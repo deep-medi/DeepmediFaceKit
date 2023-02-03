@@ -1,0 +1,776 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F8C90DDD8829E40683EB5D0289CFDF4 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AC4BE2AFD57489FACD87EF08675A60 /* ReplaceMe.swift */; };
+		14E328E38AC54B563ECB4E54204E2B48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		296D7F944033208ED303CF1943FF0CFC /* DeepmediFaceKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D003D8BB5DEC137C0248CD4D8669E35E /* DeepmediFaceKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		401D24019045547920BB5E687E40CC1A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		5FB118130624E7A5044E46D129C0F1E3 /* Pods-DeepmediFaceKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2472E7557E41F856E50A1004856BD1E6 /* Pods-DeepmediFaceKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75327768D8646609C4949F4ACC25B9D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		9B9B5BD60D30768A896DB90CAF4F2CB9 /* Pods-DeepmediFaceKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F162C22B853EF075FA845C132B99347 /* Pods-DeepmediFaceKit_Example-dummy.m */; };
+		A5E284179E7A5753164A03E14FE126D9 /* DeepmediFaceKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9324A2C051779A71970ADA695487D782 /* DeepmediFaceKit-dummy.m */; };
+		B9F5D3802F44B3A44FDEB4D7639CB027 /* Pods-DeepmediFaceKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E57DB467F3388574A3532EE6EEE0ED8A /* Pods-DeepmediFaceKit_Tests-dummy.m */; };
+		E546912617EA6539BFA078CE2D83C77F /* Pods-DeepmediFaceKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 416191DEF5776DB6FF3EC2C30DFC4FBC /* Pods-DeepmediFaceKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1820EEBABF33DB919EAE80DC88850FB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAFBEBB0E326A888478C5E56D1D2DEF1;
+			remoteInfo = "Pods-DeepmediFaceKit_Example";
+		};
+		A553D85258E30ECDB1F0CE7F86D9D2A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8ECAF70C8A2AE50D137BFB6536988799;
+			remoteInfo = DeepmediFaceKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F9008B6F01E8F6518600E076FE5611B /* Pods-DeepmediFaceKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DeepmediFaceKit_Tests.modulemap"; sourceTree = "<group>"; };
+		184383D099BE9012B8C0CA7DC68E71E8 /* DeepmediFaceKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DeepmediFaceKit-prefix.pch"; sourceTree = "<group>"; };
+		1CD0871A43258C62C9EDB304E2169C34 /* Pods-DeepmediFaceKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DeepmediFaceKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		1F162C22B853EF075FA845C132B99347 /* Pods-DeepmediFaceKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DeepmediFaceKit_Example-dummy.m"; sourceTree = "<group>"; };
+		2472E7557E41F856E50A1004856BD1E6 /* Pods-DeepmediFaceKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DeepmediFaceKit_Tests-umbrella.h"; sourceTree = "<group>"; };
+		339B890E63A7F74C2081B026551C3DD1 /* DeepmediFaceKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DeepmediFaceKit.modulemap; sourceTree = "<group>"; };
+		3480DF8126218B0864EA4CF4EE8F8595 /* Pods-DeepmediFaceKit_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DeepmediFaceKit_Tests"; path = Pods_DeepmediFaceKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		416191DEF5776DB6FF3EC2C30DFC4FBC /* Pods-DeepmediFaceKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DeepmediFaceKit_Example-umbrella.h"; sourceTree = "<group>"; };
+		548A423186B14E97B03188557B40C89F /* Pods-DeepmediFaceKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DeepmediFaceKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		55C121F60C722B6420C1202BA3660B18 /* Pods-DeepmediFaceKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DeepmediFaceKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		59A8253D4889DB52326EDD5CEEB72948 /* Pods-DeepmediFaceKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DeepmediFaceKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5C6C32C4080A71BE11284ECB71523FCA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		5D958EC173FF091FB9D953B2CBFDCEE5 /* DeepmediFaceKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DeepmediFaceKit.release.xcconfig; sourceTree = "<group>"; };
+		67EFB7D01537074433D4787716C83F54 /* Pods-DeepmediFaceKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DeepmediFaceKit_Tests-Info.plist"; sourceTree = "<group>"; };
+		696F573B364A7066D4BA223901363945 /* DeepmediFaceKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DeepmediFaceKit-Info.plist"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		76A222FF207B41E0F67B69CB282E2133 /* Pods-DeepmediFaceKit_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DeepmediFaceKit_Example"; path = Pods_DeepmediFaceKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8237EACC0762EA5526D978B776B8514A /* Pods-DeepmediFaceKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DeepmediFaceKit_Example.release.xcconfig"; sourceTree = "<group>"; };
+		91BB5A19070CB244F54E7F65EC4AB14C /* Pods-DeepmediFaceKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DeepmediFaceKit_Example.modulemap"; sourceTree = "<group>"; };
+		9324A2C051779A71970ADA695487D782 /* DeepmediFaceKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DeepmediFaceKit-dummy.m"; sourceTree = "<group>"; };
+		955D1FE802EFB03E7BDEF8BBE4A98AFE /* DeepmediFaceKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DeepmediFaceKit.debug.xcconfig; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A15847363F8FFAA63B62B169DEE6811A /* Pods-DeepmediFaceKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DeepmediFaceKit_Example-Info.plist"; sourceTree = "<group>"; };
+		AB8C9407650C1F46D65CA51D5F7F9D77 /* Pods-DeepmediFaceKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DeepmediFaceKit_Example-frameworks.sh"; sourceTree = "<group>"; };
+		B15C66F780FBCBC0E24DF9C061449C2A /* Pods-DeepmediFaceKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DeepmediFaceKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		B6FF669D95E7547F7C80F62FBBD51B7B /* DeepmediFaceKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = DeepmediFaceKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B9E08042CE88F8D5E1B44D54112A725D /* Pods-DeepmediFaceKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DeepmediFaceKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C422A20E0CA09685A926737F70F145C8 /* Pods-DeepmediFaceKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DeepmediFaceKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		CE613C6981B7D95942A81FA446E27279 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		D003D8BB5DEC137C0248CD4D8669E35E /* DeepmediFaceKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DeepmediFaceKit-umbrella.h"; sourceTree = "<group>"; };
+		D511F655F3219053DD69C70D0C07188B /* DeepmediFaceKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DeepmediFaceKit; path = DeepmediFaceKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9AC4BE2AFD57489FACD87EF08675A60 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = DeepmediFaceKit/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		E57DB467F3388574A3532EE6EEE0ED8A /* Pods-DeepmediFaceKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DeepmediFaceKit_Tests-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		633E0CEB984210FC1DDB350401183735 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75327768D8646609C4949F4ACC25B9D9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67BEE466B141F64C52DB3D5406BB237E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14E328E38AC54B563ECB4E54204E2B48 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F0AC32F71050A7EE526EA472FC47B8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				401D24019045547920BB5E687E40CC1A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		228822E923962C33CE29DE63ECC1ED04 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				B6FF669D95E7547F7C80F62FBBD51B7B /* DeepmediFaceKit.podspec */,
+				5C6C32C4080A71BE11284ECB71523FCA /* LICENSE */,
+				CE613C6981B7D95942A81FA446E27279 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		307F76244DEBD28C9AE38DFCAB2237D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D511F655F3219053DD69C70D0C07188B /* DeepmediFaceKit */,
+				76A222FF207B41E0F67B69CB282E2133 /* Pods-DeepmediFaceKit_Example */,
+				3480DF8126218B0864EA4CF4EE8F8595 /* Pods-DeepmediFaceKit_Tests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		A73EA24F9644DB1CB4ED5C4283BAE675 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				339B890E63A7F74C2081B026551C3DD1 /* DeepmediFaceKit.modulemap */,
+				9324A2C051779A71970ADA695487D782 /* DeepmediFaceKit-dummy.m */,
+				696F573B364A7066D4BA223901363945 /* DeepmediFaceKit-Info.plist */,
+				184383D099BE9012B8C0CA7DC68E71E8 /* DeepmediFaceKit-prefix.pch */,
+				D003D8BB5DEC137C0248CD4D8669E35E /* DeepmediFaceKit-umbrella.h */,
+				955D1FE802EFB03E7BDEF8BBE4A98AFE /* DeepmediFaceKit.debug.xcconfig */,
+				5D958EC173FF091FB9D953B2CBFDCEE5 /* DeepmediFaceKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/DeepmediFaceKit";
+			sourceTree = "<group>";
+		};
+		B5F4C3BAE80D7F8F94E8D93459BBB8EE /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD9A20A1536E3485A40D32290C01BB0F /* DeepmediFaceKit */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		CD9A20A1536E3485A40D32290C01BB0F /* DeepmediFaceKit */ = {
+			isa = PBXGroup;
+			children = (
+				D9AC4BE2AFD57489FACD87EF08675A60 /* ReplaceMe.swift */,
+				228822E923962C33CE29DE63ECC1ED04 /* Pod */,
+				A73EA24F9644DB1CB4ED5C4283BAE675 /* Support Files */,
+			);
+			name = DeepmediFaceKit;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				B5F4C3BAE80D7F8F94E8D93459BBB8EE /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				307F76244DEBD28C9AE38DFCAB2237D7 /* Products */,
+				D3C9A2817DB462A040FBEDF5132F86C4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3C9A2817DB462A040FBEDF5132F86C4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F0EDB7979C100C2ECB62652838077DC0 /* Pods-DeepmediFaceKit_Example */,
+				FDE8ACF8253372D97B945647FA42695B /* Pods-DeepmediFaceKit_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F0EDB7979C100C2ECB62652838077DC0 /* Pods-DeepmediFaceKit_Example */ = {
+			isa = PBXGroup;
+			children = (
+				91BB5A19070CB244F54E7F65EC4AB14C /* Pods-DeepmediFaceKit_Example.modulemap */,
+				B9E08042CE88F8D5E1B44D54112A725D /* Pods-DeepmediFaceKit_Example-acknowledgements.markdown */,
+				55C121F60C722B6420C1202BA3660B18 /* Pods-DeepmediFaceKit_Example-acknowledgements.plist */,
+				1F162C22B853EF075FA845C132B99347 /* Pods-DeepmediFaceKit_Example-dummy.m */,
+				AB8C9407650C1F46D65CA51D5F7F9D77 /* Pods-DeepmediFaceKit_Example-frameworks.sh */,
+				A15847363F8FFAA63B62B169DEE6811A /* Pods-DeepmediFaceKit_Example-Info.plist */,
+				416191DEF5776DB6FF3EC2C30DFC4FBC /* Pods-DeepmediFaceKit_Example-umbrella.h */,
+				548A423186B14E97B03188557B40C89F /* Pods-DeepmediFaceKit_Example.debug.xcconfig */,
+				8237EACC0762EA5526D978B776B8514A /* Pods-DeepmediFaceKit_Example.release.xcconfig */,
+			);
+			name = "Pods-DeepmediFaceKit_Example";
+			path = "Target Support Files/Pods-DeepmediFaceKit_Example";
+			sourceTree = "<group>";
+		};
+		FDE8ACF8253372D97B945647FA42695B /* Pods-DeepmediFaceKit_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0F9008B6F01E8F6518600E076FE5611B /* Pods-DeepmediFaceKit_Tests.modulemap */,
+				59A8253D4889DB52326EDD5CEEB72948 /* Pods-DeepmediFaceKit_Tests-acknowledgements.markdown */,
+				C422A20E0CA09685A926737F70F145C8 /* Pods-DeepmediFaceKit_Tests-acknowledgements.plist */,
+				E57DB467F3388574A3532EE6EEE0ED8A /* Pods-DeepmediFaceKit_Tests-dummy.m */,
+				67EFB7D01537074433D4787716C83F54 /* Pods-DeepmediFaceKit_Tests-Info.plist */,
+				2472E7557E41F856E50A1004856BD1E6 /* Pods-DeepmediFaceKit_Tests-umbrella.h */,
+				1CD0871A43258C62C9EDB304E2169C34 /* Pods-DeepmediFaceKit_Tests.debug.xcconfig */,
+				B15C66F780FBCBC0E24DF9C061449C2A /* Pods-DeepmediFaceKit_Tests.release.xcconfig */,
+			);
+			name = "Pods-DeepmediFaceKit_Tests";
+			path = "Target Support Files/Pods-DeepmediFaceKit_Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2528C4FE1CFC81F8AA82918656FD7846 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E546912617EA6539BFA078CE2D83C77F /* Pods-DeepmediFaceKit_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BDEE2C2CA22E4A8C4955BE69C2A61B2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				296D7F944033208ED303CF1943FF0CFC /* DeepmediFaceKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B570526207C2BF14414D01FCB09597D9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FB118130624E7A5044E46D129C0F1E3 /* Pods-DeepmediFaceKit_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8ECAF70C8A2AE50D137BFB6536988799 /* DeepmediFaceKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E10A061EB639999109EBA39B8F587E09 /* Build configuration list for PBXNativeTarget "DeepmediFaceKit" */;
+			buildPhases = (
+				2BDEE2C2CA22E4A8C4955BE69C2A61B2 /* Headers */,
+				86822DF408752407E4AF1B3A8EBF0EE2 /* Sources */,
+				8F0AC32F71050A7EE526EA472FC47B8F /* Frameworks */,
+				DE7F5615E2CBA1E850A6D5FC43FD432B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeepmediFaceKit;
+			productName = DeepmediFaceKit;
+			productReference = D511F655F3219053DD69C70D0C07188B /* DeepmediFaceKit */;
+			productType = "com.apple.product-type.framework";
+		};
+		A7F947F15E73171D5238DAE683EEC4FB /* Pods-DeepmediFaceKit_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA1DC4EBA2E9600A046EF497EFC18000 /* Build configuration list for PBXNativeTarget "Pods-DeepmediFaceKit_Tests" */;
+			buildPhases = (
+				B570526207C2BF14414D01FCB09597D9 /* Headers */,
+				DDF73EE59390200AD36DAC3F0C3F267D /* Sources */,
+				67BEE466B141F64C52DB3D5406BB237E /* Frameworks */,
+				0AC22C0F62A4FE229339640AE33660F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8368CFD70D4FDE996D7BFDE4AB63ECC4 /* PBXTargetDependency */,
+			);
+			name = "Pods-DeepmediFaceKit_Tests";
+			productName = Pods_DeepmediFaceKit_Tests;
+			productReference = 3480DF8126218B0864EA4CF4EE8F8595 /* Pods-DeepmediFaceKit_Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+		DAFBEBB0E326A888478C5E56D1D2DEF1 /* Pods-DeepmediFaceKit_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A347B762C43FA6A273D671853A7365CE /* Build configuration list for PBXNativeTarget "Pods-DeepmediFaceKit_Example" */;
+			buildPhases = (
+				2528C4FE1CFC81F8AA82918656FD7846 /* Headers */,
+				E47C24318F08B67759FA78F9D75E73AA /* Sources */,
+				633E0CEB984210FC1DDB350401183735 /* Frameworks */,
+				873C2F817D008F989A4B8F29599263CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A17F0341596AD72970195A448D5DF91 /* PBXTargetDependency */,
+			);
+			name = "Pods-DeepmediFaceKit_Example";
+			productName = Pods_DeepmediFaceKit_Example;
+			productReference = 76A222FF207B41E0F67B69CB282E2133 /* Pods-DeepmediFaceKit_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 307F76244DEBD28C9AE38DFCAB2237D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8ECAF70C8A2AE50D137BFB6536988799 /* DeepmediFaceKit */,
+				DAFBEBB0E326A888478C5E56D1D2DEF1 /* Pods-DeepmediFaceKit_Example */,
+				A7F947F15E73171D5238DAE683EEC4FB /* Pods-DeepmediFaceKit_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0AC22C0F62A4FE229339640AE33660F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		873C2F817D008F989A4B8F29599263CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE7F5615E2CBA1E850A6D5FC43FD432B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		86822DF408752407E4AF1B3A8EBF0EE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E284179E7A5753164A03E14FE126D9 /* DeepmediFaceKit-dummy.m in Sources */,
+				0F8C90DDD8829E40683EB5D0289CFDF4 /* ReplaceMe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDF73EE59390200AD36DAC3F0C3F267D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9F5D3802F44B3A44FDEB4D7639CB027 /* Pods-DeepmediFaceKit_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E47C24318F08B67759FA78F9D75E73AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B9B5BD60D30768A896DB90CAF4F2CB9 /* Pods-DeepmediFaceKit_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4A17F0341596AD72970195A448D5DF91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DeepmediFaceKit;
+			target = 8ECAF70C8A2AE50D137BFB6536988799 /* DeepmediFaceKit */;
+			targetProxy = A553D85258E30ECDB1F0CE7F86D9D2A8 /* PBXContainerItemProxy */;
+		};
+		8368CFD70D4FDE996D7BFDE4AB63ECC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-DeepmediFaceKit_Example";
+			target = DAFBEBB0E326A888478C5E56D1D2DEF1 /* Pods-DeepmediFaceKit_Example */;
+			targetProxy = 1820EEBABF33DB919EAE80DC88850FB9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		713A40C3C954A3E926E74F1A581D9ACE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B15C66F780FBCBC0E24DF9C061449C2A /* Pods-DeepmediFaceKit_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DeepmediFaceKit_Tests/Pods-DeepmediFaceKit_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DeepmediFaceKit_Tests/Pods-DeepmediFaceKit_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		814E585CF115418C20BF63E050C5E26A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 548A423186B14E97B03188557B40C89F /* Pods-DeepmediFaceKit_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DeepmediFaceKit_Example/Pods-DeepmediFaceKit_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DeepmediFaceKit_Example/Pods-DeepmediFaceKit_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D6B15E9F7B8EEE69B6AAC09EE33F2694 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CD0871A43258C62C9EDB304E2169C34 /* Pods-DeepmediFaceKit_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DeepmediFaceKit_Tests/Pods-DeepmediFaceKit_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DeepmediFaceKit_Tests/Pods-DeepmediFaceKit_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E50CF823544AD794224EDC161C239D88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D958EC173FF091FB9D953B2CBFDCEE5 /* DeepmediFaceKit.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DeepmediFaceKit/DeepmediFaceKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DeepmediFaceKit/DeepmediFaceKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DeepmediFaceKit/DeepmediFaceKit.modulemap";
+				PRODUCT_MODULE_NAME = DeepmediFaceKit;
+				PRODUCT_NAME = DeepmediFaceKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E7820E10BDE1FDEE4403842053710C72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 955D1FE802EFB03E7BDEF8BBE4A98AFE /* DeepmediFaceKit.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DeepmediFaceKit/DeepmediFaceKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DeepmediFaceKit/DeepmediFaceKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DeepmediFaceKit/DeepmediFaceKit.modulemap";
+				PRODUCT_MODULE_NAME = DeepmediFaceKit;
+				PRODUCT_NAME = DeepmediFaceKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EA19E9B3210954AE1670E99CC7784D60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8237EACC0762EA5526D978B776B8514A /* Pods-DeepmediFaceKit_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DeepmediFaceKit_Example/Pods-DeepmediFaceKit_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DeepmediFaceKit_Example/Pods-DeepmediFaceKit_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A347B762C43FA6A273D671853A7365CE /* Build configuration list for PBXNativeTarget "Pods-DeepmediFaceKit_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				814E585CF115418C20BF63E050C5E26A /* Debug */,
+				EA19E9B3210954AE1670E99CC7784D60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E10A061EB639999109EBA39B8F587E09 /* Build configuration list for PBXNativeTarget "DeepmediFaceKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7820E10BDE1FDEE4403842053710C72 /* Debug */,
+				E50CF823544AD794224EDC161C239D88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA1DC4EBA2E9600A046EF497EFC18000 /* Build configuration list for PBXNativeTarget "Pods-DeepmediFaceKit_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6B15E9F7B8EEE69B6AAC09EE33F2694 /* Debug */,
+				713A40C3C954A3E926E74F1A581D9ACE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

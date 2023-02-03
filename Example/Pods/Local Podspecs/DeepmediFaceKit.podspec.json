@@ -1,0 +1,22 @@
+{
+  "name": "DeepmediFaceKit",
+  "version": "0.1.0",
+  "summary": "A short description of DeepmediFaceKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/demianjun/DeepmediFaceKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "demianjun": "demianjun@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/demianjun/DeepmediFaceKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "DeepmediFaceKit/Classes/**/*"
+}

@@ -1,0 +1,16 @@
+PODS:
+  - DeepmediFaceKit (0.1.0)
+
+DEPENDENCIES:
+  - DeepmediFaceKit (from `../`)
+
+EXTERNAL SOURCES:
+  DeepmediFaceKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DeepmediFaceKit: 8c2b50227eccde375b0a2af085da6b94e7399622
+
+PODFILE CHECKSUM: 9428d5781aa9d1d25a2c7ee92dca62e1e500df74
+
+COCOAPODS: 1.11.3
