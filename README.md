@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # DeepmediFaceKit
 
 [![CI Status](https://img.shields.io/travis/demianjun/DeepmediFaceKit.svg?style=flat)](https://travis-ci.org/demianjun/DeepmediFaceKit)
@@ -30,4 +29,3 @@ demianjun, demianjun@gmail.com
 DeepmediFaceKit is available under the MIT license. See the LICENSE file for more info.
 =======
 # FaceKit_ios
->>>>>>> 6136ac384cfb10c09f56a6dd1c66aeaf97d2a198
