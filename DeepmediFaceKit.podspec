@@ -44,7 +44,7 @@ TODO: Add long description of the pod here.
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
   
-  s.dependency 'Then', '~> 3.0.0'
+  s.dependency 'Then'
   s.dependency 'SnapKit', '~> 5.0.0'
   # s.dependency 'GoogleMLKit/FaceDetection'
   s.dependency 'Alamofire', '~> 5.2.0'
