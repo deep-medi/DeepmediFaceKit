@@ -27,5 +27,3 @@ demianjun, demianjun@gmail.com
 ## License
 
 DeepmediFaceKit is available under the MIT license. See the LICENSE file for more info.
-=======
-# FaceKit_ios
