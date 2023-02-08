@@ -1,14 +1,15 @@
-use_frameworks!
-# use_frameworks! :linkage => :static
+# use_frameworks!
+use_frameworks! :linkage > :static
 
 platform :ios, '13.0'
 
 target 'DeepmediFaceKit_Example' do
+
   pod 'DeepmediFaceKit', :path => '../'
 
-	pod 'Then'
+	# pod 'Then'
 	pod 'SnapKit', '~> 5.0.0'
-	# pod 'GoogleMLKit/FaceDetection'
+	pod 'GoogleMLKit/FaceDetection', '2.6.0'
 	pod 'Alamofire', '~> 5.2.0'
 	# pod 'OpenCV', '~> 4.3'
 	pod 'RxSwift', '~> 6.0.0'
@@ -19,16 +20,13 @@ target 'DeepmediFaceKit_Example' do
   end
 end
 
-# pre_install do |installer|
-#     def installer.verify_no_static_framework_transitive_dependencies; end
-# end
+pre_install do |installer|
+    def installer.verify_no_static_framework_transitive_dependencies; end
+end
 
 post_install do |installer|
   installer.pods_project.targets.each do |target|
     target.build_configurations.each do |config|
-#      cflags = config.build_settings['OTHER_CFLAGS'] || ['$(inherited)']
-#      cflags << '-fembed-bitcode'
-#      config.build_settings['OTHER_CFLAGS'] = cflags
       config.build_settings['IPHONEOS DEPLOYMENT_TARGET'] = '13.0'
       config.build_settings["ONLY_ACTIVE_ARCH"] = "NO"
     end
