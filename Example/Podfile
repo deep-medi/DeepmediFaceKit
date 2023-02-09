@@ -9,7 +9,9 @@ target 'DeepmediFaceKit_Example' do
 
 	# pod 'Then'
 	pod 'SnapKit', '~> 5.0.0'
-	pod 'GoogleMLKit/FaceDetection', '2.6.0'
+  pod 'GoogleMLKit/FaceDetection'
+#	pod 'GoogleMLKit/FaceDetection', '2.6.0'
+	pod 'GoogleMLKit/FaceDetection'
 	pod 'Alamofire', '~> 5.2.0'
 	# pod 'OpenCV', '~> 4.3'
 	pod 'RxSwift', '~> 6.0.0'
