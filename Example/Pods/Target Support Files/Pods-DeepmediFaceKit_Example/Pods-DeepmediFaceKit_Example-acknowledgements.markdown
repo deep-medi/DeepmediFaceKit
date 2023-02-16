@@ -1128,19 +1128,19 @@ Fuller's blog</a>
 
 ## MLImage
 
-Copyright 2021 Google
+Copyright 2022 Google
 
 ## MLKitCommon
 
-Copyright 2021 Google
+Copyright 2022 Google
 
 ## MLKitFaceDetection
 
-Copyright 2021 Google
+Copyright 2022 Google
 
 ## MLKitVision
 
-Copyright 2021 Google
+Copyright 2022 Google
 
 ## OpenCV
 
