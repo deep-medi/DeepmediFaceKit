@@ -10,6 +10,8 @@
 #endif
 #endif
 
+#import "ObjcMapper.h"
+#import "OpenCVWrapper.h"
 
 FOUNDATION_EXPORT double DeepmediFaceKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char DeepmediFaceKitVersionString[];

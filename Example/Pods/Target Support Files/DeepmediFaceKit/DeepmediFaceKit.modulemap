@@ -1,4 +1,4 @@
-framework module DeepmediFaceKit {
+module DeepmediFaceKit {
   umbrella header "DeepmediFaceKit-umbrella.h"
 
   export *
