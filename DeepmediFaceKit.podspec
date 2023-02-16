@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/deep-medi/FaceKit_ios'
+  s.homepage         = 'https://github.com/deep-medi/DeepmediFaceKit'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'demianjun' => 'demianjun@gmail.com' }
@@ -49,7 +49,7 @@ TODO: Add long description of the pod here.
   s.dependency 'GoogleMLKit/FaceDetection'
 #  s.dependency 'GoogleMLKit/FaceDetection', '2.6.0'
   s.dependency 'Alamofire', '~> 5.2.0'
-  # s.dependency 'OpenCV', '~> 4.3'
+  s.dependency 'OpenCV'
   s.dependency 'RxSwift', '~> 6.0.0'
   s.dependency 'RxCocoa', '~> 6.0.0'
 
