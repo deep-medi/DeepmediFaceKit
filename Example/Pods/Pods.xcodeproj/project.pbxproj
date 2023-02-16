@@ -21,6 +21,7 @@
 				D5FA55B26A65289F6D5552830634916E /* PBXTargetDependency */,
 			);
 			name = MLKitCommon;
+			productName = MLKitCommon;
 		};
 		2C80449F84CF910DF6AD6AFDDE039F2A /* OpenCV */ = {
 			isa = PBXAggregateTarget;
@@ -30,6 +31,7 @@
 			dependencies = (
 			);
 			name = OpenCV;
+			productName = OpenCV;
 		};
 		6D46A1F6123B14449A2A1FC04011860D /* GoogleMLKit */ = {
 			isa = PBXAggregateTarget;
@@ -41,6 +43,7 @@
 				5149DDB2164A710DB0356DFBBE4BDABE /* PBXTargetDependency */,
 			);
 			name = GoogleMLKit;
+			productName = GoogleMLKit;
 		};
 		8628FA5433C5F582EFA7209B6B4C8CD7 /* MLKitFaceDetection */ = {
 			isa = PBXAggregateTarget;
@@ -53,6 +56,7 @@
 				A816D1D463ED374D77B0577C600C52B9 /* PBXTargetDependency */,
 			);
 			name = MLKitFaceDetection;
+			productName = MLKitFaceDetection;
 		};
 		BE3B5914C1194353E85796E3EE3CE245 /* MLImage */ = {
 			isa = PBXAggregateTarget;
@@ -62,6 +66,7 @@
 			dependencies = (
 			);
 			name = MLImage;
+			productName = MLImage;
 		};
 		F1D55369E4C8976F396F83588DAC03C4 /* MLKitVision */ = {
 			isa = PBXAggregateTarget;
@@ -76,6 +81,7 @@
 				09019962A0DD68C601970F846B7F779E /* PBXTargetDependency */,
 			);
 			name = MLKitVision;
+			productName = MLKitVision;
 		};
 /* End PBXAggregateTarget section */
 
@@ -124,7 +130,6 @@
 		138DC706F8CF628AB14B51C85EC2D6D3 /* FBLPromise+Retry.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A479C17E09059F02E12FB5CE3715 /* FBLPromise+Retry.m */; };
 		13B85A3795D17C0C194BB67BFE677B29 /* ImmediateSchedulerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59C0C9DB04CDA575C635A0066C863E1 /* ImmediateSchedulerType.swift */; };
 		13EA3479242E77E6B420C99C557128FD /* GDTCORUploadCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 067D2FDE7AE70F9E104AD893CF1AAA16 /* GDTCORUploadCoordinator.m */; };
-		14602DEDC9B66DFB4CEC9B6BC6120351 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33622120477F6F4E395260850D5FF36 /* ViewModel.swift */; };
 		14717488DECDFD27C132EF7A8AA3E3F5 /* ServerTrustEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4856B8B2791CA601C76547E4D1F61115 /* ServerTrustEvaluation.swift */; };
 		14BD0E3BD2FDF6F079AF9465D143522B /* Disposables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E14A1C4B98D938A37D0A46EC3DD5CC9 /* Disposables.swift */; };
 		1577FAE9B799C769D987FAA02B5FF7A5 /* GTMNSString+URLArguments.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A3BDD14CBE773C5CCDFFF6257C0250E /* GTMNSString+URLArguments.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -511,6 +516,7 @@
 		ACEBDE5A3C80436C358712CA5DD9B36A /* _RXKVOObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = F1C1C2B56D28635160B93AED567CA989 /* _RXKVOObserver.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		ACFA72F430512F3BC56B26AC42333F40 /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4347ED39451CDA922447D42414171D7E /* Driver.swift */; };
 		AD18097C146086C91D098503823D3480 /* ToArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2ECDB006386F2BA23C0AB5AAC23E3C8 /* ToArray.swift */; };
+		AD3C02AB299E166400156934 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3C02AA299E166300156934 /* ViewModel.swift */; };
 		AD3CD6264FB5E3DE0D2E6245CF1CCD62 /* BCLlefteyeclosed_200.emd in Resources */ = {isa = PBXBuildFile; fileRef = B86725FB392FD0D32E68F0FFA31AE3C6 /* BCLlefteyeclosed_200.emd */; };
 		ADFA8BAE737CD467FEFA11AD71486C59 /* GPBTimestamp.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C4930413DE02468242DDF02E5FC51F /* GPBTimestamp.pbobjc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		AEDB79F6794250F7C10369937C73356D /* UIButton+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD700894B34E0ABA67B7B2DFECA08C /* UIButton+Rx.swift */; };
@@ -1124,7 +1130,7 @@
 		036D849BC9122437B4DD1B5DBAEC5A99 /* GDTCOREvent_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCOREvent_Private.h; path = GoogleDataTransport/GDTCORLibrary/Private/GDTCOREvent_Private.h; sourceTree = "<group>"; };
 		039D700BDC40597F7506A9F32F83419E /* GULUserDefaults.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULUserDefaults.h; path = GoogleUtilities/UserDefaults/Public/GoogleUtilities/GULUserDefaults.h; sourceTree = "<group>"; };
 		03A032FC5E15E2BE9BB5BDCC56A2A5CE /* UIRefreshControl+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIRefreshControl+Rx.swift"; path = "RxCocoa/iOS/UIRefreshControl+Rx.swift"; sourceTree = "<group>"; };
-		03AD2E25394B26F382BBDEE80EB13315 /* MFT_fssd_fastgray.pb */ = {isa = PBXFileReference; includeInIndex = 1; name = MFT_fssd_fastgray.pb; path = Resources/GoogleMVFaceDetectorResources/MFT_fssd_fastgray.pb; sourceTree = "<group>"; };
+		03AD2E25394B26F382BBDEE80EB13315 /* MFT_fssd_fastgray.pb */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = MFT_fssd_fastgray.pb; path = Resources/GoogleMVFaceDetectorResources/MFT_fssd_fastgray.pb; sourceTree = "<group>"; };
 		03C42EEEADA06A3B37632E9F938A3BBB /* Struct.pbobjc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Struct.pbobjc.h; path = objectivec/google/protobuf/Struct.pbobjc.h; sourceTree = "<group>"; };
 		03F0DD0FBF7D1E93AAF41007ACF90AC0 /* gfluidkernel.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = gfluidkernel.hpp; path = opencv2.framework/Versions/A/Headers/gapi/fluid/gfluidkernel.hpp; sourceTree = "<group>"; };
 		044C042A5477D8669882677C2DA17EC1 /* FBLPromise+Testing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Testing.h"; path = "Sources/FBLPromises/include/FBLPromise+Testing.h"; sourceTree = "<group>"; };
@@ -1205,7 +1211,7 @@
 		15936000632B0E7DDE0037DF01CA8F37 /* RxCocoa-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RxCocoa-umbrella.h"; sourceTree = "<group>"; };
 		15A6032857FAC6FF94A046E355E13E7A /* core.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = core.hpp; path = opencv2.framework/Versions/A/Headers/gapi/fluid/core.hpp; sourceTree = "<group>"; };
 		15D56FF3A8841C245A00E59A8120DDBD /* warp_reduce.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = warp_reduce.hpp; path = opencv2.framework/Versions/A/Headers/core/cuda/warp_reduce.hpp; sourceTree = "<group>"; };
-		15E45CC6A056E92840EA8E627DD25393 /* pb_decode.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_decode.c; sourceTree = "<group>"; };
+		15E45CC6A056E92840EA8E627DD25393 /* pb_decode.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = pb_decode.c; sourceTree = "<group>"; };
 		162A40A8375BD556D80BB21FB2E8C83A /* FBLPromise+Await.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Await.h"; path = "Sources/FBLPromises/include/FBLPromise+Await.h"; sourceTree = "<group>"; };
 		1680C3395CF5915FCFB4047113C9A623 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
 		168A96FE02A0FA1CFF8B943AF2B7D79D /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
@@ -1246,7 +1252,7 @@
 		20D019822EB11CDF3CDB26A62DEB7F50 /* opencl_clamdfft.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = opencl_clamdfft.hpp; path = opencv2.framework/Versions/A/Headers/core/opencl/runtime/autogenerated/opencl_clamdfft.hpp; sourceTree = "<group>"; };
 		2133E6B9E6A270E3F78EEDF614D6B78F /* Timestamp.pbobjc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Timestamp.pbobjc.h; path = objectivec/google/protobuf/Timestamp.pbobjc.h; sourceTree = "<group>"; };
 		2143C6E182B38B69BC3FEA387F3798B7 /* allocator_stats.impl.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = allocator_stats.impl.hpp; path = opencv2.framework/Versions/A/Headers/core/utils/allocator_stats.impl.hpp; sourceTree = "<group>"; };
-		21C5F425EE4EC0DAEE9792BA97128166 /* BCLjoy_200.emd */ = {isa = PBXFileReference; includeInIndex = 1; name = BCLjoy_200.emd; path = Resources/GoogleMVFaceDetectorResources/BCLjoy_200.emd; sourceTree = "<group>"; };
+		21C5F425EE4EC0DAEE9792BA97128166 /* BCLjoy_200.emd */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = BCLjoy_200.emd; path = Resources/GoogleMVFaceDetectorResources/BCLjoy_200.emd; sourceTree = "<group>"; };
 		21D5D8D22CEF5CE291FE30D9DFCDFD34 /* GTMDebugThreadValidation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMDebugThreadValidation.h; path = DebugUtils/GTMDebugThreadValidation.h; sourceTree = "<group>"; };
 		22501122C9A44241B4931C71EF237E69 /* blenders.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = blenders.hpp; path = opencv2.framework/Versions/A/Headers/stitching/detail/blenders.hpp; sourceTree = "<group>"; };
 		230FDFDDE0BF85768103B83B6C4F1565 /* Model.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
@@ -1317,7 +1323,7 @@
 		340A4D0174180A8F62BECC96E768049B /* PrimitiveSequence+Zip+arity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PrimitiveSequence+Zip+arity.swift"; path = "RxSwift/Traits/PrimitiveSequence/PrimitiveSequence+Zip+arity.swift"; sourceTree = "<group>"; };
 		341B1768E0AE8746161054F7794B48A6 /* FBLPromise+Reduce.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Reduce.m"; path = "Sources/FBLPromises/FBLPromise+Reduce.m"; sourceTree = "<group>"; };
 		3451F14E67816370A61A9805D3D42FC6 /* PublishRelay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PublishRelay.swift; path = RxRelay/PublishRelay.swift; sourceTree = "<group>"; };
-		34560AA40D71F3B2BFB36FA6A87E7EFD /* fssd_25_8bit_gray_v1.tflite */ = {isa = PBXFileReference; includeInIndex = 1; name = fssd_25_8bit_gray_v1.tflite; path = Resources/GoogleMVFaceDetectorResources/fssd_25_8bit_gray_v1.tflite; sourceTree = "<group>"; };
+		34560AA40D71F3B2BFB36FA6A87E7EFD /* fssd_25_8bit_gray_v1.tflite */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = fssd_25_8bit_gray_v1.tflite; path = Resources/GoogleMVFaceDetectorResources/fssd_25_8bit_gray_v1.tflite; sourceTree = "<group>"; };
 		347C9891F3F9E01DFA85FE4483128B79 /* ControlProperty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ControlProperty.swift; path = RxCocoa/Traits/ControlProperty.swift; sourceTree = "<group>"; };
 		3480DF8126218B0864EA4CF4EE8F8595 /* Pods-DeepmediFaceKit_Tests */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-DeepmediFaceKit_Tests"; path = "libPods-DeepmediFaceKit_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34A08C0B8F15AF57B5AED8B9784E0C34 /* RxSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RxSwift-prefix.pch"; sourceTree = "<group>"; };
@@ -1421,7 +1427,7 @@
 		4DFA43068E7222654CB303C01683DF70 /* GULHeartbeatDateStorageUserDefaults.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULHeartbeatDateStorageUserDefaults.h; path = GoogleUtilities/Environment/Public/GoogleUtilities/GULHeartbeatDateStorageUserDefaults.h; sourceTree = "<group>"; };
 		4E0CBA85FC22611863DA046E3851CFE4 /* GPBSourceContext.pbobjc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPBSourceContext.pbobjc.h; path = objectivec/GPBSourceContext.pbobjc.h; sourceTree = "<group>"; };
 		4E2F36A4C8A92485D82AAD5CD52C2C58 /* interface.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = interface.h; path = opencv2.framework/Versions/A/Headers/imgproc/hal/interface.h; sourceTree = "<group>"; };
-		4E5A06BA4BFD7B3D556B278BDCCD54B2 /* DeepmediFaceKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = DeepmediFaceKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4E5A06BA4BFD7B3D556B278BDCCD54B2 /* DeepmediFaceKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = DeepmediFaceKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4E7E49E88E7408A3A9A18C6F6D4B369F /* gcall.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = gcall.hpp; path = opencv2.framework/Versions/A/Headers/gapi/gcall.hpp; sourceTree = "<group>"; };
 		4E86F2EE4B9C5EDFFA5F52E7AFF695D9 /* NSTextStorage+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSTextStorage+Rx.swift"; path = "RxCocoa/iOS/NSTextStorage+Rx.swift"; sourceTree = "<group>"; };
 		4EBB38E4DDEC190E7D6EF2477119BAEC /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Source/Typealiases.swift; sourceTree = "<group>"; };
@@ -1461,11 +1467,11 @@
 		5A210661E5B46DE978A8F8ADDAF54247 /* GPBType.pbobjc.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPBType.pbobjc.m; path = objectivec/GPBType.pbobjc.m; sourceTree = "<group>"; };
 		5A3BDD14CBE773C5CCDFFF6257C0250E /* GTMNSString+URLArguments.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSString+URLArguments.m"; path = "Foundation/GTMNSString+URLArguments.m"; sourceTree = "<group>"; };
 		5A95CBDE6214C2EADFDAF763428DE94F /* InvocableType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InvocableType.swift; path = RxSwift/Schedulers/Internal/InvocableType.swift; sourceTree = "<group>"; };
-		5AC1EE0930011BE83C8AB0A35E2DFDBE /* LMprec_600.emd */ = {isa = PBXFileReference; includeInIndex = 1; name = LMprec_600.emd; path = Resources/GoogleMVFaceDetectorResources/LMprec_600.emd; sourceTree = "<group>"; };
+		5AC1EE0930011BE83C8AB0A35E2DFDBE /* LMprec_600.emd */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = LMprec_600.emd; path = Resources/GoogleMVFaceDetectorResources/LMprec_600.emd; sourceTree = "<group>"; };
 		5AE847B12B38932FB81A6688D4DBE516 /* intrin_forward.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = intrin_forward.hpp; path = opencv2.framework/Versions/A/Headers/core/hal/intrin_forward.hpp; sourceTree = "<group>"; };
 		5BF59BE78AC0AE4214376BC07DCFE3D4 /* Pods-DeepmediFaceKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DeepmediFaceKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5C9DD9CE68E23C124F94DA53D0443CB9 /* FBLPromise+Validate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Validate.h"; path = "Sources/FBLPromises/include/FBLPromise+Validate.h"; sourceTree = "<group>"; };
-		5D206CE1E7593C0179A1B489F7AE566F /* contours.tfl */ = {isa = PBXFileReference; includeInIndex = 1; name = contours.tfl; path = Resources/GoogleMVFaceDetectorResources/contours.tfl; sourceTree = "<group>"; };
+		5D206CE1E7593C0179A1B489F7AE566F /* contours.tfl */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = contours.tfl; path = Resources/GoogleMVFaceDetectorResources/contours.tfl; sourceTree = "<group>"; };
 		5D6D74E12F246936F9E2F2A019F1BCD8 /* SingleAsync.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SingleAsync.swift; path = RxSwift/Observables/SingleAsync.swift; sourceTree = "<group>"; };
 		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = Alamofire; path = libAlamofire.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D7B1F3E5918899A62E7491D589EA908 /* eigen.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = eigen.hpp; path = opencv2.framework/Versions/A/Headers/core/eigen.hpp; sourceTree = "<group>"; };
@@ -1492,7 +1498,7 @@
 		60BB9366EB78CF1F019C500CAC7BE23B /* _RXDelegateProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _RXDelegateProxy.m; path = RxCocoa/Runtime/_RXDelegateProxy.m; sourceTree = "<group>"; };
 		619289FBE20D9AFD0F0445C628CE25FB /* DeepmediFaceKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DeepmediFaceKit-prefix.pch"; sourceTree = "<group>"; };
 		61B31814B960FD9627C9253F03A2B1E5 /* FBLPromiseError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBLPromiseError.m; path = Sources/FBLPromises/FBLPromiseError.m; sourceTree = "<group>"; };
-		623D049305BFB01A04DB0ED24EA8C0B5 /* pb_common.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_common.c; sourceTree = "<group>"; };
+		623D049305BFB01A04DB0ED24EA8C0B5 /* pb_common.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = pb_common.c; sourceTree = "<group>"; };
 		6256A22A47F9A8C19EFC8B2BF1684428 /* types_c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = types_c.h; path = opencv2.framework/Versions/A/Headers/imgproc/types_c.h; sourceTree = "<group>"; };
 		62CC26EF6282177C31132DA4CD5FE345 /* SubscriptionDisposable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SubscriptionDisposable.swift; path = RxSwift/Disposables/SubscriptionDisposable.swift; sourceTree = "<group>"; };
 		62DEA047459814B0E4C87D3013F1D138 /* RxCocoa.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RxCocoa.modulemap; sourceTree = "<group>"; };
@@ -1525,9 +1531,9 @@
 		6A154444B37B56BE60D03A23C714DED2 /* GDTCORMetricsControllerProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORMetricsControllerProtocol.h; path = GoogleDataTransport/GDTCORLibrary/Internal/GDTCORMetricsControllerProtocol.h; sourceTree = "<group>"; };
 		6A6F2F95B9983C914051707CC6D9E3EE /* gcomputation.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = gcomputation.hpp; path = opencv2.framework/Versions/A/Headers/gapi/gcomputation.hpp; sourceTree = "<group>"; };
 		6B28A7D01D159B8334ECE0828FFD4E0A /* RxRelay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RxRelay.debug.xcconfig; sourceTree = "<group>"; };
-		6B56D95FE8447A049AB9323054DAD261 /* fssd_100_8bit_v1.tflite */ = {isa = PBXFileReference; includeInIndex = 1; name = fssd_100_8bit_v1.tflite; path = Resources/GoogleMVFaceDetectorResources/fssd_100_8bit_v1.tflite; sourceTree = "<group>"; };
+		6B56D95FE8447A049AB9323054DAD261 /* fssd_100_8bit_v1.tflite */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = fssd_100_8bit_v1.tflite; path = Resources/GoogleMVFaceDetectorResources/fssd_100_8bit_v1.tflite; sourceTree = "<group>"; };
 		6BAD9A964A0E5FF149558228614C468D /* GDTCORMetricsController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORMetricsController.h; path = GoogleDataTransport/GDTCORLibrary/Private/GDTCORMetricsController.h; sourceTree = "<group>"; };
-		6BBB6C18B2CD3B5774C59C0EB3065D02 /* MLKitFaceDetection-GoogleMVFaceDetectorResources */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "MLKitFaceDetection-GoogleMVFaceDetectorResources"; path = GoogleMVFaceDetectorResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BBB6C18B2CD3B5774C59C0EB3065D02 /* GoogleMVFaceDetectorResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoogleMVFaceDetectorResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C0F57C83ADBD46C9C5689A74D72BD72 /* intrin_msa.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = intrin_msa.hpp; path = opencv2.framework/Versions/A/Headers/core/hal/intrin_msa.hpp; sourceTree = "<group>"; };
 		6C556E839A41623E750295354780F153 /* optional.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = optional.hpp; path = opencv2.framework/Versions/A/Headers/gapi/util/optional.hpp; sourceTree = "<group>"; };
 		6C9C32A98EC31524E3A0589B75D50C27 /* GPBExtensionRegistry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPBExtensionRegistry.h; path = objectivec/GPBExtensionRegistry.h; sourceTree = "<group>"; };
@@ -1606,7 +1612,7 @@
 		7C7E496D011003914F93B7F4FE9369BA /* GULLoggerLevel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULLoggerLevel.h; path = GoogleUtilities/Logger/Public/GoogleUtilities/GULLoggerLevel.h; sourceTree = "<group>"; };
 		7CB1F2D10E54F38F79045C361D8871F6 /* logtag.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = logtag.hpp; path = opencv2.framework/Versions/A/Headers/core/utils/logtag.hpp; sourceTree = "<group>"; };
 		7CF14A630D9FCBA62547C926B86B182C /* ObserveOn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObserveOn.swift; path = RxSwift/Observables/ObserveOn.swift; sourceTree = "<group>"; };
-		7CF255BAA0DA3F8EB43CB779F48731B3 /* BCLrighteyeclosed_200.emd */ = {isa = PBXFileReference; includeInIndex = 1; name = BCLrighteyeclosed_200.emd; path = Resources/GoogleMVFaceDetectorResources/BCLrighteyeclosed_200.emd; sourceTree = "<group>"; };
+		7CF255BAA0DA3F8EB43CB779F48731B3 /* BCLrighteyeclosed_200.emd */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = BCLrighteyeclosed_200.emd; path = Resources/GoogleMVFaceDetectorResources/BCLrighteyeclosed_200.emd; sourceTree = "<group>"; };
 		7D16C33F59C14F8488F3D9D2D753658B /* GULNetworkInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULNetworkInfo.h; path = GoogleUtilities/Environment/Public/GoogleUtilities/GULNetworkInfo.h; sourceTree = "<group>"; };
 		7D3D8D90D372399820B45C3064AB0FF0 /* SectionedViewDataSourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SectionedViewDataSourceType.swift; path = RxCocoa/Common/SectionedViewDataSourceType.swift; sourceTree = "<group>"; };
 		7D4F43B7503A51227413DA59EA1B15A5 /* simplex_downhill.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = simplex_downhill.h; path = opencv2.framework/Versions/A/Headers/flann/simplex_downhill.h; sourceTree = "<group>"; };
@@ -1635,7 +1641,7 @@
 		82FE687706ED3BB896F35FBA5621C380 /* allocator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = allocator.h; path = opencv2.framework/Versions/A/Headers/flann/allocator.h; sourceTree = "<group>"; };
 		831645CA1B84A3E50E4DBF86262B3857 /* GPBWellKnownTypes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPBWellKnownTypes.m; path = objectivec/GPBWellKnownTypes.m; sourceTree = "<group>"; };
 		83476C1ED2B53A1A01D54354A0D14F0B /* FBLPromise+Recover.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Recover.m"; path = "Sources/FBLPromises/FBLPromise+Recover.m"; sourceTree = "<group>"; };
-		835B694AE7CC85C77E0710F1D60FD903 /* blazeface.tfl */ = {isa = PBXFileReference; includeInIndex = 1; name = blazeface.tfl; path = Resources/GoogleMVFaceDetectorResources/blazeface.tfl; sourceTree = "<group>"; };
+		835B694AE7CC85C77E0710F1D60FD903 /* blazeface.tfl */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = blazeface.tfl; path = Resources/GoogleMVFaceDetectorResources/blazeface.tfl; sourceTree = "<group>"; };
 		837FF4B82BD1CBAE6F5C0C87452CCC97 /* filesystem.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = filesystem.hpp; path = opencv2.framework/Versions/A/Headers/core/utils/filesystem.hpp; sourceTree = "<group>"; };
 		840F855D77DB999D986292A5D98FB94C /* RecursiveScheduler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecursiveScheduler.swift; path = RxSwift/Schedulers/RecursiveScheduler.swift; sourceTree = "<group>"; };
 		84895D326D555A2AC6C274B7F4301143 /* RxRelay.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RxRelay.modulemap; sourceTree = "<group>"; };
@@ -1707,7 +1713,7 @@
 		90F84672609509EFE55FA4BDC32E6162 /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Source/HTTPMethod.swift; sourceTree = "<group>"; };
 		922AD0C3775687A3124B33AF44B2006C /* RxCocoa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RxCocoa.release.xcconfig; sourceTree = "<group>"; };
 		926591BE0EF50D00A358BEBD3DABAE27 /* gplaidmlkernel.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = gplaidmlkernel.hpp; path = opencv2.framework/Versions/A/Headers/gapi/plaidml/gplaidmlkernel.hpp; sourceTree = "<group>"; };
-		9297E1E302999993DD15C3C93094C68B /* OpenCVWrapper.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
+		9297E1E302999993DD15C3C93094C68B /* OpenCVWrapper.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
 		9301728E0D31FA0C1B8DDF535E7A0A73 /* GDTCOREventTransformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCOREventTransformer.h; path = GoogleDataTransport/GDTCORLibrary/Public/GoogleDataTransport/GDTCOREventTransformer.h; sourceTree = "<group>"; };
 		9317E4947CA2FE1B5D5999034C09CCA7 /* Then */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = Then; path = libThen.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		934CEAA17C9F0F6089ACD5040B576DFC /* check.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = check.hpp; path = opencv2.framework/Versions/A/Headers/core/check.hpp; sourceTree = "<group>"; };
@@ -1748,7 +1754,7 @@
 		9C44F451711E71B62B318649EA877BA0 /* GDTCORMetricsMetadata.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCORMetricsMetadata.m; path = GoogleDataTransport/GDTCORLibrary/GDTCORMetricsMetadata.m; sourceTree = "<group>"; };
 		9CAB53C2D508A915220C3EE435D2B763 /* GDTCORConsoleLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCORConsoleLogger.m; path = GoogleDataTransport/GDTCORLibrary/GDTCORConsoleLogger.m; sourceTree = "<group>"; };
 		9D175DF443D42F5A24D13188813CD05D /* opencl_core.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = opencl_core.hpp; path = opencv2.framework/Versions/A/Headers/core/opencl/runtime/opencl_core.hpp; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DA8E0BF3FF9D5576CE7767943CEFA5C /* imgproc.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = imgproc.hpp; path = opencv2.framework/Versions/A/Headers/imgproc/imgproc.hpp; sourceTree = "<group>"; };
 		9DCDABA9F1998662352FE44D43D4EF96 /* opencl_clamdblas.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = opencl_clamdblas.hpp; path = opencv2.framework/Versions/A/Headers/core/opencl/runtime/autogenerated/opencl_clamdblas.hpp; sourceTree = "<group>"; };
 		9E1674824E3749E744232B6D892F6658 /* RxCollectionViewDataSourcePrefetchingProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxCollectionViewDataSourcePrefetchingProxy.swift; path = RxCocoa/iOS/Proxies/RxCollectionViewDataSourcePrefetchingProxy.swift; sourceTree = "<group>"; };
@@ -1756,7 +1762,7 @@
 		9EC343C82D6713BFD0B1312306728210 /* KVORepresentable+CoreGraphics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "KVORepresentable+CoreGraphics.swift"; path = "RxCocoa/Foundation/KVORepresentable+CoreGraphics.swift"; sourceTree = "<group>"; };
 		9F300A36E7EB43F3208E21A7495F0F4D /* ShareReplayScope.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShareReplayScope.swift; path = RxSwift/Observables/ShareReplayScope.swift; sourceTree = "<group>"; };
 		9F41CAADD5A1184821ADF1E8D7A23B07 /* ParameterEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoder.swift; path = Source/ParameterEncoder.swift; sourceTree = "<group>"; };
-		9FCBD71271CF67BC25CA76180289D4D5 /* cct.nanopb.c */ = {isa = PBXFileReference; includeInIndex = 1; name = cct.nanopb.c; path = GoogleDataTransport/GDTCCTLibrary/Protogen/nanopb/cct.nanopb.c; sourceTree = "<group>"; };
+		9FCBD71271CF67BC25CA76180289D4D5 /* cct.nanopb.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = cct.nanopb.c; path = GoogleDataTransport/GDTCCTLibrary/Protogen/nanopb/cct.nanopb.c; sourceTree = "<group>"; };
 		A03D5B6925CD75367ED52F617B9F56AE /* NSControl+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSControl+Rx.swift"; path = "RxCocoa/macOS/NSControl+Rx.swift"; sourceTree = "<group>"; };
 		A0F0765F95AABF1D0CB1222593B86DCD /* GULSecureCoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULSecureCoding.h; path = GoogleUtilities/Environment/Public/GoogleUtilities/GULSecureCoding.h; sourceTree = "<group>"; };
 		A13CE79468E8220F4FB50BA6A14154F0 /* SharedSequence+Operators+arity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SharedSequence+Operators+arity.swift"; path = "RxCocoa/Traits/SharedSequence/SharedSequence+Operators+arity.swift"; sourceTree = "<group>"; };
@@ -1769,7 +1775,6 @@
 		A2B924D5890A7BE3FEED6D9F048F572A /* FaceAreaView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FaceAreaView.swift; sourceTree = "<group>"; };
 		A2BD5C793FAB3B013B97C2B9D4088E48 /* GTMSessionUploadFetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionUploadFetcher.m; path = Source/GTMSessionUploadFetcher.m; sourceTree = "<group>"; };
 		A2ECDB006386F2BA23C0AB5AAC23E3C8 /* ToArray.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToArray.swift; path = RxSwift/Observables/ToArray.swift; sourceTree = "<group>"; };
-		A33622120477F6F4E395260850D5FF36 /* ViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		A34BC4CB3BE5C0C2F6487E194ECBA73B /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
 		A3BC44AABCD396C966532357D2471F32 /* MultipartUpload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartUpload.swift; path = Source/MultipartUpload.swift; sourceTree = "<group>"; };
 		A45DAD81E50F2EAA8243F13F143F9DB8 /* Pods-DeepmediFaceKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DeepmediFaceKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -1808,6 +1813,7 @@
 		ACA8A479C17E09059F02E12FB5CE3715 /* FBLPromise+Retry.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Retry.m"; path = "Sources/FBLPromises/FBLPromise+Retry.m"; sourceTree = "<group>"; };
 		ACEB81FCD824A2C3C9B9F92852889189 /* version.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = version.hpp; path = opencv2.framework/Versions/A/Headers/core/version.hpp; sourceTree = "<group>"; };
 		AD39C24C24D3CD2832C657A9CAE891B3 /* ie.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = ie.hpp; path = opencv2.framework/Versions/A/Headers/gapi/infer/ie.hpp; sourceTree = "<group>"; };
+		AD3C02AA299E166300156934 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		AD5ABC2C6676A36A4FAD089C66667503 /* SkipUntil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkipUntil.swift; path = RxSwift/Observables/SkipUntil.swift; sourceTree = "<group>"; };
 		AD69E082D5F7F76A6905B6250859F773 /* AsSingle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsSingle.swift; path = RxSwift/Observables/AsSingle.swift; sourceTree = "<group>"; };
 		ADAAF2D5B3C5F77B45D061D0D4D003E1 /* Zip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Zip.swift; path = RxSwift/Observables/Zip.swift; sourceTree = "<group>"; };
@@ -1843,7 +1849,7 @@
 		B6EDF8D9CCA09E7EF15872E4E598D68F /* GDTCORReachability_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORReachability_Private.h; path = GoogleDataTransport/GDTCORLibrary/Private/GDTCORReachability_Private.h; sourceTree = "<group>"; };
 		B73EB5F958DC620A06298729A53B34DF /* RxPickerViewDelegateProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxPickerViewDelegateProxy.swift; path = RxCocoa/iOS/Proxies/RxPickerViewDelegateProxy.swift; sourceTree = "<group>"; };
 		B7AC54CE09BDAF6C202167BAA0152A87 /* Platform.Darwin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Platform.Darwin.swift; path = Platform/Platform.Darwin.swift; sourceTree = "<group>"; };
-		B86725FB392FD0D32E68F0FFA31AE3C6 /* BCLlefteyeclosed_200.emd */ = {isa = PBXFileReference; includeInIndex = 1; name = BCLlefteyeclosed_200.emd; path = Resources/GoogleMVFaceDetectorResources/BCLlefteyeclosed_200.emd; sourceTree = "<group>"; };
+		B86725FB392FD0D32E68F0FFA31AE3C6 /* BCLlefteyeclosed_200.emd */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = BCLlefteyeclosed_200.emd; path = Resources/GoogleMVFaceDetectorResources/BCLlefteyeclosed_200.emd; sourceTree = "<group>"; };
 		B8A295C2ED9CF5D151C00176952D8782 /* core.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = core.hpp; path = opencv2.framework/Versions/A/Headers/gapi/cpu/core.hpp; sourceTree = "<group>"; };
 		B8B477C72D48E740BFD346F8ED01BAC0 /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSessionConfiguration+Alamofire.swift"; path = "Source/URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
 		B96D65C6B60677BC08D889DB8CB99C1D /* Infallible+Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Infallible+Operators.swift"; path = "RxSwift/Traits/Infallible/Infallible+Operators.swift"; sourceTree = "<group>"; };
@@ -1858,7 +1864,7 @@
 		BC4BB9D3EE3F07226C2640174B762152 /* GTMSessionFetcher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GTMSessionFetcher-prefix.pch"; sourceTree = "<group>"; };
 		BC695F1FA1370F7F10B85F40C848D282 /* nn_index.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = nn_index.h; path = opencv2.framework/Versions/A/Headers/flann/nn_index.h; sourceTree = "<group>"; };
 		BCC62D586DA39E716F136908A7F06B5D /* imgproc.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = imgproc.hpp; path = opencv2.framework/Versions/A/Headers/gapi/imgproc.hpp; sourceTree = "<group>"; };
-		BCE7CB8655E1825A31D2E9020BE098B0 /* client_metrics.nanopb.c */ = {isa = PBXFileReference; includeInIndex = 1; name = client_metrics.nanopb.c; path = GoogleDataTransport/GDTCCTLibrary/Protogen/nanopb/client_metrics.nanopb.c; sourceTree = "<group>"; };
+		BCE7CB8655E1825A31D2E9020BE098B0 /* client_metrics.nanopb.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = client_metrics.nanopb.c; path = GoogleDataTransport/GDTCCTLibrary/Protogen/nanopb/client_metrics.nanopb.c; sourceTree = "<group>"; };
 		BD1B56EDD7C1DAD569EA3DCA78A89204 /* constants_c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = constants_c.h; path = opencv2.framework/Versions/A/Headers/video/legacy/constants_c.h; sourceTree = "<group>"; };
 		BD3B15B74300E6E4E644E76EA11BB753 /* FBLPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBLPromise.h; path = Sources/FBLPromises/include/FBLPromise.h; sourceTree = "<group>"; };
 		BDCCDDC16031F6A4505B83AA24BECBF0 /* PromisesObjC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PromisesObjC-dummy.m"; sourceTree = "<group>"; };
@@ -1903,10 +1909,10 @@
 		C5B35865AFE3C7478A03B3D33BE75716 /* InfiniteSequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InfiniteSequence.swift; path = Platform/DataStructures/InfiniteSequence.swift; sourceTree = "<group>"; };
 		C5BBA80FF8302A8CFF2A5FE21B35169B /* GPBStruct.pbobjc.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPBStruct.pbobjc.m; path = objectivec/GPBStruct.pbobjc.m; sourceTree = "<group>"; };
 		C5E4B3F2A3CB9E1E21B547F66B17A1FF /* Signal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Signal.swift; path = RxCocoa/Traits/Signal/Signal.swift; sourceTree = "<group>"; };
-		C5F10573F3C7D1CDE389597DBB522B8D /* ObjcMapper.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = ObjcMapper.mm; sourceTree = "<group>"; };
+		C5F10573F3C7D1CDE389597DBB522B8D /* ObjcMapper.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = ObjcMapper.mm; sourceTree = "<group>"; };
 		C608FB88203FEADBCE39359B6C895F03 /* GULCCComponentContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULCCComponentContainer.h; path = GoogleUtilitiesComponents/Sources/Public/GULCCComponentContainer.h; sourceTree = "<group>"; };
 		C612C25499C3339217E3FFF6CB69B588 /* ObservableType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObservableType.swift; path = RxSwift/ObservableType.swift; sourceTree = "<group>"; };
-		C63D844FD593C0402A897A3E1BBA87F3 /* fssd_100_8bit_gray_v1.tflite */ = {isa = PBXFileReference; includeInIndex = 1; name = fssd_100_8bit_gray_v1.tflite; path = Resources/GoogleMVFaceDetectorResources/fssd_100_8bit_gray_v1.tflite; sourceTree = "<group>"; };
+		C63D844FD593C0402A897A3E1BBA87F3 /* fssd_100_8bit_gray_v1.tflite */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = fssd_100_8bit_gray_v1.tflite; path = Resources/GoogleMVFaceDetectorResources/fssd_100_8bit_gray_v1.tflite; sourceTree = "<group>"; };
 		C6D522367F2FC248F0F0B52D8A094995 /* MLImage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MLImage.release.xcconfig; sourceTree = "<group>"; };
 		C6EDEB396862786000E0AE30951F7CDA /* utility.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = utility.hpp; path = opencv2.framework/Versions/A/Headers/core/cuda/utility.hpp; sourceTree = "<group>"; };
 		C713FC0E4296F49A3BECAFB7B87A073C /* First.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = First.swift; path = RxSwift/Observables/First.swift; sourceTree = "<group>"; };
@@ -1929,7 +1935,7 @@
 		CAE0A027F78DC8B6796C99872AEFA464 /* Concat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Concat.swift; path = RxSwift/Observables/Concat.swift; sourceTree = "<group>"; };
 		CB323C820C6A8A3570B46865FB3D3DA7 /* GTMNSData+zlib.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSData+zlib.m"; path = "Foundation/GTMNSData+zlib.m"; sourceTree = "<group>"; };
 		CB628FF3D9309AB9A61B12DF3A314A8C /* flann.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = flann.hpp; path = opencv2.framework/Versions/A/Headers/flann.hpp; sourceTree = "<group>"; };
-		CB7BED41FD7771F54944CA114BD93D3E /* pb_encode.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_encode.c; sourceTree = "<group>"; };
+		CB7BED41FD7771F54944CA114BD93D3E /* pb_encode.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = pb_encode.c; sourceTree = "<group>"; };
 		CBA0E8DA73BEC527A269CD48C3F4C42E /* DefaultIfEmpty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultIfEmpty.swift; path = RxSwift/Observables/DefaultIfEmpty.swift; sourceTree = "<group>"; };
 		CC020532B7B7383C7A7D14CF8B14C1AB /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
 		CC21657F5ED7FAEE2D0D5FE422A43154 /* Observable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Observable.swift; path = RxSwift/Observable.swift; sourceTree = "<group>"; };
@@ -1961,7 +1967,7 @@
 		D3B6A5BF94E4B918E75E2BC0D5E113BC /* imgcodecs.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = imgcodecs.hpp; path = opencv2.framework/Versions/A/Headers/imgcodecs/imgcodecs.hpp; sourceTree = "<group>"; };
 		D42001BA541C34AAC4B65990A43990E3 /* cv_cpu_dispatch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cv_cpu_dispatch.h; path = opencv2.framework/Versions/A/Headers/core/cv_cpu_dispatch.h; sourceTree = "<group>"; };
 		D4D1AAE0ADF556795DA50DE34B017D25 /* types.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = types.hpp; path = opencv2.framework/Versions/A/Headers/gapi/own/types.hpp; sourceTree = "<group>"; };
-		D511F655F3219053DD69C70D0C07188B /* DeepmediFaceKit */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = DeepmediFaceKit; path = libDeepmediFaceKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D511F655F3219053DD69C70D0C07188B /* libDeepmediFaceKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDeepmediFaceKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D52B53841A890DA9166F920CCDB54B35 /* GDTCORFlatFileStorage+Promises.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GDTCORFlatFileStorage+Promises.m"; path = "GoogleDataTransport/GDTCORLibrary/GDTCORFlatFileStorage+Promises.m"; sourceTree = "<group>"; };
 		D56E3ED8154D3FB212B9855CE181D418 /* Pods-DeepmediFaceKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DeepmediFaceKit_Example.modulemap"; sourceTree = "<group>"; };
 		D5B53BA7D769BC04CDED662767F0F7FC /* layer.details.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = layer.details.hpp; path = opencv2.framework/Versions/A/Headers/dnn/layer.details.hpp; sourceTree = "<group>"; };
@@ -2007,7 +2013,7 @@
 		DE73EC0F5555836D33576A5816D3A6D3 /* GULKeychainStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULKeychainStorage.m; path = GoogleUtilities/Environment/SecureStorage/GULKeychainStorage.m; sourceTree = "<group>"; };
 		DE7CCC5F581BA78F87CCC60E3557266E /* GULAppEnvironmentUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULAppEnvironmentUtil.h; path = GoogleUtilities/Environment/Public/GoogleUtilities/GULAppEnvironmentUtil.h; sourceTree = "<group>"; };
 		DEAE571D189373A4D588D603D76950C3 /* bindings_utils.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = bindings_utils.hpp; path = opencv2.framework/Versions/A/Headers/core/bindings_utils.hpp; sourceTree = "<group>"; };
-		DEDE3C417156C1DAF1DD63ED2D49129B /* fssd_25_8bit_v1.tflite */ = {isa = PBXFileReference; includeInIndex = 1; name = fssd_25_8bit_v1.tflite; path = Resources/GoogleMVFaceDetectorResources/fssd_25_8bit_v1.tflite; sourceTree = "<group>"; };
+		DEDE3C417156C1DAF1DD63ED2D49129B /* fssd_25_8bit_v1.tflite */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = fssd_25_8bit_v1.tflite; path = Resources/GoogleMVFaceDetectorResources/fssd_25_8bit_v1.tflite; sourceTree = "<group>"; };
 		DF4BD494D39E9D744C37AEE8FEC7557A /* vec_math.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = vec_math.hpp; path = opencv2.framework/Versions/A/Headers/core/cuda/vec_math.hpp; sourceTree = "<group>"; };
 		DFABC0463C8EBA728910BC0614BF88C4 /* TakeWithPredicate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TakeWithPredicate.swift; path = RxSwift/Observables/TakeWithPredicate.swift; sourceTree = "<group>"; };
 		E07A8A65FAEBD52813691DE5108FF21B /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OperationQueue+Alamofire.swift"; path = "Source/OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
@@ -2071,14 +2077,14 @@
 		EE3C4046911C4C708D1714F9DD1D8BDC /* GULSecureCoding.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULSecureCoding.m; path = GoogleUtilities/Environment/GULSecureCoding.m; sourceTree = "<group>"; };
 		EE59CDB83FC5E691B92C67E3EB114DF2 /* Observable+Bind.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Observable+Bind.swift"; path = "RxRelay/Observable+Bind.swift"; sourceTree = "<group>"; };
 		EEF342CA09BC894B32FA1B5536815D9D /* FBLPromise+Wrap.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Wrap.m"; path = "Sources/FBLPromises/FBLPromise+Wrap.m"; sourceTree = "<group>"; };
-		EF40014C4FF3D7753AB66CE2CDBDA898 /* MFT_fssd_accgray.pb */ = {isa = PBXFileReference; includeInIndex = 1; name = MFT_fssd_accgray.pb; path = Resources/GoogleMVFaceDetectorResources/MFT_fssd_accgray.pb; sourceTree = "<group>"; };
+		EF40014C4FF3D7753AB66CE2CDBDA898 /* MFT_fssd_accgray.pb */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = MFT_fssd_accgray.pb; path = Resources/GoogleMVFaceDetectorResources/MFT_fssd_accgray.pb; sourceTree = "<group>"; };
 		EF40D0758EC5D94939C4B47AC68C3253 /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
 		EF45C0312B0742BB60571BCB6859C389 /* PromisesObjC.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PromisesObjC.modulemap; sourceTree = "<group>"; };
 		EF65ADEA08E4FA59C7314116B773303E /* RxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RxSwift.debug.xcconfig; sourceTree = "<group>"; };
 		F0037B23266C021DB270237327195BFC /* any.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = any.hpp; path = opencv2.framework/Versions/A/Headers/gapi/util/any.hpp; sourceTree = "<group>"; };
 		F0368CA466FC1C65EB497D7926BF61BE /* Protobuf-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Protobuf-prefix.pch"; sourceTree = "<group>"; };
 		F05CE85445AA08881A5B4E529FAF2472 /* MainScheduler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MainScheduler.swift; path = RxSwift/Schedulers/MainScheduler.swift; sourceTree = "<group>"; };
-		F0A2AB3E56F5F7AFE66A1A7EB6700926 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		F0A2AB3E56F5F7AFE66A1A7EB6700926 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F0B1D8C49D7F8A3FE9C723411F6A261D /* GULLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULLogger.h; path = GoogleUtilities/Logger/Public/GoogleUtilities/GULLogger.h; sourceTree = "<group>"; };
 		F0C32FA416B2FABF98E641836AD8C146 /* FBLPromise+Recover.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Recover.h"; path = "Sources/FBLPromises/include/FBLPromise+Recover.h"; sourceTree = "<group>"; };
 		F0C4DC8B3FC426A0A570F6C329EFDC60 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = RxRelay/Utils.swift; sourceTree = "<group>"; };
@@ -2137,7 +2143,7 @@
 		FC98BB839FA2019C9EDF0D92483DFFAA /* neon_utils.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = neon_utils.hpp; path = opencv2.framework/Versions/A/Headers/core/neon_utils.hpp; sourceTree = "<group>"; };
 		FCE9C8EE958A47039664851B68F4BCA2 /* Alamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.debug.xcconfig; sourceTree = "<group>"; };
 		FD409803E72D718B15EC6CCF9569E75C /* UIActivityIndicatorView+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIActivityIndicatorView+Rx.swift"; path = "RxCocoa/iOS/UIActivityIndicatorView+Rx.swift"; sourceTree = "<group>"; };
-		FDBB71691167AEA2FE27B3E78464DBD0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		FDBB71691167AEA2FE27B3E78464DBD0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		FE7764C2502F59B36322E5182A4C3C1D /* GPBExtensionInternals.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPBExtensionInternals.h; path = objectivec/GPBExtensionInternals.h; sourceTree = "<group>"; };
 		FF7D9465A09AC94BBAF91BC247CE722F /* reduce.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = reduce.hpp; path = opencv2.framework/Versions/A/Headers/core/cuda/reduce.hpp; sourceTree = "<group>"; };
 		FF88D958CF66D08B0669F19034459E2E /* warpers.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = warpers.hpp; path = opencv2.framework/Versions/A/Headers/stitching/detail/warpers.hpp; sourceTree = "<group>"; };
@@ -2290,7 +2296,6 @@
 				F2A1749C9BE88CFA8C1498D96ED57EBF /* GULCCLibrary.h */,
 				8583020C40667468081FB7C720DA9E2C /* Support Files */,
 			);
-			name = GoogleUtilitiesComponents;
 			path = GoogleUtilitiesComponents;
 			sourceTree = "<group>";
 		};
@@ -2347,7 +2352,6 @@
 				2530FF30CA540CA420C6DAEA9E393E88 /* Frameworks */,
 				813273BFFAC84B4CD1C5E3927A22705E /* Support Files */,
 			);
-			name = MLImage;
 			path = MLImage;
 			sourceTree = "<group>";
 		};
@@ -2428,7 +2432,6 @@
 				2B0170996BF53017ECEB10B058804B58 /* Wrappers.pbobjc.h */,
 				7CC3E82B1E7955C9C93F3F6334B8E101 /* Support Files */,
 			);
-			name = Protobuf;
 			path = Protobuf;
 			sourceTree = "<group>";
 		};
@@ -2608,7 +2611,6 @@
 				C27E3FD59DEB7249DFDBF69C07EF9E23 /* Zip+Collection.swift */,
 				B7CABE909F9E4A8EB34E791495BB7C71 /* Support Files */,
 			);
-			name = RxSwift;
 			path = RxSwift;
 			sourceTree = "<group>";
 		};
@@ -2694,7 +2696,6 @@
 				741DE2D56B2E290B9D2CE33542AEE4A6 /* GoogleDataTransport.h */,
 				5769801AD44582FA367F295243168CF7 /* Support Files */,
 			);
-			name = GoogleDataTransport;
 			path = GoogleDataTransport;
 			sourceTree = "<group>";
 		};
@@ -2735,15 +2736,6 @@
 			name = DebugUtils;
 			sourceTree = "<group>";
 		};
-		2E6D625A383CD7E44A7FBB86DBE41D40 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				A33622120477F6F4E395260850D5FF36 /* ViewModel.swift */,
-			);
-			name = ViewModel;
-			path = DeepmediFaceKit/Classes/ViewModel;
-			sourceTree = "<group>";
-		};
 		3A13FA4A1487DB2AB72BF4823A3872E2 /* RxRelay */ = {
 			isa = PBXGroup;
 			children = (
@@ -2754,7 +2746,6 @@
 				F0C4DC8B3FC426A0A570F6C329EFDC60 /* Utils.swift */,
 				F83F88D5EF91E5D1C1B04E55D4C60B3C /* Support Files */,
 			);
-			name = RxRelay;
 			path = RxRelay;
 			sourceTree = "<group>";
 		};
@@ -2822,7 +2813,6 @@
 				48DF1BEBDFFFB40F3CC069F3329DD4F8 /* FBLPromises.h */,
 				9F0B00367A9BB451D9CB027A44DFAF46 /* Support Files */,
 			);
-			name = PromisesObjC;
 			path = PromisesObjC;
 			sourceTree = "<group>";
 		};
@@ -2832,7 +2822,6 @@
 				B63DBF574B43ED640ACCCF049E11CD42 /* Core */,
 				6EEEB1EB9F46761BBBB41D8052797D1E /* Support Files */,
 			);
-			name = GTMSessionFetcher;
 			path = GTMSessionFetcher;
 			sourceTree = "<group>";
 		};
@@ -2859,7 +2848,6 @@
 				BAAEACFBE16D57910EAAD5AC13423EB7 /* encode */,
 				F2481073C60C2FF18EBFD3FAC45F507D /* Support Files */,
 			);
-			name = nanopb;
 			path = nanopb;
 			sourceTree = "<group>";
 		};
@@ -2880,7 +2868,6 @@
 				14AEC68EE4B682CC70EB7F56945F048B /* Then.swift */,
 				104D239FEAA2252C7BB59E1CB2106838 /* Support Files */,
 			);
-			name = Then;
 			path = Then;
 			sourceTree = "<group>";
 		};
@@ -2984,13 +2971,13 @@
 			isa = PBXGroup;
 			children = (
 				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */,
-				D511F655F3219053DD69C70D0C07188B /* DeepmediFaceKit */,
+				D511F655F3219053DD69C70D0C07188B /* libDeepmediFaceKit.a */,
 				856B5CD56F194FAD26EA91620B66D614 /* GoogleDataTransport */,
 				251C6319AD50CB50F18D50CBF727F8B2 /* GoogleToolboxForMac */,
 				B43874C6CBB50E7134FBEC24BABFE14F /* GoogleUtilities */,
 				28A6DB952CEA79E3902D41748273A364 /* GoogleUtilitiesComponents */,
 				C1998E0D8085221AD87F89B614C10E52 /* GTMSessionFetcher */,
-				6BBB6C18B2CD3B5774C59C0EB3065D02 /* MLKitFaceDetection-GoogleMVFaceDetectorResources */,
+				6BBB6C18B2CD3B5774C59C0EB3065D02 /* GoogleMVFaceDetectorResources.bundle */,
 				06FC5C9CF96D60C50FCD47D339C91951 /* nanopb */,
 				76A222FF207B41E0F67B69CB282E2133 /* Pods-DeepmediFaceKit_Example */,
 				3480DF8126218B0864EA4CF4EE8F8595 /* Pods-DeepmediFaceKit_Tests */,
@@ -3113,7 +3100,6 @@
 				5099D56C7A05E1415030AF7E134CB9E6 /* NSString+URLArguments */,
 				A32D438EC77518624ABC7549ECA37EF3 /* Support Files */,
 			);
-			name = GoogleToolboxForMac;
 			path = GoogleToolboxForMac;
 			sourceTree = "<group>";
 		};
@@ -3123,7 +3109,6 @@
 				F2AD90256F6D9EB83F85A6DBC820992F /* MLKitCore */,
 				9170FF04EC5E3A99F21E145145723EE0 /* Support Files */,
 			);
-			name = GoogleMLKit;
 			path = GoogleMLKit;
 			sourceTree = "<group>";
 		};
@@ -3168,7 +3153,6 @@
 				0A786FF1C4013243E0912BE8E7897AB1 /* UILayoutSupport+Extensions.swift */,
 				1BCE692F10D349A630727C606F9026EB /* Support Files */,
 			);
-			name = SnapKit;
 			path = SnapKit;
 			sourceTree = "<group>";
 		};
@@ -3325,7 +3309,6 @@
 				8DDB905167B3EDEEFF8F6E881E29EE1F /* WKWebView+Rx.swift */,
 				E95AFFE479B43B0762504A7FBC5CE9A9 /* Support Files */,
 			);
-			name = RxCocoa;
 			path = RxCocoa;
 			sourceTree = "<group>";
 		};
@@ -3336,6 +3319,15 @@
 			);
 			name = Document;
 			path = DeepmediFaceKit/Classes/Document;
+			sourceTree = "<group>";
+		};
+		AD3C02A9299E166300156934 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AD3C02AA299E166300156934 /* ViewModel.swift */,
+			);
+			name = ViewModel;
+			path = DeepmediFaceKit/Classes/ViewModel;
 			sourceTree = "<group>";
 		};
 		B63DBF574B43ED640ACCCF049E11CD42 /* Core */ = {
@@ -3359,7 +3351,6 @@
 				E31EC904AEB406DE8F692A50964B07B7 /* Frameworks */,
 				176B1F60926D23C2A7730E34588C5159 /* Support Files */,
 			);
-			name = MLKitVision;
 			path = MLKitVision;
 			sourceTree = "<group>";
 		};
@@ -3408,7 +3399,6 @@
 				713BA82B3671F0F45CE218D71143297F /* Frameworks */,
 				63ACD898338D25544DFC80049F0D4461 /* Support Files */,
 			);
-			name = MLKitCommon;
 			path = MLKitCommon;
 			sourceTree = "<group>";
 		};
@@ -3428,20 +3418,20 @@
 		CD7C01FE701BFC7E3530D4E8C12E63C7 /* DeepmediFaceKit */ = {
 			isa = PBXGroup;
 			children = (
-				0A79D3E0A42021F338E7EEA77297F514 /* CameraObject.swift */,
-				392AD5E5B79F2F0932C322C6E4EE6708 /* FaceDetection.swift */,
-				C9BF7026FFC4ACD54587876F45795021 /* MeasurementObject.swift */,
-				E18B3258175F170A90E3A7A7E73B292F /* Protocol.swift */,
-				BFEC15FAFE076A33FBD129B8EF810040 /* Service.swift */,
+				AD3C02A9299E166300156934 /* ViewModel */,
 				7C7D03C8D570E7290D14D8D7BEF6BB32 /* Camera */,
 				A813BF4704EE8CE1E235687115642BDE /* Document */,
 				6CDCC82A487A7366C43E8727F435BE4E /* Model */,
 				656C1E3700E5E8A81B54A80BB21E4402 /* Objc */,
 				FDBEB54FE85FECF364562FDDB48D0889 /* Pod */,
 				64FFB6E91966CB744C5A6FA371F7743C /* Service */,
-				0D490D2CCFB530EFEB97C76DCD70EBAE /* Support Files */,
 				BD009AFC55A2E6E6D02A54065C2035E5 /* View */,
-				2E6D625A383CD7E44A7FBB86DBE41D40 /* ViewModel */,
+				0A79D3E0A42021F338E7EEA77297F514 /* CameraObject.swift */,
+				392AD5E5B79F2F0932C322C6E4EE6708 /* FaceDetection.swift */,
+				C9BF7026FFC4ACD54587876F45795021 /* MeasurementObject.swift */,
+				E18B3258175F170A90E3A7A7E73B292F /* Protocol.swift */,
+				BFEC15FAFE076A33FBD129B8EF810040 /* Service.swift */,
+				0D490D2CCFB530EFEB97C76DCD70EBAE /* Support Files */,
 			);
 			name = DeepmediFaceKit;
 			path = ../..;
@@ -3497,7 +3487,6 @@
 				E0C3FEE9C2F1F2BB79F65A380A75E7C0 /* Support Files */,
 				848ECAEFE7378BD6108B38ABA65B02A1 /* UserDefaults */,
 			);
-			name = GoogleUtilities;
 			path = GoogleUtilities;
 			sourceTree = "<group>";
 		};
@@ -3569,7 +3558,6 @@
 				F4ACA1702CC7AFD22B947CA8E48E0731 /* Resources */,
 				3BF32FE6211C6B66A4D6AFFC305310D9 /* Support Files */,
 			);
-			name = MLKitFaceDetection;
 			path = MLKitFaceDetection;
 			sourceTree = "<group>";
 		};
@@ -3652,7 +3640,6 @@
 				DBA586E8EA61A0ED36C4FE67F9F973BD /* Validation.swift */,
 				9A464F1288FD555BDB9F80D2366DE769 /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -3948,7 +3935,6 @@
 				9285100D817F1EDDEF0E7345A503B84A /* Frameworks */,
 				DFF6E67994485AB324484A9198168927 /* Support Files */,
 			);
-			name = OpenCV;
 			path = OpenCV;
 			sourceTree = "<group>";
 		};
@@ -4419,7 +4405,7 @@
 			);
 			name = DeepmediFaceKit;
 			productName = DeepmediFaceKit;
-			productReference = D511F655F3219053DD69C70D0C07188B /* DeepmediFaceKit */;
+			productReference = D511F655F3219053DD69C70D0C07188B /* libDeepmediFaceKit.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		A64F5725956770327D080E1EB31878EE /* GoogleUtilitiesComponents */ = {
@@ -4472,7 +4458,7 @@
 			);
 			name = "MLKitFaceDetection-GoogleMVFaceDetectorResources";
 			productName = GoogleMVFaceDetectorResources;
-			productReference = 6BBB6C18B2CD3B5774C59C0EB3065D02 /* MLKitFaceDetection-GoogleMVFaceDetectorResources */;
+			productReference = 6BBB6C18B2CD3B5774C59C0EB3065D02 /* GoogleMVFaceDetectorResources.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		C17AEFC79E770A2906EFAAB1A3757406 /* Then */ = {
@@ -4626,6 +4612,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					B261389A17E06B2008D7A7EE94835132 = {
+						DevelopmentTeam = ALL2F32G29;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -5317,13 +5308,13 @@
 				E3A8987DD587FB0A8D498FC2FC0966C3 /* Header.swift in Sources */,
 				B07ACCE926B76FB266BA90F4F798AD58 /* MeasurementObject.swift in Sources */,
 				2C8FB22E32CDE4F1415FE6CA327BF68E /* Model.swift in Sources */,
+				AD3C02AB299E166400156934 /* ViewModel.swift in Sources */,
 				1ABF53D6F053228C9DBBFA7D5B124242 /* ObjcMapper.mm in Sources */,
 				1F9F7502461D6F9D44FF9E4B1A925F9A /* OpenCVWrapper.mm in Sources */,
 				1FF8F96B8FDD1AF45A35FBDEAAC4C6EF /* PrefixHeader.pch in Sources */,
 				3BAE0BDCE73329BC0CC64DB504A160BE /* Protocol.swift in Sources */,
 				6E81967575FADFE08955F122EA2A379D /* RGBData.swift in Sources */,
 				7AE547678DECA3EE7096FD28D5855652 /* Service.swift in Sources */,
-				14602DEDC9B66DFB4CEC9B6BC6120351 /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5962,6 +5953,7 @@
 			baseConfigurationReference = 0A6DF596567F61B974D89EA104BA8EE1 /* MLKitFaceDetection.debug.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MLKitFaceDetection";
+				DEVELOPMENT_TEAM = ALL2F32G29;
 				IBSC_MODULE = MLKitFaceDetection;
 				INFOPLIST_FILE = "Target Support Files/MLKitFaceDetection/ResourceBundle-GoogleMVFaceDetectorResources-MLKitFaceDetection-Info.plist";
 				"IPHONEOS DEPLOYMENT_TARGET" = 13.0;
@@ -5980,6 +5972,7 @@
 			baseConfigurationReference = AB271B592D8749027D0A9B27DE06B642 /* MLKitFaceDetection.release.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MLKitFaceDetection";
+				DEVELOPMENT_TEAM = ALL2F32G29;
 				IBSC_MODULE = MLKitFaceDetection;
 				INFOPLIST_FILE = "Target Support Files/MLKitFaceDetection/ResourceBundle-GoogleMVFaceDetectorResources-MLKitFaceDetection-Info.plist";
 				"IPHONEOS DEPLOYMENT_TARGET" = 13.0;
@@ -6628,8 +6621,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

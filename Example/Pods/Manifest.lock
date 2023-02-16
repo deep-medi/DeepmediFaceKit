@@ -1,6 +1,6 @@
 PODS:
   - Alamofire (5.2.2)
-  - DeepmediFaceKit (0.4.0):
+  - DeepmediFaceKit (0.4.1):
     - Alamofire (~> 5.2.0)
     - GoogleMLKit/FaceDetection
     - OpenCV
@@ -12,11 +12,11 @@ PODS:
     - GoogleUtilities/Environment (~> 7.7)
     - nanopb (< 2.30910.0, >= 2.30908.0)
     - PromisesObjC (< 3.0, >= 1.2)
-  - GoogleMLKit/FaceDetection (2.6.0):
+  - GoogleMLKit/FaceDetection (3.2.0):
     - GoogleMLKit/MLKitCore
-    - MLKitFaceDetection (~> 1.5.0)
-  - GoogleMLKit/MLKitCore (2.6.0):
-    - MLKitCommon (~> 5.0.0)
+    - MLKitFaceDetection (~> 2.2.0)
+  - GoogleMLKit/MLKitCore (3.2.0):
+    - MLKitCommon (~> 8.0.0)
   - GoogleToolboxForMac/DebugUtils (2.3.2):
     - GoogleToolboxForMac/Defines (= 2.3.2)
   - GoogleToolboxForMac/Defines (2.3.2)
@@ -38,8 +38,8 @@ PODS:
   - GoogleUtilitiesComponents (1.1.0):
     - GoogleUtilities/Logger
   - GTMSessionFetcher/Core (1.7.2)
-  - MLImage (1.0.0-beta2)
-  - MLKitCommon (5.0.0):
+  - MLImage (1.0.0-beta3)
+  - MLKitCommon (8.0.0):
     - GoogleDataTransport (~> 9.0)
     - GoogleToolboxForMac/Logger (~> 2.1)
     - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
@@ -48,15 +48,15 @@ PODS:
     - GoogleUtilitiesComponents (~> 1.0)
     - GTMSessionFetcher/Core (~> 1.1)
     - Protobuf (~> 3.12)
-  - MLKitFaceDetection (1.5.0):
-    - MLKitCommon (~> 5.0)
-    - MLKitVision (~> 3.0)
-  - MLKitVision (3.0.0):
+  - MLKitFaceDetection (2.2.0):
+    - MLKitCommon (~> 8.0)
+    - MLKitVision (~> 4.2)
+  - MLKitVision (4.2.0):
     - GoogleToolboxForMac/Logger (~> 2.1)
     - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
     - GTMSessionFetcher/Core (~> 1.1)
-    - MLImage (= 1.0.0-beta2)
-    - MLKitCommon (~> 5.0)
+    - MLImage (= 1.0.0-beta3)
+    - MLKitCommon (~> 8.0)
     - Protobuf (~> 3.12)
   - nanopb (2.30909.0):
     - nanopb/decode (= 2.30909.0)
@@ -114,17 +114,17 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
-  DeepmediFaceKit: 798f8504689b327f8870573af06bea28a917eac8
+  DeepmediFaceKit: 7babd74ef4ef463621cec1bced04c30ca89a023f
   GoogleDataTransport: ea169759df570f4e37bdee1623ec32a7e64e67c4
-  GoogleMLKit: 755661c46990a85e42278015f26400286d98ad95
+  GoogleMLKit: 0017a6a8372e1a182139b9def4d89be5d87ca5a7
   GoogleToolboxForMac: 8bef7c7c5cf7291c687cf5354f39f9db6399ad34
   GoogleUtilities: c2bdc4cf2ce786c4d2e6b3bcfd599a25ca78f06f
   GoogleUtilitiesComponents: 679b2c881db3b615a2777504623df6122dd20afe
   GTMSessionFetcher: 5595ec75acf5be50814f81e9189490412bad82ba
-  MLImage: a454f9f8ecfd537783a12f9488f5be1a68820829
-  MLKitCommon: 3bc17c6f7d25ce3660f030350b46ae7ec9ebca6e
-  MLKitFaceDetection: 617cb847441868a8bfd4b48d751c9b33c1104948
-  MLKitVision: e87dc3f2e456a6ab32361ebd985e078dd2746143
+  MLImage: 489dfec109f21da8621b28d476401aaf7a0d4ff4
+  MLKitCommon: f6da6c5659618c070b50a80db01248ebe2964175
+  MLKitFaceDetection: 9f29d8d0bb38911281407e24e74d2e5da812ba8d
+  MLKitVision: 96c96571190b7f63eddf4a12068ce8a8689e0d2c
   nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
   OpenCV: 681e0451c1e54c5930a8922277f817ed5d5ab459
   PromisesObjC: ab77feca74fa2823e7af4249b8326368e61014cb
