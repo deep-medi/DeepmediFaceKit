@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DeepmediFaceKit'
-  s.version          = '0.4.0'
+  s.version          = '0.4.1'
   s.summary          = 'Framework for measurement after face recognition'
 
 # This description is used to generate tags and improve search results.
