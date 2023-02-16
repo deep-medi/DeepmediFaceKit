@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DeepmediFaceKit'
-  s.version          = '0.3.1'
+  s.version          = '0.4.0'
   s.summary          = 'Framework for measurement after face recognition'
 
 # This description is used to generate tags and improve search results.
@@ -47,7 +47,6 @@ TODO: Add long description of the pod here.
   s.dependency 'Then'
   s.dependency 'SnapKit', '~> 5.0.0'
   s.dependency 'GoogleMLKit/FaceDetection'
-#  s.dependency 'GoogleMLKit/FaceDetection', '2.6.0'
   s.dependency 'Alamofire', '~> 5.2.0'
   s.dependency 'OpenCV'
   s.dependency 'RxSwift', '~> 6.0.0'
