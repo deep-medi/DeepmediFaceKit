@@ -1,4 +1,4 @@
-framework module Pods_DeepmediFaceKit_Example {
+module Pods_DeepmediFaceKit_Example {
   umbrella header "Pods-DeepmediFaceKit_Example-umbrella.h"
 
   export *

@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		392F88D749F76C4AE470F762 /* Pods_DeepmediFaceKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 199C2D71187F731BD3A70E3A /* Pods_DeepmediFaceKit_Tests.framework */; };
+		35D986B80B14F725DAAA43A2 /* libPods-DeepmediFaceKit_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 089DFC0519E6608F3532C460 /* libPods-DeepmediFaceKit_Tests.a */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		B868CD21FE7A8DD703AE7DA3 /* Pods_DeepmediFaceKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E12459253F8EC5F745DB6B47 /* Pods_DeepmediFaceKit_Example.framework */; };
+		7C6479AD376CBE64B0E0F7A4 /* libPods-DeepmediFaceKit_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B37AD9A2A948B3DE0250C06 /* libPods-DeepmediFaceKit_Example.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,8 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		199C2D71187F731BD3A70E3A /* Pods_DeepmediFaceKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeepmediFaceKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		089DFC0519E6608F3532C460 /* libPods-DeepmediFaceKit_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DeepmediFaceKit_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AE46E786D6A556E45DB7C61 /* Pods-DeepmediFaceKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeepmediFaceKit_Example.release.xcconfig"; path = "Target Support Files/Pods-DeepmediFaceKit_Example/Pods-DeepmediFaceKit_Example.release.xcconfig"; sourceTree = "<group>"; };
+		1B37AD9A2A948B3DE0250C06 /* libPods-DeepmediFaceKit_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DeepmediFaceKit_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DE7BD54241C84DE82B8BD8E /* Pods-DeepmediFaceKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeepmediFaceKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-DeepmediFaceKit_Tests/Pods-DeepmediFaceKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* DeepmediFaceKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeepmediFaceKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,7 +46,6 @@
 		83872142BF45B8FB801094E0 /* DeepmediFaceKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DeepmediFaceKit.podspec; path = ../DeepmediFaceKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D7D074AEAC6CC29E474D044F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		DAB78F72C54C0BAC8C638696 /* Pods-DeepmediFaceKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeepmediFaceKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-DeepmediFaceKit_Tests/Pods-DeepmediFaceKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		E12459253F8EC5F745DB6B47 /* Pods_DeepmediFaceKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeepmediFaceKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F308C52E7E89B0D1B8666DDC /* Pods-DeepmediFaceKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeepmediFaceKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-DeepmediFaceKit_Example/Pods-DeepmediFaceKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B868CD21FE7A8DD703AE7DA3 /* Pods_DeepmediFaceKit_Example.framework in Frameworks */,
+				7C6479AD376CBE64B0E0F7A4 /* libPods-DeepmediFaceKit_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				392F88D749F76C4AE470F762 /* Pods_DeepmediFaceKit_Tests.framework in Frameworks */,
+				35D986B80B14F725DAAA43A2 /* libPods-DeepmediFaceKit_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,8 +72,8 @@
 		5670FB285F047B62EF0F2E5D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E12459253F8EC5F745DB6B47 /* Pods_DeepmediFaceKit_Example.framework */,
-				199C2D71187F731BD3A70E3A /* Pods_DeepmediFaceKit_Tests.framework */,
+				1B37AD9A2A948B3DE0250C06 /* libPods-DeepmediFaceKit_Example.a */,
+				089DFC0519E6608F3532C460 /* libPods-DeepmediFaceKit_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -170,7 +170,7 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				041BF1F0583394B0E7880A33 /* [CP] Embed Pods Frameworks */,
+				FE6D5A779BEE622E5651E4DC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -212,10 +212,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = ALL2F32G29;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = ALL2F32G29;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -262,24 +264,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		041BF1F0583394B0E7880A33 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DeepmediFaceKit_Example/Pods-DeepmediFaceKit_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/DeepmediFaceKit/DeepmediFaceKit.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DeepmediFaceKit.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DeepmediFaceKit_Example/Pods-DeepmediFaceKit_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		3C31E0D606E2B58B5AF1D0C9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -322,6 +306,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE6D5A779BEE622E5651E4DC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DeepmediFaceKit_Example/Pods-DeepmediFaceKit_Example-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/MLKitFaceDetection/GoogleMVFaceDetectorResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMVFaceDetectorResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DeepmediFaceKit_Example/Pods-DeepmediFaceKit_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -478,6 +480,9 @@
 			baseConfigurationReference = F308C52E7E89B0D1B8666DDC /* Pods-DeepmediFaceKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ALL2F32G29;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = DeepmediFaceKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -494,6 +499,9 @@
 			baseConfigurationReference = 1AE46E786D6A556E45DB7C61 /* Pods-DeepmediFaceKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ALL2F32G29;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = DeepmediFaceKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -509,6 +517,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DAB78F72C54C0BAC8C638696 /* Pods-DeepmediFaceKit_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = ALL2F32G29;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -531,6 +540,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1DE7BD54241C84DE82B8BD8E /* Pods-DeepmediFaceKit_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = ALL2F32G29;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
