@@ -64,8 +64,8 @@ PODS:
   - nanopb/decode (2.30909.0)
   - nanopb/encode (2.30909.0)
   - OpenCV (4.3.0)
-  - PromisesObjC (2.1.1)
-  - Protobuf (3.21.12)
+  - PromisesObjC (2.2.0)
+  - Protobuf (3.22.0)
   - RxCocoa (6.0.0):
     - RxRelay (= 6.0.0)
     - RxSwift (= 6.0.0)
@@ -79,7 +79,6 @@ DEPENDENCIES:
   - Alamofire (~> 5.2.0)
   - DeepmediFaceKit (from `../`)
   - GoogleMLKit/FaceDetection
-  - OpenCV
   - RxCocoa (~> 6.0.0)
   - RxSwift (~> 6.0.0)
   - SnapKit (~> 5.0.0)
@@ -127,14 +126,14 @@ SPEC CHECKSUMS:
   MLKitVision: 96c96571190b7f63eddf4a12068ce8a8689e0d2c
   nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
   OpenCV: 681e0451c1e54c5930a8922277f817ed5d5ab459
-  PromisesObjC: ab77feca74fa2823e7af4249b8326368e61014cb
-  Protobuf: 120350fc38646e2dedc26f49ecba778184ea1de2
+  PromisesObjC: 09985d6d70fbe7878040aa746d78236e6946d2ef
+  Protobuf: 5e6cbc143d02fe08585d86b0098f8b755d2caaab
   RxCocoa: 3f79328fafa3645b34600f37c31e64c73ae3a80e
   RxRelay: 8d593be109c06ea850df027351beba614b012ffb
   RxSwift: c14e798c59b9f6e9a2df8fd235602e85cc044295
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
 
-PODFILE CHECKSUM: e77136bdca2b1595d431766ae021936259313fbc
+PODFILE CHECKSUM: 91292dbb716b31267768a42f5a1cfb184fbdc375
 
 COCOAPODS: 1.11.3

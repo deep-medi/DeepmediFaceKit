@@ -130,6 +130,7 @@
 		138DC706F8CF628AB14B51C85EC2D6D3 /* FBLPromise+Retry.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A479C17E09059F02E12FB5CE3715 /* FBLPromise+Retry.m */; };
 		13B85A3795D17C0C194BB67BFE677B29 /* ImmediateSchedulerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59C0C9DB04CDA575C635A0066C863E1 /* ImmediateSchedulerType.swift */; };
 		13EA3479242E77E6B420C99C557128FD /* GDTCORUploadCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 067D2FDE7AE70F9E104AD893CF1AAA16 /* GDTCORUploadCoordinator.m */; };
+		14602DEDC9B66DFB4CEC9B6BC6120351 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33622120477F6F4E395260850D5FF36 /* ViewModel.swift */; };
 		14717488DECDFD27C132EF7A8AA3E3F5 /* ServerTrustEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4856B8B2791CA601C76547E4D1F61115 /* ServerTrustEvaluation.swift */; };
 		14BD0E3BD2FDF6F079AF9465D143522B /* Disposables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E14A1C4B98D938A37D0A46EC3DD5CC9 /* Disposables.swift */; };
 		1577FAE9B799C769D987FAA02B5FF7A5 /* GTMNSString+URLArguments.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A3BDD14CBE773C5CCDFFF6257C0250E /* GTMNSString+URLArguments.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -516,7 +517,6 @@
 		ACEBDE5A3C80436C358712CA5DD9B36A /* _RXKVOObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = F1C1C2B56D28635160B93AED567CA989 /* _RXKVOObserver.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		ACFA72F430512F3BC56B26AC42333F40 /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4347ED39451CDA922447D42414171D7E /* Driver.swift */; };
 		AD18097C146086C91D098503823D3480 /* ToArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2ECDB006386F2BA23C0AB5AAC23E3C8 /* ToArray.swift */; };
-		AD3C02AB299E166400156934 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3C02AA299E166300156934 /* ViewModel.swift */; };
 		AD3CD6264FB5E3DE0D2E6245CF1CCD62 /* BCLlefteyeclosed_200.emd in Resources */ = {isa = PBXBuildFile; fileRef = B86725FB392FD0D32E68F0FFA31AE3C6 /* BCLlefteyeclosed_200.emd */; };
 		ADFA8BAE737CD467FEFA11AD71486C59 /* GPBTimestamp.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C4930413DE02468242DDF02E5FC51F /* GPBTimestamp.pbobjc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		AEDB79F6794250F7C10369937C73356D /* UIButton+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD700894B34E0ABA67B7B2DFECA08C /* UIButton+Rx.swift */; };
@@ -1775,6 +1775,7 @@
 		A2B924D5890A7BE3FEED6D9F048F572A /* FaceAreaView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FaceAreaView.swift; sourceTree = "<group>"; };
 		A2BD5C793FAB3B013B97C2B9D4088E48 /* GTMSessionUploadFetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionUploadFetcher.m; path = Source/GTMSessionUploadFetcher.m; sourceTree = "<group>"; };
 		A2ECDB006386F2BA23C0AB5AAC23E3C8 /* ToArray.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToArray.swift; path = RxSwift/Observables/ToArray.swift; sourceTree = "<group>"; };
+		A33622120477F6F4E395260850D5FF36 /* ViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		A34BC4CB3BE5C0C2F6487E194ECBA73B /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
 		A3BC44AABCD396C966532357D2471F32 /* MultipartUpload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartUpload.swift; path = Source/MultipartUpload.swift; sourceTree = "<group>"; };
 		A45DAD81E50F2EAA8243F13F143F9DB8 /* Pods-DeepmediFaceKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DeepmediFaceKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -1813,7 +1814,6 @@
 		ACA8A479C17E09059F02E12FB5CE3715 /* FBLPromise+Retry.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Retry.m"; path = "Sources/FBLPromises/FBLPromise+Retry.m"; sourceTree = "<group>"; };
 		ACEB81FCD824A2C3C9B9F92852889189 /* version.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = version.hpp; path = opencv2.framework/Versions/A/Headers/core/version.hpp; sourceTree = "<group>"; };
 		AD39C24C24D3CD2832C657A9CAE891B3 /* ie.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = ie.hpp; path = opencv2.framework/Versions/A/Headers/gapi/infer/ie.hpp; sourceTree = "<group>"; };
-		AD3C02AA299E166300156934 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		AD5ABC2C6676A36A4FAD089C66667503 /* SkipUntil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkipUntil.swift; path = RxSwift/Observables/SkipUntil.swift; sourceTree = "<group>"; };
 		AD69E082D5F7F76A6905B6250859F773 /* AsSingle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsSingle.swift; path = RxSwift/Observables/AsSingle.swift; sourceTree = "<group>"; };
 		ADAAF2D5B3C5F77B45D061D0D4D003E1 /* Zip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Zip.swift; path = RxSwift/Observables/Zip.swift; sourceTree = "<group>"; };
@@ -1967,7 +1967,7 @@
 		D3B6A5BF94E4B918E75E2BC0D5E113BC /* imgcodecs.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = imgcodecs.hpp; path = opencv2.framework/Versions/A/Headers/imgcodecs/imgcodecs.hpp; sourceTree = "<group>"; };
 		D42001BA541C34AAC4B65990A43990E3 /* cv_cpu_dispatch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cv_cpu_dispatch.h; path = opencv2.framework/Versions/A/Headers/core/cv_cpu_dispatch.h; sourceTree = "<group>"; };
 		D4D1AAE0ADF556795DA50DE34B017D25 /* types.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = types.hpp; path = opencv2.framework/Versions/A/Headers/gapi/own/types.hpp; sourceTree = "<group>"; };
-		D511F655F3219053DD69C70D0C07188B /* libDeepmediFaceKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDeepmediFaceKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D511F655F3219053DD69C70D0C07188B /* DeepmediFaceKit */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = DeepmediFaceKit; path = libDeepmediFaceKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D52B53841A890DA9166F920CCDB54B35 /* GDTCORFlatFileStorage+Promises.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GDTCORFlatFileStorage+Promises.m"; path = "GoogleDataTransport/GDTCORLibrary/GDTCORFlatFileStorage+Promises.m"; sourceTree = "<group>"; };
 		D56E3ED8154D3FB212B9855CE181D418 /* Pods-DeepmediFaceKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DeepmediFaceKit_Example.modulemap"; sourceTree = "<group>"; };
 		D5B53BA7D769BC04CDED662767F0F7FC /* layer.details.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = layer.details.hpp; path = opencv2.framework/Versions/A/Headers/dnn/layer.details.hpp; sourceTree = "<group>"; };
@@ -2736,6 +2736,15 @@
 			name = DebugUtils;
 			sourceTree = "<group>";
 		};
+		2E6D625A383CD7E44A7FBB86DBE41D40 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A33622120477F6F4E395260850D5FF36 /* ViewModel.swift */,
+			);
+			name = ViewModel;
+			path = DeepmediFaceKit/Classes/ViewModel;
+			sourceTree = "<group>";
+		};
 		3A13FA4A1487DB2AB72BF4823A3872E2 /* RxRelay */ = {
 			isa = PBXGroup;
 			children = (
@@ -2971,7 +2980,7 @@
 			isa = PBXGroup;
 			children = (
 				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */,
-				D511F655F3219053DD69C70D0C07188B /* libDeepmediFaceKit.a */,
+				D511F655F3219053DD69C70D0C07188B /* DeepmediFaceKit */,
 				856B5CD56F194FAD26EA91620B66D614 /* GoogleDataTransport */,
 				251C6319AD50CB50F18D50CBF727F8B2 /* GoogleToolboxForMac */,
 				B43874C6CBB50E7134FBEC24BABFE14F /* GoogleUtilities */,
@@ -3321,15 +3330,6 @@
 			path = DeepmediFaceKit/Classes/Document;
 			sourceTree = "<group>";
 		};
-		AD3C02A9299E166300156934 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				AD3C02AA299E166300156934 /* ViewModel.swift */,
-			);
-			name = ViewModel;
-			path = DeepmediFaceKit/Classes/ViewModel;
-			sourceTree = "<group>";
-		};
 		B63DBF574B43ED640ACCCF049E11CD42 /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -3418,20 +3418,20 @@
 		CD7C01FE701BFC7E3530D4E8C12E63C7 /* DeepmediFaceKit */ = {
 			isa = PBXGroup;
 			children = (
-				AD3C02A9299E166300156934 /* ViewModel */,
+				0A79D3E0A42021F338E7EEA77297F514 /* CameraObject.swift */,
+				392AD5E5B79F2F0932C322C6E4EE6708 /* FaceDetection.swift */,
+				C9BF7026FFC4ACD54587876F45795021 /* MeasurementObject.swift */,
+				E18B3258175F170A90E3A7A7E73B292F /* Protocol.swift */,
+				BFEC15FAFE076A33FBD129B8EF810040 /* Service.swift */,
 				7C7D03C8D570E7290D14D8D7BEF6BB32 /* Camera */,
 				A813BF4704EE8CE1E235687115642BDE /* Document */,
 				6CDCC82A487A7366C43E8727F435BE4E /* Model */,
 				656C1E3700E5E8A81B54A80BB21E4402 /* Objc */,
 				FDBEB54FE85FECF364562FDDB48D0889 /* Pod */,
 				64FFB6E91966CB744C5A6FA371F7743C /* Service */,
-				BD009AFC55A2E6E6D02A54065C2035E5 /* View */,
-				0A79D3E0A42021F338E7EEA77297F514 /* CameraObject.swift */,
-				392AD5E5B79F2F0932C322C6E4EE6708 /* FaceDetection.swift */,
-				C9BF7026FFC4ACD54587876F45795021 /* MeasurementObject.swift */,
-				E18B3258175F170A90E3A7A7E73B292F /* Protocol.swift */,
-				BFEC15FAFE076A33FBD129B8EF810040 /* Service.swift */,
 				0D490D2CCFB530EFEB97C76DCD70EBAE /* Support Files */,
+				BD009AFC55A2E6E6D02A54065C2035E5 /* View */,
+				2E6D625A383CD7E44A7FBB86DBE41D40 /* ViewModel */,
 			);
 			name = DeepmediFaceKit;
 			path = ../..;
@@ -4405,7 +4405,7 @@
 			);
 			name = DeepmediFaceKit;
 			productName = DeepmediFaceKit;
-			productReference = D511F655F3219053DD69C70D0C07188B /* libDeepmediFaceKit.a */;
+			productReference = D511F655F3219053DD69C70D0C07188B /* DeepmediFaceKit */;
 			productType = "com.apple.product-type.library.static";
 		};
 		A64F5725956770327D080E1EB31878EE /* GoogleUtilitiesComponents */ = {
@@ -5308,13 +5308,13 @@
 				E3A8987DD587FB0A8D498FC2FC0966C3 /* Header.swift in Sources */,
 				B07ACCE926B76FB266BA90F4F798AD58 /* MeasurementObject.swift in Sources */,
 				2C8FB22E32CDE4F1415FE6CA327BF68E /* Model.swift in Sources */,
-				AD3C02AB299E166400156934 /* ViewModel.swift in Sources */,
 				1ABF53D6F053228C9DBBFA7D5B124242 /* ObjcMapper.mm in Sources */,
 				1F9F7502461D6F9D44FF9E4B1A925F9A /* OpenCVWrapper.mm in Sources */,
 				1FF8F96B8FDD1AF45A35FBDEAAC4C6EF /* PrefixHeader.pch in Sources */,
 				3BAE0BDCE73329BC0CC64DB504A160BE /* Protocol.swift in Sources */,
 				6E81967575FADFE08955F122EA2A379D /* RGBData.swift in Sources */,
 				7AE547678DECA3EE7096FD28D5855652 /* Service.swift in Sources */,
+				14602DEDC9B66DFB4CEC9B6BC6120351 /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5820,6 +5820,61 @@
 			};
 			name = Release;
 		};
+		0E53127D7634A73944624BE1E1C71BAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41AD56B6EECE3B9F891044638D6003F3 /* Protobuf.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Protobuf/Protobuf-prefix.pch";
+				"IPHONEOS DEPLOYMENT_TARGET" = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Protobuf;
+				PRODUCT_NAME = Protobuf;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		10D82FD1527CC301F0CBD4B89D8FFF00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6062500864AD327A6214A10A4327BF7 /* Protobuf.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Protobuf/Protobuf-prefix.pch";
+				"IPHONEOS DEPLOYMENT_TARGET" = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Protobuf;
+				PRODUCT_NAME = Protobuf;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		1155240CFA2258EDB5F9D1A867B5F7DE /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B6EB7703CA2DE704881CA0F58640BA7F /* Pods-DeepmediFaceKit_Example.release.xcconfig */;
@@ -6176,32 +6231,6 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.1;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		52BF69CF3BC2C8289AB7C173D8E435E9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 41AD56B6EECE3B9F891044638D6003F3 /* Protobuf.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/Protobuf/Protobuf-prefix.pch";
-				"IPHONEOS DEPLOYMENT_TARGET" = 13.0;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = Protobuf;
-				PRODUCT_NAME = Protobuf;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -6756,33 +6785,6 @@
 			};
 			name = Debug;
 		};
-		C04B6544FD3CE8CC123DDE1F07B2C15E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B6062500864AD327A6214A10A4327BF7 /* Protobuf.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/Protobuf/Protobuf-prefix.pch";
-				"IPHONEOS DEPLOYMENT_TARGET" = 13.0;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = Protobuf;
-				PRODUCT_NAME = Protobuf;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		C16D21F2A7472D7A8BF54E598DBF78F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E3C2940A81C7F0125E7F1F842ECB34E7 /* nanopb.debug.xcconfig */;
@@ -7107,8 +7109,8 @@
 		5C8B9B531A51E5101E85D9611666A4D7 /* Build configuration list for PBXNativeTarget "Protobuf" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				52BF69CF3BC2C8289AB7C173D8E435E9 /* Debug */,
-				C04B6544FD3CE8CC123DDE1F07B2C15E /* Release */,
+				0E53127D7634A73944624BE1E1C71BAC /* Debug */,
+				10D82FD1527CC301F0CBD4B89D8FFF00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
