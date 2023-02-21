@@ -29,7 +29,8 @@ TODO: Add long description of the pod here.
   
   s.ios.deployment_target = '13.0'
 
-  s.source_files = 'DeepmediFaceKit/Classes/**/*.{h, mm, swift}'
+  s.source_files = 'DeepmediFaceKit/Classes/**/*'
+  # s.source_files = 'DeepmediFaceKit/Classes/**/*.{h, mm, swift}'
   
   s.swift_versions = '5.0'
   s.static_framework = true
