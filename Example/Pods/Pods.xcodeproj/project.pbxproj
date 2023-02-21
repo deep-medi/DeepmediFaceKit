@@ -2943,13 +2943,13 @@
 			path = "../Target Support Files/MLKitCommon";
 			sourceTree = "<group>";
 		};
-		64FFB6E91966CB744C5A6FA371F7743C /* Service */ = {
+		64FFB6E91966CB744C5A6FA371F7743C /* Header */ = {
 			isa = PBXGroup;
 			children = (
 				F2713B510D02AB73CEEC1E9592D20605 /* Header.swift */,
 			);
-			name = Service;
-			path = DeepmediFaceKit/Classes/Service;
+			name = Header;
+			path = DeepmediFaceKit/Classes/Header;
 			sourceTree = "<group>";
 		};
 		656C1E3700E5E8A81B54A80BB21E4402 /* Objc */ = {
@@ -3423,15 +3423,15 @@
 				C9BF7026FFC4ACD54587876F45795021 /* MeasurementObject.swift */,
 				E18B3258175F170A90E3A7A7E73B292F /* Protocol.swift */,
 				BFEC15FAFE076A33FBD129B8EF810040 /* Service.swift */,
+				64FFB6E91966CB744C5A6FA371F7743C /* Header */,
+				BD009AFC55A2E6E6D02A54065C2035E5 /* View */,
+				2E6D625A383CD7E44A7FBB86DBE41D40 /* ViewModel */,
 				7C7D03C8D570E7290D14D8D7BEF6BB32 /* Camera */,
 				A813BF4704EE8CE1E235687115642BDE /* Document */,
 				6CDCC82A487A7366C43E8727F435BE4E /* Model */,
 				656C1E3700E5E8A81B54A80BB21E4402 /* Objc */,
 				FDBEB54FE85FECF364562FDDB48D0889 /* Pod */,
-				64FFB6E91966CB744C5A6FA371F7743C /* Service */,
 				0D490D2CCFB530EFEB97C76DCD70EBAE /* Support Files */,
-				BD009AFC55A2E6E6D02A54065C2035E5 /* View */,
-				2E6D625A383CD7E44A7FBB86DBE41D40 /* ViewModel */,
 			);
 			name = DeepmediFaceKit;
 			path = ../..;
