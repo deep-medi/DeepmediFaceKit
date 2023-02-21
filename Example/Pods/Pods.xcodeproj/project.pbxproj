@@ -87,14 +87,12 @@
 
 /* Begin PBXBuildFile section */
 		00D0D1EB8F7A91D8D52E9808D45CF219 /* DistinctUntilChanged.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDEEA94EE08AD301A50D072BF23FBF6 /* DistinctUntilChanged.swift */; };
-		0164576DFB76479D6A5C6BB00D339639 /* ObjcMapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = D28F317983F01E02F6572BB0E314346F /* ObjcMapper.mm */; };
 		01B9544BF77A1F8402D0064826E7C885 /* Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AEC68EE4B682CC70EB7F56945F048B /* Then.swift */; };
 		02057A9343523695086461E53270824F /* PromisesObjC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BDCCDDC16031F6A4505B83AA24BECBF0 /* PromisesObjC-dummy.m */; };
 		039B34EA02DDB70DC3C933634F99EFF4 /* GoogleToolboxForMac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 811C8629E7A5209611392DAD374B4F78 /* GoogleToolboxForMac-dummy.m */; };
 		03A3CAE8A2576E32AF8B4AE568141AE1 /* GDTCORStorageProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 18475A77F8232ABB2E20A40A3DDA0A81 /* GDTCORStorageProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		03CEE52BA9BFBA2FBE4723948DDC7928 /* SynchronizedUnsubscribeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF2F741DA6C538A0035D7A4F543CEE0 /* SynchronizedUnsubscribeType.swift */; };
 		046B8EFA6EA32F66B33A162A71B582FD /* AuthenticationInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6C28BF8E033F1F26FD761BF46802EB /* AuthenticationInterceptor.swift */; };
-		04B1538277B0EEBAFE1DEBF329F7A3CB /* DeepmediFaceKit-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 927F34A2F99019581822461AEB2BDD78 /* DeepmediFaceKit-Bridging-Header.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		0547DF6E57D442A5A718B8AC8F6065FB /* NSSlider+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE6B32472DCF54885906492DAE5A52D /* NSSlider+Rx.swift */; };
 		0557ECDD35566DCCDA4A285069C97DC5 /* Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C5AE7A6A1D26DDD3D5017B665183C6 /* Binder.swift */; };
 		05E01EEA189F906B32CBD09591C19586 /* ObservableType+PrimitiveSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6DC27586B2CBE8BCF0BE8B07B8ABE3 /* ObservableType+PrimitiveSequence.swift */; };
@@ -130,7 +128,6 @@
 		118B3944C1DE79E171101553E66C81BA /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7F1A47A97E1B05CF3F5ABB8CA2DF31 /* SessionDelegate.swift */; };
 		118F3D207EDAD738EC4E906CB25E5883 /* FBLPromise+Validate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB75CF12E535AB7826C9F529DFED4464 /* FBLPromise+Validate.m */; };
 		119B965C45966BCA90535A543DE1D528 /* UITextView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7CBA52E0DE4FDFDBC0AF8751C79BE3 /* UITextView+Rx.swift */; };
-		11C639E7534D56054F2B790B162706FC /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0775DC6C61C828E2999EB1E2F49EDFA0 /* ViewModel.swift */; };
 		12AE08076E41A0D31428979166386367 /* Any.pbobjc.h in Headers */ = {isa = PBXBuildFile; fileRef = 9369EFEB8F93B81CA0EA9AAE0963562A /* Any.pbobjc.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		12E288730B9179BCC122E781E3154984 /* ScheduledDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA471FA4F33DD06EC1599E8A69C054D9 /* ScheduledDisposable.swift */; };
 		12F2828D44F3274EC16D6908F3CDA670 /* Catch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134982CD9B2A3295E70234391A75084F /* Catch.swift */; };
@@ -182,7 +179,6 @@
 		2403FFF4484985A8D3B3D7EB94BFBCDE /* CurrentThreadScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792F74CAC39D85CFEF98CC4135B5C96F /* CurrentThreadScheduler.swift */; };
 		24231F3A88A1DBEFFBDC6FBA399D0613 /* GULHeartbeatDateStorageUserDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DFA43068E7222654CB303C01683DF70 /* GULHeartbeatDateStorageUserDefaults.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2540B9CBD2BB49DD94FD87FE340DFF2D /* ConcurrentMainScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E8FDC8A0824A8EF0FF7152B5F43F37 /* ConcurrentMainScheduler.swift */; };
-		254E746E4EA95831BF50867A291E351B /* CameraObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19373FC6D28ADDC3E257F03681CA0D25 /* CameraObject.swift */; };
 		25DA59FC9C729E00343293FF8ED77130 /* GDTCOREndpoints.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9E7FBE5F1121A8FBE3C42613DC0CC9 /* GDTCOREndpoints.m */; };
 		25FC7F022150A4C5E799676018B04DEB /* GDTCORTransport.h in Headers */ = {isa = PBXBuildFile; fileRef = 89F728ACEB1839B37A0BC342BB3C2A01 /* GDTCORTransport.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		264F66C8F62CCE55B165B2909FC5066D /* WithLatestFrom.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6B70A26749976E4F7EC6A8819A4D28 /* WithLatestFrom.swift */; };
@@ -228,7 +224,6 @@
 		333BF6212755D5828E9DEA207B65C2EE /* GPBApi.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A31C198AD2A638987282CA9FA341AA /* GPBApi.pbobjc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		336516E794BD7D50AFCFA2D61D20EE13 /* StringEncoding+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D3D379F00F07E0B55B54E9133EF8AC /* StringEncoding+Alamofire.swift */; };
 		337600772FE7607C5ADD3294BADA01C4 /* GoogleDataTransport-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7E5E932B98124F17F3723DCE97BB0A /* GoogleDataTransport-dummy.m */; };
-		33DBAE2346772191A52B81CFFCFA54A6 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F2CC3BD80A11C7E324FAFAA4B3387A /* DataModel.swift */; };
 		340E7BD3E96C90F7A26A5BAF9A50CF9A /* GPBCodedOutputStream_PackagePrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F79C62442C6481FFD06255F4D9B3458 /* GPBCodedOutputStream_PackagePrivate.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		34DAA48B53456422831C2D723A699EFB /* DispatchQueueConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6088F14A1CF7DEBFB12FA47E9E1C7AB2 /* DispatchQueueConfiguration.swift */; };
 		3569F1A554AA903EC31A3784889A2DA5 /* GDTCORPlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CE52D15F04E9F27BB43CACCDB14CAF5 /* GDTCORPlatform.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -300,10 +295,8 @@
 		4E4FA785CAB774F87AD5BA99964D9F5D /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122F7B049E3C5784C5FC5BEB29C6555A /* Session.swift */; };
 		4E7ED07C1D2569D8E936B0B68137FC3C /* GULCCComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 670CE043167FC8B8D4E604C1CBFC0DC1 /* GULCCComponent.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		4F1606605B689E28DFF3B2E56D1AABFF /* GDTCORMetrics+GDTCCTSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 308CC485F52FFE7944BD82BC3E0C5B36 /* GDTCORMetrics+GDTCCTSupport.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		4F3112DE2E26CE6FE77D29B07C7C7E0E /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = A248FE95C85224D535A1CF8A77DA258B /* OpenCVWrapper.mm */; };
 		4F74E7328370D20200549BA409DE7C0E /* GPBAny.pbobjc.h in Headers */ = {isa = PBXBuildFile; fileRef = D239C04C3E9EFB5D9D96C833FBFA4A47 /* GPBAny.pbobjc.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		50450221EB9DA7732FC21238631A4982 /* GDTCCTUploadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 935B53A89A0EFCFD014142A3091F2F95 /* GDTCCTUploadOperation.m */; };
-		50B1ADEDA522AB47B32ACE8064CF1DAE /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAA2A13261A1C4F73D75025BF1FADA1 /* Protocol.swift */; };
 		50E2974AEA13C987DB03E5EA5B988266 /* RefCountDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148403E16948ABAB9B4D3D972E360E1F /* RefCountDisposable.swift */; };
 		50FE318852A22DE16C1A01C59538A0A8 /* GPBDuration.pbobjc.h in Headers */ = {isa = PBXBuildFile; fileRef = 783A5301011F2815010F01FCC293BC53 /* GPBDuration.pbobjc.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		534A95C20F58F2629F4B2C71C17B9D18 /* BehaviorSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954A476D23C5004E936942809E8D18DB /* BehaviorSubject.swift */; };
@@ -351,7 +344,6 @@
 		657107A2A03F9D37B210F6AAD869EFA3 /* GDTCOREvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 555E7F5C80DB76543C9629EDE6D603BB /* GDTCOREvent.m */; };
 		65C0756E163C6768BA28E5FD4239AB7D /* GDTCORDirectorySizeTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 24A0A1F3929AE00542BF5E07436FF990 /* GDTCORDirectorySizeTracker.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		65D224756E2328F5E108E0B1235B7E20 /* FBLPromise+Await.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DB210CAE91047E93FC5552905515B6 /* FBLPromise+Await.m */; };
-		65E4C035041F7E245E69654BCE0347B5 /* FaceAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4D2A5460B06F52D70C43E7A7324FB0 /* FaceAreaView.swift */; };
 		663889FCE6FE613D3093CFABA28FF765 /* ItemEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1B12A950422FA9AACDAC738D4EC7D3 /* ItemEvents.swift */; };
 		673ADC013D417B3B3CD9273616686E51 /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765E53345D6D99AAC2DA91E7993C876D /* Sample.swift */; };
 		675423A7AD6FABD455F3B36048DEAD3F /* GPBDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D7DBFD6A16C14E84C43B7ABF8007BA9 /* GPBDictionary.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -371,7 +363,6 @@
 		6E51BB6DDEBB16A85A0B64164D7EFCB9 /* RxCocoa-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 15936000632B0E7DDE0037DF01CA8F37 /* RxCocoa-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6E5FFF865CCDADFB13F6CEC17C83F153 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB99CA922A0F0435AE0A268A280170E4 /* Errors.swift */; };
 		6E8E77D2AC2DC59215A54FAF3EE36FA9 /* SerialDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F40D2F3041A0A9280546A33D6AB0B0 /* SerialDisposable.swift */; };
-		70022CC4FDC47D55FBECDB0BB3DEF366 /* RGBData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FC29DB1064F18F986BCA22D5FF2451 /* RGBData.swift */; };
 		707984CC6995918F8C40D9897531224F /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CFF3760EA9BF0235B5B1BF10275385 /* Response.swift */; };
 		707992ED9FB2C0AE8F64CD1197A4E7C0 /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD1BDF759CC3394C6F9CA3A948285B4 /* ConstraintMultiplierTarget.swift */; };
 		71636214BB4BFED96CA13110DD1EFD19 /* GDTCORMetrics+GDTCCTSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = A71BF8FA481C0BEE61C51A1F3F26EBBE /* GDTCORMetrics+GDTCCTSupport.m */; };
@@ -386,7 +377,6 @@
 		73D26CB54EB0DA6E9C4F82C238180210 /* FBLPromise+Retry.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A479C17E09059F02E12FB5CE3715 /* FBLPromise+Retry.m */; };
 		73E83F83E187513F0F2433E270AD5202 /* RxCocoa.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81BCE3F9FE534A476D1105CF721DDC8 /* RxCocoa.swift */; };
 		742C80B24A551AF4E48665229306D10F /* GPBApi.pbobjc.h in Headers */ = {isa = PBXBuildFile; fileRef = 63912B58C76F11A439C330BCC294E41C /* GPBApi.pbobjc.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		744910E908803A578075F882C6C9C236 /* PrefixHeader.pch in Sources */ = {isa = PBXBuildFile; fileRef = 928B7A94AAB1FFD2D89430578D987395 /* PrefixHeader.pch */; };
 		7464A97798CBE6D96373FFD36EF6F582 /* Platform.Darwin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC54CE09BDAF6C202167BAA0152A87 /* Platform.Darwin.swift */; };
 		74924E77EE604EE17AC5F89E5C5DF3F8 /* ScheduledItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F46C489399C49EEBBB40E210A671759 /* ScheduledItem.swift */; };
 		74C30EF407E16A6A65EA50E79BCF3FC8 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0508FEEB5AA9FE9BC59E022CCFDAF7C2 /* SwiftSupport.swift */; };
@@ -403,7 +393,6 @@
 		782F5DAEA03E64462C6C7250F1FA43A3 /* SynchronizedDisposeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9423709487C382C09F951AF212C988D /* SynchronizedDisposeType.swift */; };
 		78419EA54594999378666D8F52762C0E /* InvocableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A95CBDE6214C2EADFDAF763428DE94F /* InvocableType.swift */; };
 		785488DF67BF1EF72BD9E919910E0509 /* GDTCORMetrics.m in Sources */ = {isa = PBXBuildFile; fileRef = 86798FCD783CB3177A205BAA5CD3D2E9 /* GDTCORMetrics.m */; };
-		78F1A3DCFDE064A34D1655A1B66E6EEE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFA44344500C63830A35484A6E3400E /* Model.swift */; };
 		7A05416ED96FB8D78ABE5B842A758BED /* RxCocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = B9D198A369628F066A2F250C45BC86B7 /* RxCocoa.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		7A3CE9602AD83244BADC0291A4A2B545 /* SingleAssignmentDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A55B2A77306044871BC3632966F2121 /* SingleAssignmentDisposable.swift */; };
 		7A47365506CD11CBE3A99339D1A93F46 /* GDTCORMetricsMetadata.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FD1703DF12AB9302078E3D2AFD212C6 /* GDTCORMetricsMetadata.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -444,7 +433,6 @@
 		877CCCAEFBC1944D4BDF686D64CF33A3 /* GDTCORClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE043275B9FE8D04EF8CEE20C128250 /* GDTCORClock.m */; };
 		887C222B12CA8A1CFD8A14C59EAA5BF3 /* Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2D4D0D0C3239A1E7E72B3D45645626 /* Decode.swift */; };
 		892C42F181E81006498B9DD8ACDE806B /* GTMNSData+zlib.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A5C2144304644EE169BADB4C1C6BCFC /* GTMNSData+zlib.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		893E8B3E16664BD332A0D6B7158B7C0C /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F307F6F7528EB4D195BCA21677822A /* Header.swift */; };
 		8952117AB87A877AAFD31DD77A6CBD1B /* Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8720F4623D08132746A0AFF535EB9AB2 /* Create.swift */; };
 		895A4F2102F0E7DDCC5D205CC3251A90 /* Reduce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECC0695221B3B3DB79DC299A8741CF9 /* Reduce.swift */; };
 		89A60EBA42A9438AAD309869977AF380 /* InfiniteSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269BD4EA78E1942D025D33CA0CEBF338 /* InfiniteSequence.swift */; };
@@ -465,8 +453,6 @@
 		8F8B0B471B13836A15D543A0784E2AC6 /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A786FF1C4013243E0912BE8E7897AB1 /* UILayoutSupport+Extensions.swift */; };
 		902CB9BDC27F0C6466691145F99E9159 /* GPBUnknownField.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EFF8BE607023A217E4DF5FE63E81D0 /* GPBUnknownField.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		903044FE88A2BB59C11F4EE0DAEB08B8 /* GULHeartbeatDateStorageUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C119612F95BDED586BE9B5F21D34506 /* GULHeartbeatDateStorageUserDefaults.m */; };
-		909FDB73B869D9AAC720700CD53F6E8C /* CameraSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F228221ECFB72EFB403708B8945EFB /* CameraSetup.swift */; };
-		91507B8F6FE87CB86FB8DA2650309B69 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB52C465C32DC8E79EF30775C7E53746 /* Service.swift */; };
 		919C5F089672B444E0EF63126359549B /* NotificationCenter+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BD48A2C41A6E85CA6F9FED8337F10E /* NotificationCenter+Rx.swift */; };
 		91FD44CE4B9E71430C936F69307600EF /* Range.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB467D639C31852D1CF9DAFD4FFA5E5 /* Range.swift */; };
 		92737E41461C149E7DC4DE575B442D83 /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1680C3395CF5915FCFB4047113C9A623 /* ConstraintMakerEditable.swift */; };
@@ -533,6 +519,24 @@
 		AAEFF61B4B32B76FED0038EF154583F6 /* RxWKNavigationDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088C434F7D69C10096609154A1C4AAA9 /* RxWKNavigationDelegateProxy.swift */; };
 		AB868D1EA80E4F91A8AC49C422FDC2C0 /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D5DCA08988E21BFEBAE4902EB1EBCB /* ConstraintDSL.swift */; };
 		AD15074C7A22FE4C970DAA0403293EB2 /* GPBUnknownField.h in Headers */ = {isa = PBXBuildFile; fileRef = 72AB12E9DBFB6079CE9E46DA49008FE6 /* GPBUnknownField.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AD2E604929A4AC3E008F64D7 /* ObjcMapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = AD2E604529A4AC3E008F64D7 /* ObjcMapper.mm */; };
+		AD2E604A29A4AC3E008F64D7 /* OpenCVWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = AD2E604629A4AC3E008F64D7 /* OpenCVWrapper.h */; };
+		AD2E604B29A4AC3E008F64D7 /* ObjcMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = AD2E604729A4AC3E008F64D7 /* ObjcMapper.h */; };
+		AD2E604C29A4AC3E008F64D7 /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = AD2E604829A4AC3E008F64D7 /* OpenCVWrapper.mm */; };
+		AD2E606129A4AE4A008F64D7 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2E604E29A4AE49008F64D7 /* Document.swift */; };
+		AD2E606229A4AE4A008F64D7 /* MeasurementObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2E604F29A4AE4A008F64D7 /* MeasurementObject.swift */; };
+		AD2E606329A4AE4A008F64D7 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2E605029A4AE4A008F64D7 /* Service.swift */; };
+		AD2E606429A4AE4A008F64D7 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2E605229A4AE4A008F64D7 /* DataModel.swift */; };
+		AD2E606529A4AE4A008F64D7 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2E605329A4AE4A008F64D7 /* Model.swift */; };
+		AD2E606629A4AE4A008F64D7 /* RGBData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2E605429A4AE4A008F64D7 /* RGBData.swift */; };
+		AD2E606729A4AE4A008F64D7 /* CameraSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2E605629A4AE4A008F64D7 /* CameraSetup.swift */; };
+		AD2E606829A4AE4A008F64D7 /* FaceDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2E605729A4AE4A008F64D7 /* FaceDetection.swift */; };
+		AD2E606929A4AE4A008F64D7 /* CameraObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2E605829A4AE4A008F64D7 /* CameraObject.swift */; };
+		AD2E606A29A4AE4A008F64D7 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2E605929A4AE4A008F64D7 /* Protocol.swift */; };
+		AD2E606B29A4AE4A008F64D7 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2E605B29A4AE4A008F64D7 /* Header.swift */; };
+		AD2E606C29A4AE4A008F64D7 /* CameraPreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2E605D29A4AE4A008F64D7 /* CameraPreView.swift */; };
+		AD2E606D29A4AE4A008F64D7 /* FaceAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2E605E29A4AE4A008F64D7 /* FaceAreaView.swift */; };
+		AD2E606E29A4AE4A008F64D7 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2E606029A4AE4A008F64D7 /* ViewModel.swift */; };
 		AD7125CDB881E95BB70A0F2F428FD279 /* Buffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791B239CCD784EF4C7115A1FE69FC604 /* Buffer.swift */; };
 		AD877986D5EC8228AFD36339E0F5BA41 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC21657F5ED7FAEE2D0D5FE422A43154 /* Observable.swift */; };
 		AEC5E72B5AE55FAC4E683FC44D10FB21 /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E8358B53FC559002567F822AB71160 /* Empty.swift */; };
@@ -558,7 +562,6 @@
 		B69FA3A43FF7E8215B9A22AAC62E58CB /* ControlTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3F6232D95945DA6BE0F1DD64A46BBF /* ControlTarget.swift */; };
 		B71038C0A7923E0D8D3B4D42CEB4C6EF /* AsSingle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD69E082D5F7F76A6905B6250859F773 /* AsSingle.swift */; };
 		B71A1EB7BB873DDD0B7C5F08D4D5D5EF /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC020532B7B7383C7A7D14CF8B14C1AB /* ConstraintMakerRelatable.swift */; };
-		B72DE747FEBA5075C11863916363C1E2 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8679594C68E9C0254DEC58320AEC3346 /* Document.swift */; };
 		B72EC5A038D9BABE3C2D6586E93BE9DE /* GULCCDependency.h in Headers */ = {isa = PBXBuildFile; fileRef = DD8EEFB1ED39BC27D5D343DEB8FB8929 /* GULCCDependency.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		B737EF4FA911EE0EB49F4B39F78A26C7 /* UITableView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F049F1CD893CA6C9456A1F072FC9947 /* UITableView+Rx.swift */; };
 		B7DA406814B764CCE11133B8A298928F /* Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E4B3F2A3CB9E1E21B547F66B17A1FF /* Signal.swift */; };
@@ -566,7 +569,6 @@
 		B87310451E3D8639654C23A2E4624216 /* BCLlefteyeclosed_200.emd in Resources */ = {isa = PBXBuildFile; fileRef = B86725FB392FD0D32E68F0FFA31AE3C6 /* BCLlefteyeclosed_200.emd */; };
 		B9E7511A104789C9E71DC88AD23C4BC9 /* GPBProtocolBuffers_RuntimeSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 81C1C2B3E5C6C0DE547B973D3BB7A5F4 /* GPBProtocolBuffers_RuntimeSupport.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		BA12C32354B2954547AB3D4B509B135D /* Timestamp.pbobjc.h in Headers */ = {isa = PBXBuildFile; fileRef = 2133E6B9E6A270E3F78EEDF614D6B78F /* Timestamp.pbobjc.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		BA2540EFFC34BBE14028D88F517F91B0 /* CameraPreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89A9B7FF1E2FB3B80DEAF0BDFDCFADF /* CameraPreView.swift */; };
 		BAB0E206E837E903CC242D6DCCF7DBE9 /* DelegateProxyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCAD8623510C47166F35E5D7FB8F23 /* DelegateProxyType.swift */; };
 		BB00140C626944013AEE46AF73458B36 /* Then-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B17B117A69B4A2B3CC547586DD6BF0A7 /* Then-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		BB0F7D05D1580C916C8C886C1A55B836 /* GPBRootObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C9697A01D1EA20BE7E6C16C99659C06A /* GPBRootObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -586,7 +588,6 @@
 		BFD82FA01A839C50E46966F1FAC4957C /* LMprec_600.emd in Resources */ = {isa = PBXBuildFile; fileRef = 5AC1EE0930011BE83C8AB0A35E2DFDBE /* LMprec_600.emd */; };
 		C0511AEAE98CF82FF99651BA99177D68 /* GPBWireFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = E8E0A614B8DD16E4371978CDCA708E73 /* GPBWireFormat.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		C1050004C4CABD0F327229AFD31D56A2 /* TextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA7868F6E1183AFC062DD6AB4560B8F /* TextInput.swift */; };
-		C1103261C96581A2A68D34819A505F02 /* FaceDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA2C8E88B8D8A2DC808855DFEFBCD2B /* FaceDetection.swift */; };
 		C36D0AF973963E5BF21E23DAE3E24CF2 /* GDTCOREndpoints.h in Headers */ = {isa = PBXBuildFile; fileRef = D79763EE5FB23542CCD6B93330774E34 /* GDTCOREndpoints.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		C408D1362E682FF4DC2D249A1E5D33F0 /* PublishSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DA23C8E24D9A259E53B0B088568399 /* PublishSubject.swift */; };
 		C4347ED1E221BB272BC331C7D81740CB /* GoogleUtilities-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC8E7FF23081CE23E0E402DCEC5761E /* GoogleUtilities-dummy.m */; };
@@ -669,7 +670,6 @@
 		E41986D773993981DE73E8BE28C709D4 /* VirtualTimeConverterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B3EBA74BE60EEBD299E7DA5432487A /* VirtualTimeConverterType.swift */; };
 		E446CC33C8AFADD2CCAA611704CB5E89 /* ControlEvent+Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EB3DD7A8DF3397039741E7CD63DF7E /* ControlEvent+Signal.swift */; };
 		E4E3B88A73BB759637E0EF5F28778A30 /* ConcurrentDispatchQueueScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97937CBBA69479EF752269E8414A7FB /* ConcurrentDispatchQueueScheduler.swift */; };
-		E58A4ED33B291E88B2AB2101EFA321AB /* MeasurementObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F837006BAE3E2879AB1476FDF8ED9F7 /* MeasurementObject.swift */; };
 		E5ADED46977535BCA8CDADE14FBC3565 /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE134BD248B7B87509B7C5069F12643 /* ConstraintMakerExtendable.swift */; };
 		E5F96CCD1FCFF3BF3BE1B3C77FDC6829 /* RetryWhen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758920459F9E4630D75707D721A85622 /* RetryWhen.swift */; };
 		E75E4E6E37334AE7F8FAC24AA0952714 /* FBLPromise+Any.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FC1A402FC39D6938E54823860839B65 /* FBLPromise+Any.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -682,7 +682,6 @@
 		E911FDFDA6606C0C2D98B12C1B00AE28 /* Amb.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACDE40752580C45B966F08E71B72459 /* Amb.swift */; };
 		EB9D9EB4E1EEA863DBF449B2F4EF414D /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABCA731DA1C678C2C3FAF81F2B3F7C6 /* Map.swift */; };
 		EC09A052E7366FA1FDB9C5D26E4294F2 /* SynchronizedOnType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC5F7F7FA82F5F3CF3C7EEAFAE68355 /* SynchronizedOnType.swift */; };
-		EC2CFE07F914F5B9B161734DBCC66D03 /* OpenCVWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B5953027A0577F9A84FD9C539E02352 /* OpenCVWrapper.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		EC84251FD76F7A6EDDE7E683881AE1C9 /* UIApplication+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741A694C21DC274CBA1A196E541FBE78 /* UIApplication+Rx.swift */; };
 		ED340EC67B780D2E658B0C649F404F2D /* RxCollectionViewDataSourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17427F35E396B7D3204C0CD325D9BA4 /* RxCollectionViewDataSourceType.swift */; };
 		ED6E464CB3FADAB33901FA0E0963CEAA /* BCLjoy_200.emd in Resources */ = {isa = PBXBuildFile; fileRef = 21C5F425EE4EC0DAEE9792BA97128166 /* BCLjoy_200.emd */; };
@@ -721,7 +720,6 @@
 		FA2532EEC7492944F98962246170CD6B /* FBLPromise+Async.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E9B86FF68D2218072FF71BD22FAEA1 /* FBLPromise+Async.m */; };
 		FA375BEA8831F86748A73032B7AC3162 /* Scan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3660E57BD3671ACC9DC20AAB55495BE8 /* Scan.swift */; };
 		FA4A2E374A0358AC72938E00FE69D933 /* GPBDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 048DC234CE30AA7E962DD23556163226 /* GPBDictionary.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		FA823E7DD96E7AA63DBB192B44FABD3F /* ObjcMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = F6C768DC33D7454FDF1331A798B98B43 /* ObjcMapper.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		FA9E5C8E405EF34251A493146BA24BCA /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522AAAD82E3CF38AB1A78FDE189FEDB8 /* LayoutConstraintItem.swift */; };
 		FAF050F701B8243F805FAFF9F7573150 /* GTMSessionFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 0647729DEDC53777F92292A3592CC5EF /* GTMSessionFetcher.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		FB69BCD341B9C15110C2343F8C86CCD4 /* PrimitiveSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6536D321D879520F8E2FC466EBE643FE /* PrimitiveSequence.swift */; };
@@ -1153,7 +1151,6 @@
 		067DFCA349D6B8BF6A3C0B7AADE8B8EF /* photo.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = photo.hpp; path = opencv2.framework/Versions/A/Headers/photo/photo.hpp; sourceTree = "<group>"; };
 		06EFFA35486968B93C4BCB5193F17268 /* GDTCCTUploader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCCTUploader.h; path = GoogleDataTransport/GDTCCTLibrary/Private/GDTCCTUploader.h; sourceTree = "<group>"; };
 		06FC5C9CF96D60C50FCD47D339C91951 /* nanopb */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = nanopb; path = libnanopb.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		0775DC6C61C828E2999EB1E2F49EDFA0 /* ViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		07D4E6513C64932DF3D90BB2D30493E6 /* sse_utils.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = sse_utils.hpp; path = opencv2.framework/Versions/A/Headers/core/sse_utils.hpp; sourceTree = "<group>"; };
 		07ED483DB2FE0B0B9A81ACD155B796FB /* NSObject+Rx+RawRepresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSObject+Rx+RawRepresentable.swift"; path = "RxCocoa/Foundation/NSObject+Rx+RawRepresentable.swift"; sourceTree = "<group>"; };
 		080DC8AB99F514A9FB10370194F31BE5 /* GPBRuntimeTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPBRuntimeTypes.h; path = objectivec/GPBRuntimeTypes.h; sourceTree = "<group>"; };
@@ -1206,7 +1203,6 @@
 		138E406C92F4A1F91D06FDEE75C6F668 /* utility.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = utility.hpp; path = opencv2.framework/Versions/A/Headers/core/utility.hpp; sourceTree = "<group>"; };
 		148403E16948ABAB9B4D3D972E360E1F /* RefCountDisposable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RefCountDisposable.swift; path = RxSwift/Disposables/RefCountDisposable.swift; sourceTree = "<group>"; };
 		14AEC68EE4B682CC70EB7F56945F048B /* Then.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Then.swift; path = Sources/Then/Then.swift; sourceTree = "<group>"; };
-		14F228221ECFB72EFB403708B8945EFB /* CameraSetup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CameraSetup.swift; sourceTree = "<group>"; };
 		150EC819AD3C6767E7432A4DB48F5C49 /* GoogleUtilitiesComponents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleUtilitiesComponents.debug.xcconfig; sourceTree = "<group>"; };
 		157289474C38D3218270A9C810337947 /* HistoricalSchedulerTimeConverter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HistoricalSchedulerTimeConverter.swift; path = RxSwift/Schedulers/HistoricalSchedulerTimeConverter.swift; sourceTree = "<group>"; };
 		15936000632B0E7DDE0037DF01CA8F37 /* RxCocoa-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RxCocoa-umbrella.h"; sourceTree = "<group>"; };
@@ -1226,7 +1222,6 @@
 		181A4DEF8B672312B8337996C376FFA9 /* FBLPromise+Delay.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Delay.m"; path = "Sources/FBLPromises/FBLPromise+Delay.m"; sourceTree = "<group>"; };
 		18475A77F8232ABB2E20A40A3DDA0A81 /* GDTCORStorageProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORStorageProtocol.h; path = GoogleDataTransport/GDTCORLibrary/Internal/GDTCORStorageProtocol.h; sourceTree = "<group>"; };
 		18EE96E35C1811E1C2DA68A6124FF3A5 /* GPBSourceContext.pbobjc.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPBSourceContext.pbobjc.m; path = objectivec/GPBSourceContext.pbobjc.m; sourceTree = "<group>"; };
-		19373FC6D28ADDC3E257F03681CA0D25 /* CameraObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraObject.swift; path = DeepmediFaceKit/Classes/CameraObject.swift; sourceTree = "<group>"; };
 		1963E27D7BC22203F9C149FB6E1FA580 /* Empty.pbobjc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Empty.pbobjc.h; path = objectivec/google/protobuf/Empty.pbobjc.h; sourceTree = "<group>"; };
 		19689DD3A0E8C4F337DB3719C03C8EB9 /* ControlProperty+Driver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ControlProperty+Driver.swift"; path = "RxCocoa/Traits/Driver/ControlProperty+Driver.swift"; sourceTree = "<group>"; };
 		197E6C3C1B486122061845E8C321E9DD /* GPBAny.pbobjc.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPBAny.pbobjc.m; path = objectivec/GPBAny.pbobjc.m; sourceTree = "<group>"; };
@@ -1250,7 +1245,6 @@
 		1F2B60E657E9A5C1930003527CBC0871 /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
 		1F4973C42676120A767A4F829D1F1FAA /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
 		1F824EF62946596140625A4471016ABE /* cvstd.inl.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = cvstd.inl.hpp; path = opencv2.framework/Versions/A/Headers/core/cvstd.inl.hpp; sourceTree = "<group>"; };
-		1FA2C8E88B8D8A2DC808855DFEFBCD2B /* FaceDetection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FaceDetection.swift; path = DeepmediFaceKit/Classes/FaceDetection.swift; sourceTree = "<group>"; };
 		1FF696D67399CD06B2B9A8ADBBD8A984 /* gfluidbuffer.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = gfluidbuffer.hpp; path = opencv2.framework/Versions/A/Headers/gapi/fluid/gfluidbuffer.hpp; sourceTree = "<group>"; };
 		20D019822EB11CDF3CDB26A62DEB7F50 /* opencl_clamdfft.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = opencl_clamdfft.hpp; path = opencv2.framework/Versions/A/Headers/core/opencl/runtime/autogenerated/opencl_clamdfft.hpp; sourceTree = "<group>"; };
 		2133E6B9E6A270E3F78EEDF614D6B78F /* Timestamp.pbobjc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Timestamp.pbobjc.h; path = objectivec/google/protobuf/Timestamp.pbobjc.h; sourceTree = "<group>"; };
@@ -1303,7 +1297,6 @@
 		2ED2C2D0D8BBB9DBF60DB3F79BBAE632 /* SubjectType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SubjectType.swift; path = RxSwift/Subjects/SubjectType.swift; sourceTree = "<group>"; };
 		2F7E0737D5803103509A691633DE3788 /* CachedResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CachedResponseHandler.swift; path = Source/CachedResponseHandler.swift; sourceTree = "<group>"; };
 		2F909B33B41C18A198B5D40416607288 /* NSTextView+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSTextView+Rx.swift"; path = "RxCocoa/macOS/NSTextView+Rx.swift"; sourceTree = "<group>"; };
-		2FAA2A13261A1C4F73D75025BF1FADA1 /* Protocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protocol.swift; path = DeepmediFaceKit/Classes/Protocol.swift; sourceTree = "<group>"; };
 		2FC1A402FC39D6938E54823860839B65 /* FBLPromise+Any.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Any.h"; path = "Sources/FBLPromises/include/FBLPromise+Any.h"; sourceTree = "<group>"; };
 		2FEB904F9FDF8842AC0F3AB58FE9610C /* Driver+Subscription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Driver+Subscription.swift"; path = "RxCocoa/Traits/Driver/Driver+Subscription.swift"; sourceTree = "<group>"; };
 		30409C921B71BCE308C8DC934A56471A /* source.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = source.hpp; path = opencv2.framework/Versions/A/Headers/gapi/streaming/source.hpp; sourceTree = "<group>"; };
@@ -1392,7 +1385,6 @@
 		4539318AE56E8940FBE45E4E061D0BF1 /* GDTCORFlatFileStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCORFlatFileStorage.m; path = GoogleDataTransport/GDTCORLibrary/GDTCORFlatFileStorage.m; sourceTree = "<group>"; };
 		45AD56DB3742AA69634CF5F0A1718F95 /* scalar.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = scalar.hpp; path = opencv2.framework/Versions/A/Headers/gapi/own/scalar.hpp; sourceTree = "<group>"; };
 		45CBDEAFEC530C0EF2D3838399137750 /* mat.inl.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = mat.inl.hpp; path = opencv2.framework/Versions/A/Headers/core/mat.inl.hpp; sourceTree = "<group>"; };
-		45F307F6F7528EB4D195BCA21677822A /* Header.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		46667C6A69042F305FCB23EA96E573D7 /* GTMSessionFetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcher.m; path = Source/GTMSessionFetcher.m; sourceTree = "<group>"; };
 		4668E51F2CAD5FFC025D4B8678070CFB /* opencl_core_wrappers.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = opencl_core_wrappers.hpp; path = opencv2.framework/Versions/A/Headers/core/opencl/runtime/opencl_core_wrappers.hpp; sourceTree = "<group>"; };
 		46972D0CEB6F46EA2A6F3A42169A591F /* GDTCORAssert.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCORAssert.m; path = GoogleDataTransport/GDTCORLibrary/GDTCORAssert.m; sourceTree = "<group>"; };
@@ -1438,7 +1430,6 @@
 		4F2BA04FBA3EC74793B79AC245A8AE52 /* exports.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = exports.hpp; path = opencv2.framework/Versions/A/Headers/gapi/own/exports.hpp; sourceTree = "<group>"; };
 		4F6C28BF8E033F1F26FD761BF46802EB /* AuthenticationInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationInterceptor.swift; path = Source/AuthenticationInterceptor.swift; sourceTree = "<group>"; };
 		4F79C62442C6481FFD06255F4D9B3458 /* GPBCodedOutputStream_PackagePrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPBCodedOutputStream_PackagePrivate.h; path = objectivec/GPBCodedOutputStream_PackagePrivate.h; sourceTree = "<group>"; };
-		4F837006BAE3E2879AB1476FDF8ED9F7 /* MeasurementObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MeasurementObject.swift; path = DeepmediFaceKit/Classes/MeasurementObject.swift; sourceTree = "<group>"; };
 		4FB7B433AB47C27DC5B839055E1B53E6 /* GDTCCTUploader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCCTUploader.m; path = GoogleDataTransport/GDTCCTLibrary/GDTCCTUploader.m; sourceTree = "<group>"; };
 		4FD828270268C3DB5725FE24B7E5D31A /* simd_intrinsics.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = simd_intrinsics.hpp; path = opencv2.framework/Versions/A/Headers/core/simd_intrinsics.hpp; sourceTree = "<group>"; };
 		5016682177E6FFBEAD081C46FE7660A8 /* Materialize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Materialize.swift; path = RxSwift/Observables/Materialize.swift; sourceTree = "<group>"; };
@@ -1544,7 +1535,6 @@
 		6CCCFB80DA2A50645C747D5D8DEAA0FD /* FBLPromise+All.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+All.m"; path = "Sources/FBLPromises/FBLPromise+All.m"; sourceTree = "<group>"; };
 		6DADE8F8FCC769809E38DA1F8FEB59B6 /* DeepmediFaceKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = DeepmediFaceKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6DC8E7FF23081CE23E0E402DCEC5761E /* GoogleUtilities-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GoogleUtilities-dummy.m"; sourceTree = "<group>"; };
-		6DFA44344500C63830A35484A6E3400E /* Model.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		6E12D4E1EDE3FA0E814DB8637AE9D5B3 /* Pods-DeepmediFaceKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DeepmediFaceKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		6E497623DC1AA08599C50841086B69A2 /* GULCCComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULCCComponent.m; path = GoogleUtilitiesComponents/Sources/GULCCComponent.m; sourceTree = "<group>"; };
 		6EA2CF7FE9C91CC0F9D5D7CFCE8553E7 /* kmeans_index.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = kmeans_index.h; path = opencv2.framework/Versions/A/Headers/flann/kmeans_index.h; sourceTree = "<group>"; };
@@ -1585,7 +1575,6 @@
 		76A222FF207B41E0F67B69CB282E2133 /* Pods-DeepmediFaceKit_Example */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-DeepmediFaceKit_Example"; path = "libPods-DeepmediFaceKit_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76B785FE78F7674E4857E506AE1492FB /* Combine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Combine.swift; path = Source/Combine.swift; sourceTree = "<group>"; };
 		76D1B02BF7F79958DFB949983A9B92C4 /* OpenCV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OpenCV.debug.xcconfig; sourceTree = "<group>"; };
-		76F2CC3BD80A11C7E324FAFAA4B3387A /* DataModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		76F617C31A925CFC35DD30EED14878AF /* core.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = core.hpp; path = opencv2.framework/Versions/A/Headers/core/core.hpp; sourceTree = "<group>"; };
 		76F7051404260556A5C723AB25B1F833 /* CombineLatest+arity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CombineLatest+arity.swift"; path = "RxSwift/Observables/CombineLatest+arity.swift"; sourceTree = "<group>"; };
 		7717C92FBF5BCE693161C8CB5082A7BB /* Never.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Never.swift; path = RxSwift/Observables/Never.swift; sourceTree = "<group>"; };
@@ -1658,7 +1647,6 @@
 		85F2EFE6EB62FE81EBAA943401E5038B /* vsx_utils.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = vsx_utils.hpp; path = opencv2.framework/Versions/A/Headers/core/vsx_utils.hpp; sourceTree = "<group>"; };
 		864868D465DFD4541F0B8F1B0A4C5199 /* Lock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Lock.swift; path = RxSwift/Concurrency/Lock.swift; sourceTree = "<group>"; };
 		8648B99C11EAA0E9192EEE4A9A642209 /* SharedSequence+Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SharedSequence+Operators.swift"; path = "RxCocoa/Traits/SharedSequence/SharedSequence+Operators.swift"; sourceTree = "<group>"; };
-		8679594C68E9C0254DEC58320AEC3346 /* Document.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
 		86798FCD783CB3177A205BAA5CD3D2E9 /* GDTCORMetrics.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCORMetrics.m; path = GoogleDataTransport/GDTCORLibrary/GDTCORMetrics.m; sourceTree = "<group>"; };
 		86C7F88F7A98CAD13B4273DBCA40CD0D /* Completable+AndThen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Completable+AndThen.swift"; path = "RxSwift/Traits/PrimitiveSequence/Completable+AndThen.swift"; sourceTree = "<group>"; };
 		86E925F155C092CC51CB948B20811238 /* GULKeychainUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULKeychainUtils.m; path = GoogleUtilities/Environment/SecureStorage/GULKeychainUtils.m; sourceTree = "<group>"; };
@@ -1719,8 +1707,6 @@
 		90F84672609509EFE55FA4BDC32E6162 /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Source/HTTPMethod.swift; sourceTree = "<group>"; };
 		922AD0C3775687A3124B33AF44B2006C /* RxCocoa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RxCocoa.release.xcconfig; sourceTree = "<group>"; };
 		926591BE0EF50D00A358BEBD3DABAE27 /* gplaidmlkernel.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = gplaidmlkernel.hpp; path = opencv2.framework/Versions/A/Headers/gapi/plaidml/gplaidmlkernel.hpp; sourceTree = "<group>"; };
-		927F34A2F99019581822461AEB2BDD78 /* DeepmediFaceKit-Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DeepmediFaceKit-Bridging-Header.h"; sourceTree = "<group>"; };
-		928B7A94AAB1FFD2D89430578D987395 /* PrefixHeader.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		9301728E0D31FA0C1B8DDF535E7A0A73 /* GDTCOREventTransformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCOREventTransformer.h; path = GoogleDataTransport/GDTCORLibrary/Public/GoogleDataTransport/GDTCOREventTransformer.h; sourceTree = "<group>"; };
 		9317E4947CA2FE1B5D5999034C09CCA7 /* Then */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = Then; path = libThen.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		934CEAA17C9F0F6089ACD5040B576DFC /* check.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = check.hpp; path = opencv2.framework/Versions/A/Headers/core/check.hpp; sourceTree = "<group>"; };
@@ -1759,7 +1745,6 @@
 		9AE85D3C9F8A8BF48B178F21C572EF59 /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
 		9AF61160F0BC7E5DC090587CAF9C3CCA /* UIDatePicker+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIDatePicker+Rx.swift"; path = "RxCocoa/iOS/UIDatePicker+Rx.swift"; sourceTree = "<group>"; };
 		9B238FC91A38C424B6BD99EB323243FF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		9B5953027A0577F9A84FD9C539E02352 /* OpenCVWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
 		9C44F451711E71B62B318649EA877BA0 /* GDTCORMetricsMetadata.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCORMetricsMetadata.m; path = GoogleDataTransport/GDTCORLibrary/GDTCORMetricsMetadata.m; sourceTree = "<group>"; };
 		9CAB53C2D508A915220C3EE435D2B763 /* GDTCORConsoleLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCORConsoleLogger.m; path = GoogleDataTransport/GDTCORLibrary/GDTCORConsoleLogger.m; sourceTree = "<group>"; };
 		9D175DF443D42F5A24D13188813CD05D /* opencl_core.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = opencl_core.hpp; path = opencv2.framework/Versions/A/Headers/core/opencl/runtime/opencl_core.hpp; sourceTree = "<group>"; };
@@ -1777,7 +1762,6 @@
 		A13CE79468E8220F4FB50BA6A14154F0 /* SharedSequence+Operators+arity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SharedSequence+Operators+arity.swift"; path = "RxCocoa/Traits/SharedSequence/SharedSequence+Operators+arity.swift"; sourceTree = "<group>"; };
 		A19C76F6F47EDB1372A48ED583A8B8F1 /* HistoricalScheduler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HistoricalScheduler.swift; path = RxSwift/Schedulers/HistoricalScheduler.swift; sourceTree = "<group>"; };
 		A1B955E5672C43B5E4F76DA53F4FC7AF /* MLImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MLImage.debug.xcconfig; sourceTree = "<group>"; };
-		A248FE95C85224D535A1CF8A77DA258B /* OpenCVWrapper.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
 		A25BDF68188970F88ED8299A24DC7E1E /* softfloat.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = softfloat.hpp; path = opencv2.framework/Versions/A/Headers/core/softfloat.hpp; sourceTree = "<group>"; };
 		A275E23C9A2BCCCA6AE34B306A1404FD /* GDTCOREventDropReason.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCOREventDropReason.h; path = GoogleDataTransport/GDTCORLibrary/Internal/GDTCOREventDropReason.h; sourceTree = "<group>"; };
 		A281AFB19EAF64B54AAC5C0A6132DFA2 /* params.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = params.h; path = opencv2.framework/Versions/A/Headers/flann/params.h; sourceTree = "<group>"; };
@@ -1820,6 +1804,24 @@
 		ACA177C88960932596545E0E9F72ACF2 /* GDTCORTransformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORTransformer.h; path = GoogleDataTransport/GDTCORLibrary/Private/GDTCORTransformer.h; sourceTree = "<group>"; };
 		ACA8A479C17E09059F02E12FB5CE3715 /* FBLPromise+Retry.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Retry.m"; path = "Sources/FBLPromises/FBLPromise+Retry.m"; sourceTree = "<group>"; };
 		ACEB81FCD824A2C3C9B9F92852889189 /* version.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = version.hpp; path = opencv2.framework/Versions/A/Headers/core/version.hpp; sourceTree = "<group>"; };
+		AD2E604529A4AC3E008F64D7 /* ObjcMapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ObjcMapper.mm; sourceTree = "<group>"; };
+		AD2E604629A4AC3E008F64D7 /* OpenCVWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
+		AD2E604729A4AC3E008F64D7 /* ObjcMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjcMapper.h; sourceTree = "<group>"; };
+		AD2E604829A4AC3E008F64D7 /* OpenCVWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
+		AD2E604E29A4AE49008F64D7 /* Document.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		AD2E604F29A4AE4A008F64D7 /* MeasurementObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MeasurementObject.swift; path = DeepmediFaceKit/SourceFile/MeasurementObject.swift; sourceTree = "<group>"; };
+		AD2E605029A4AE4A008F64D7 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Service.swift; path = DeepmediFaceKit/SourceFile/Service.swift; sourceTree = "<group>"; };
+		AD2E605229A4AE4A008F64D7 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		AD2E605329A4AE4A008F64D7 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		AD2E605429A4AE4A008F64D7 /* RGBData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGBData.swift; sourceTree = "<group>"; };
+		AD2E605629A4AE4A008F64D7 /* CameraSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraSetup.swift; sourceTree = "<group>"; };
+		AD2E605729A4AE4A008F64D7 /* FaceDetection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FaceDetection.swift; path = DeepmediFaceKit/SourceFile/FaceDetection.swift; sourceTree = "<group>"; };
+		AD2E605829A4AE4A008F64D7 /* CameraObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraObject.swift; path = DeepmediFaceKit/SourceFile/CameraObject.swift; sourceTree = "<group>"; };
+		AD2E605929A4AE4A008F64D7 /* Protocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Protocol.swift; path = DeepmediFaceKit/SourceFile/Protocol.swift; sourceTree = "<group>"; };
+		AD2E605B29A4AE4A008F64D7 /* Header.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		AD2E605D29A4AE4A008F64D7 /* CameraPreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraPreView.swift; sourceTree = "<group>"; };
+		AD2E605E29A4AE4A008F64D7 /* FaceAreaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceAreaView.swift; sourceTree = "<group>"; };
+		AD2E606029A4AE4A008F64D7 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		AD39C24C24D3CD2832C657A9CAE891B3 /* ie.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = ie.hpp; path = opencv2.framework/Versions/A/Headers/gapi/infer/ie.hpp; sourceTree = "<group>"; };
 		AD5ABC2C6676A36A4FAD089C66667503 /* SkipUntil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkipUntil.swift; path = RxSwift/Observables/SkipUntil.swift; sourceTree = "<group>"; };
 		AD69E082D5F7F76A6905B6250859F773 /* AsSingle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsSingle.swift; path = RxSwift/Observables/AsSingle.swift; sourceTree = "<group>"; };
@@ -1865,7 +1867,6 @@
 		B9D198A369628F066A2F250C45BC86B7 /* RxCocoa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RxCocoa.h; path = RxCocoa/RxCocoa.h; sourceTree = "<group>"; };
 		BA8931BD6FD8BBC492D8A7CD713F87C6 /* type_traits_detail.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = type_traits_detail.hpp; path = opencv2.framework/Versions/A/Headers/core/cuda/detail/type_traits_detail.hpp; sourceTree = "<group>"; };
 		BAF3E8A2544D5CF1A83EBB2566AAA408 /* SourceContext.pbobjc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SourceContext.pbobjc.h; path = objectivec/google/protobuf/SourceContext.pbobjc.h; sourceTree = "<group>"; };
-		BB4D2A5460B06F52D70C43E7A7324FB0 /* FaceAreaView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FaceAreaView.swift; sourceTree = "<group>"; };
 		BB9AC8EB7CCC261E3742B204314B113E /* FBLPromisePrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBLPromisePrivate.h; path = Sources/FBLPromises/include/FBLPromisePrivate.h; sourceTree = "<group>"; };
 		BBD1456EB4638106E14065452C33AEF6 /* dynamic_smem.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = dynamic_smem.hpp; path = opencv2.framework/Versions/A/Headers/core/cuda/dynamic_smem.hpp; sourceTree = "<group>"; };
 		BC432FD48A5932251F1CAFBC4BF74894 /* RxCocoa */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = RxCocoa; path = libRxCocoa.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1930,7 +1931,6 @@
 		C816F2A4790EBB2801B06386345807E0 /* UIBarButtonItem+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIBarButtonItem+Rx.swift"; path = "RxCocoa/iOS/UIBarButtonItem+Rx.swift"; sourceTree = "<group>"; };
 		C82AB2DED979FC4FD76FF7D16B84D13D /* FBLPromise+Race.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Race.m"; path = "Sources/FBLPromises/FBLPromise+Race.m"; sourceTree = "<group>"; };
 		C86616B378472BD9336720A638C74FA9 /* RxTableViewDataSourceProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxTableViewDataSourceProxy.swift; path = RxCocoa/iOS/Proxies/RxTableViewDataSourceProxy.swift; sourceTree = "<group>"; };
-		C89A9B7FF1E2FB3B80DEAF0BDFDCFADF /* CameraPreView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CameraPreView.swift; sourceTree = "<group>"; };
 		C8AE3C255373B34B961B4841EC9D602E /* constants_c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = constants_c.h; path = opencv2.framework/Versions/A/Headers/photo/legacy/constants_c.h; sourceTree = "<group>"; };
 		C9697A01D1EA20BE7E6C16C99659C06A /* GPBRootObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPBRootObject.m; path = objectivec/GPBRootObject.m; sourceTree = "<group>"; };
 		C99501EAD67C87D57DAD196620B22D8F /* AlamofireExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireExtended.swift; path = Source/AlamofireExtended.swift; sourceTree = "<group>"; };
@@ -1965,7 +1965,6 @@
 		D1ABF27603B44F2A8E729A93FB12772D /* CombineLatest+Collection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CombineLatest+Collection.swift"; path = "RxSwift/Observables/CombineLatest+Collection.swift"; sourceTree = "<group>"; };
 		D239C04C3E9EFB5D9D96C833FBFA4A47 /* GPBAny.pbobjc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPBAny.pbobjc.h; path = objectivec/GPBAny.pbobjc.h; sourceTree = "<group>"; };
 		D2704D85EC2A7D0745423F3CF81A961B /* opencl_svm_20.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = opencl_svm_20.hpp; path = opencv2.framework/Versions/A/Headers/core/opencl/runtime/opencl_svm_20.hpp; sourceTree = "<group>"; };
-		D28F317983F01E02F6572BB0E314346F /* ObjcMapper.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = ObjcMapper.mm; sourceTree = "<group>"; };
 		D2AFE91BC4A24FB7C082A5748191A29F /* Do.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Do.swift; path = RxSwift/Observables/Do.swift; sourceTree = "<group>"; };
 		D2CB2386E02A6DA8459ECF2B139AF467 /* _RX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _RX.m; path = RxCocoa/Runtime/_RX.m; sourceTree = "<group>"; };
 		D363B5F126D876D82EFA0096129F6FD4 /* _RX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _RX.h; path = RxCocoa/Runtime/include/_RX.h; sourceTree = "<group>"; };
@@ -2062,12 +2061,10 @@
 		E8F13D029E08A61167EB3BFA61F6849B /* Pods-DeepmediFaceKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DeepmediFaceKit_Example-umbrella.h"; sourceTree = "<group>"; };
 		E9A1E0265C0192F93B608C23CAC0EBC0 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
 		E9D77E0944CBCF663A0CCEA62E27BAEF /* GULCCComponentType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULCCComponentType.m; path = GoogleUtilitiesComponents/Sources/GULCCComponentType.m; sourceTree = "<group>"; };
-		E9FC29DB1064F18F986BCA22D5FF2451 /* RGBData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RGBData.swift; sourceTree = "<group>"; };
 		E9FCE0794AEF7A1ADDBFF34CCAD8624B /* reduce.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = reduce.hpp; path = opencv2.framework/Versions/A/Headers/core/cuda/detail/reduce.hpp; sourceTree = "<group>"; };
 		EA0E464B3EBD65A7AE6ADF00E085849B /* GDTCORLogSourceMetrics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORLogSourceMetrics.h; path = GoogleDataTransport/GDTCORLibrary/Private/GDTCORLogSourceMetrics.h; sourceTree = "<group>"; };
 		EAD91DF9C529F0B45D0DEDDFC0E83047 /* RxTabBarControllerDelegateProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxTabBarControllerDelegateProxy.swift; path = RxCocoa/iOS/Proxies/RxTabBarControllerDelegateProxy.swift; sourceTree = "<group>"; };
 		EAFE38A8A2729178F3E9E27974F5CB6D /* constants_c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = constants_c.h; path = opencv2.framework/Versions/A/Headers/imgcodecs/legacy/constants_c.h; sourceTree = "<group>"; };
-		EB52C465C32DC8E79EF30775C7E53746 /* Service.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Service.swift; path = DeepmediFaceKit/Classes/Service.swift; sourceTree = "<group>"; };
 		EB75CF12E535AB7826C9F529DFED4464 /* FBLPromise+Validate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Validate.m"; path = "Sources/FBLPromises/FBLPromise+Validate.m"; sourceTree = "<group>"; };
 		EB925C0E3AED83DC492C38FA4357BF2D /* GDTCORStorageMetadata.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCORStorageMetadata.m; path = GoogleDataTransport/GDTCORLibrary/GDTCORStorageMetadata.m; sourceTree = "<group>"; };
 		EBA00E8080010162644A8421D7C01C2B /* GDTCORReachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCORReachability.m; path = GoogleDataTransport/GDTCORLibrary/GDTCORReachability.m; sourceTree = "<group>"; };
@@ -2112,7 +2109,6 @@
 		F5FFE7D3479E9CF0A8969E4C2A84C9EE /* GoogleUtilities.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleUtilities.debug.xcconfig; sourceTree = "<group>"; };
 		F60D81470D5D3BCF162079A1D5CD765A /* cap.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = cap.hpp; path = opencv2.framework/Versions/A/Headers/gapi/streaming/cap.hpp; sourceTree = "<group>"; };
 		F64705600BB56FEE09AC027ABB3FA236 /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
-		F6C768DC33D7454FDF1331A798B98B43 /* ObjcMapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ObjcMapper.h; sourceTree = "<group>"; };
 		F74400539877CEE5D1DC764248345AE0 /* UITextField+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextField+Rx.swift"; path = "RxCocoa/iOS/UITextField+Rx.swift"; sourceTree = "<group>"; };
 		F7AD8FF367865076155D7D70550EFAE7 /* mat.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = mat.hpp; path = opencv2.framework/Versions/A/Headers/gapi/own/mat.hpp; sourceTree = "<group>"; };
 		F7BE84C1786E345C0DECF7DE0348BDCE /* nanopb-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "nanopb-prefix.pch"; sourceTree = "<group>"; };
@@ -2738,25 +2734,6 @@
 			name = DebugUtils;
 			sourceTree = "<group>";
 		};
-		2D275FBABA6649D925570BAD27F33FA7 /* Camera */ = {
-			isa = PBXGroup;
-			children = (
-				14F228221ECFB72EFB403708B8945EFB /* CameraSetup.swift */,
-			);
-			name = Camera;
-			path = DeepmediFaceKit/Classes/Camera;
-			sourceTree = "<group>";
-		};
-		39802EE1A91AE1C7D434D84F6F7976F0 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				C89A9B7FF1E2FB3B80DEAF0BDFDCFADF /* CameraPreView.swift */,
-				BB4D2A5460B06F52D70C43E7A7324FB0 /* FaceAreaView.swift */,
-			);
-			name = View;
-			path = DeepmediFaceKit/Classes/View;
-			sourceTree = "<group>";
-		};
 		3A13FA4A1487DB2AB72BF4823A3872E2 /* RxRelay */ = {
 			isa = PBXGroup;
 			children = (
@@ -2787,15 +2764,6 @@
 				95BB3189D83C10BCF7284B9E8C6759A1 /* DeepmediFaceKit */,
 			);
 			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		4628754010B8F2BC685EFE046A8A9EED /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				0775DC6C61C828E2999EB1E2F49EDFA0 /* ViewModel.swift */,
-			);
-			name = ViewModel;
-			path = DeepmediFaceKit/Classes/ViewModel;
 			sourceTree = "<group>";
 		};
 		4C7F93166901F45323B282D92B9BE328 /* PromisesObjC */ = {
@@ -3009,15 +2977,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		758277ED6F4900B7703DD7403B7EFF58 /* Header */ = {
-			isa = PBXGroup;
-			children = (
-				45F307F6F7528EB4D195BCA21677822A /* Header.swift */,
-			);
-			name = Header;
-			path = DeepmediFaceKit/Classes/Header;
-			sourceTree = "<group>";
-		};
 		7CC3E82B1E7955C9C93F3F6334B8E101 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -3058,15 +3017,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/GoogleUtilitiesComponents";
-			sourceTree = "<group>";
-		};
-		8618734090EAB7B4F9FBF7831E488CBA /* Document */ = {
-			isa = PBXGroup;
-			children = (
-				8679594C68E9C0254DEC58320AEC3346 /* Document.swift */,
-			);
-			name = Document;
-			path = DeepmediFaceKit/Classes/Document;
 			sourceTree = "<group>";
 		};
 		9004A746EBDDDEC25C4A88299865A93A /* Frameworks */ = {
@@ -3112,34 +3062,23 @@
 		95BB3189D83C10BCF7284B9E8C6759A1 /* DeepmediFaceKit */ = {
 			isa = PBXGroup;
 			children = (
-				19373FC6D28ADDC3E257F03681CA0D25 /* CameraObject.swift */,
-				1FA2C8E88B8D8A2DC808855DFEFBCD2B /* FaceDetection.swift */,
-				4F837006BAE3E2879AB1476FDF8ED9F7 /* MeasurementObject.swift */,
-				2FAA2A13261A1C4F73D75025BF1FADA1 /* Protocol.swift */,
-				EB52C465C32DC8E79EF30775C7E53746 /* Service.swift */,
-				2D275FBABA6649D925570BAD27F33FA7 /* Camera */,
-				8618734090EAB7B4F9FBF7831E488CBA /* Document */,
-				758277ED6F4900B7703DD7403B7EFF58 /* Header */,
-				95D06B7C9E253B8C6F6C46C37587F46D /* Model */,
-				B8F3BA9C1CB6BF91009CDCCC96FA6FD7 /* Objc */,
+				AD2E605529A4AE4A008F64D7 /* Camera */,
+				AD2E605829A4AE4A008F64D7 /* CameraObject.swift */,
+				AD2E604D29A4AE49008F64D7 /* Document */,
+				AD2E605729A4AE4A008F64D7 /* FaceDetection.swift */,
+				AD2E605A29A4AE4A008F64D7 /* Header */,
+				AD2E604F29A4AE4A008F64D7 /* MeasurementObject.swift */,
+				AD2E605129A4AE4A008F64D7 /* Model */,
+				AD2E605929A4AE4A008F64D7 /* Protocol.swift */,
+				AD2E605029A4AE4A008F64D7 /* Service.swift */,
+				AD2E605C29A4AE4A008F64D7 /* View */,
+				AD2E605F29A4AE4A008F64D7 /* ViewModel */,
+				AD2E604429A4AC3E008F64D7 /* Objc */,
 				FC99332F04B24EDEEB224E2765C5DADB /* Pod */,
 				049AB14B73C5FFC736F19661B1C00D16 /* Support Files */,
-				39802EE1A91AE1C7D434D84F6F7976F0 /* View */,
-				4628754010B8F2BC685EFE046A8A9EED /* ViewModel */,
 			);
 			name = DeepmediFaceKit;
 			path = ../..;
-			sourceTree = "<group>";
-		};
-		95D06B7C9E253B8C6F6C46C37587F46D /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				76F2CC3BD80A11C7E324FAFAA4B3387A /* DataModel.swift */,
-				6DFA44344500C63830A35484A6E3400E /* Model.swift */,
-				E9FC29DB1064F18F986BCA22D5FF2451 /* RGBData.swift */,
-			);
-			name = Model;
-			path = DeepmediFaceKit/Classes/Model;
 			sourceTree = "<group>";
 		};
 		96A0E090F2CF49F9A8A9D78E7B6AE481 /* GoogleMLKit */ = {
@@ -3351,6 +3290,75 @@
 			path = RxCocoa;
 			sourceTree = "<group>";
 		};
+		AD2E604429A4AC3E008F64D7 /* Objc */ = {
+			isa = PBXGroup;
+			children = (
+				AD2E604529A4AC3E008F64D7 /* ObjcMapper.mm */,
+				AD2E604629A4AC3E008F64D7 /* OpenCVWrapper.h */,
+				AD2E604729A4AC3E008F64D7 /* ObjcMapper.h */,
+				AD2E604829A4AC3E008F64D7 /* OpenCVWrapper.mm */,
+			);
+			name = Objc;
+			path = DeepmediFaceKit/Classes/Objc;
+			sourceTree = "<group>";
+		};
+		AD2E604D29A4AE49008F64D7 /* Document */ = {
+			isa = PBXGroup;
+			children = (
+				AD2E604E29A4AE49008F64D7 /* Document.swift */,
+			);
+			name = Document;
+			path = DeepmediFaceKit/SourceFile/Document;
+			sourceTree = "<group>";
+		};
+		AD2E605129A4AE4A008F64D7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD2E605229A4AE4A008F64D7 /* DataModel.swift */,
+				AD2E605329A4AE4A008F64D7 /* Model.swift */,
+				AD2E605429A4AE4A008F64D7 /* RGBData.swift */,
+			);
+			name = Model;
+			path = DeepmediFaceKit/SourceFile/Model;
+			sourceTree = "<group>";
+		};
+		AD2E605529A4AE4A008F64D7 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				AD2E605629A4AE4A008F64D7 /* CameraSetup.swift */,
+			);
+			name = Camera;
+			path = DeepmediFaceKit/SourceFile/Camera;
+			sourceTree = "<group>";
+		};
+		AD2E605A29A4AE4A008F64D7 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				AD2E605B29A4AE4A008F64D7 /* Header.swift */,
+			);
+			name = Header;
+			path = DeepmediFaceKit/SourceFile/Header;
+			sourceTree = "<group>";
+		};
+		AD2E605C29A4AE4A008F64D7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD2E605D29A4AE4A008F64D7 /* CameraPreView.swift */,
+				AD2E605E29A4AE4A008F64D7 /* FaceAreaView.swift */,
+			);
+			name = View;
+			path = DeepmediFaceKit/SourceFile/View;
+			sourceTree = "<group>";
+		};
+		AD2E605F29A4AE4A008F64D7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AD2E606029A4AE4A008F64D7 /* ViewModel.swift */,
+			);
+			name = ViewModel;
+			path = DeepmediFaceKit/SourceFile/ViewModel;
+			sourceTree = "<group>";
+		};
 		B63DBF574B43ED640ACCCF049E11CD42 /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -3387,20 +3395,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/RxSwift";
-			sourceTree = "<group>";
-		};
-		B8F3BA9C1CB6BF91009CDCCC96FA6FD7 /* Objc */ = {
-			isa = PBXGroup;
-			children = (
-				927F34A2F99019581822461AEB2BDD78 /* DeepmediFaceKit-Bridging-Header.h */,
-				F6C768DC33D7454FDF1331A798B98B43 /* ObjcMapper.h */,
-				D28F317983F01E02F6572BB0E314346F /* ObjcMapper.mm */,
-				9B5953027A0577F9A84FD9C539E02352 /* OpenCVWrapper.h */,
-				A248FE95C85224D535A1CF8A77DA258B /* OpenCVWrapper.mm */,
-				928B7A94AAB1FFD2D89430578D987395 /* PrefixHeader.pch */,
-			);
-			name = Objc;
-			path = DeepmediFaceKit/Classes/Objc;
 			sourceTree = "<group>";
 		};
 		BAAEACFBE16D57910EAAD5AC13423EB7 /* encode */ = {
@@ -4027,10 +4021,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04B1538277B0EEBAFE1DEBF329F7A3CB /* DeepmediFaceKit-Bridging-Header.h in Headers */,
 				7C73308D754756CD2A55F8EF20E06E5A /* DeepmediFaceKit-umbrella.h in Headers */,
-				FA823E7DD96E7AA63DBB192B44FABD3F /* ObjcMapper.h in Headers */,
-				EC2CFE07F914F5B9B161734DBCC66D03 /* OpenCVWrapper.h in Headers */,
+				AD2E604B29A4AC3E008F64D7 /* ObjcMapper.h in Headers */,
+				AD2E604A29A4AC3E008F64D7 /* OpenCVWrapper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5086,24 +5079,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				254E746E4EA95831BF50867A291E351B /* CameraObject.swift in Sources */,
-				BA2540EFFC34BBE14028D88F517F91B0 /* CameraPreView.swift in Sources */,
-				909FDB73B869D9AAC720700CD53F6E8C /* CameraSetup.swift in Sources */,
-				33DBAE2346772191A52B81CFFCFA54A6 /* DataModel.swift in Sources */,
 				EF05AA9A70ECA5EACFA5ED4315B79821 /* DeepmediFaceKit-dummy.m in Sources */,
-				B72DE747FEBA5075C11863916363C1E2 /* Document.swift in Sources */,
-				65E4C035041F7E245E69654BCE0347B5 /* FaceAreaView.swift in Sources */,
-				C1103261C96581A2A68D34819A505F02 /* FaceDetection.swift in Sources */,
-				893E8B3E16664BD332A0D6B7158B7C0C /* Header.swift in Sources */,
-				E58A4ED33B291E88B2AB2101EFA321AB /* MeasurementObject.swift in Sources */,
-				78F1A3DCFDE064A34D1655A1B66E6EEE /* Model.swift in Sources */,
-				0164576DFB76479D6A5C6BB00D339639 /* ObjcMapper.mm in Sources */,
-				4F3112DE2E26CE6FE77D29B07C7C7E0E /* OpenCVWrapper.mm in Sources */,
-				744910E908803A578075F882C6C9C236 /* PrefixHeader.pch in Sources */,
-				50B1ADEDA522AB47B32ACE8064CF1DAE /* Protocol.swift in Sources */,
-				70022CC4FDC47D55FBECDB0BB3DEF366 /* RGBData.swift in Sources */,
-				91507B8F6FE87CB86FB8DA2650309B69 /* Service.swift in Sources */,
-				11C639E7534D56054F2B790B162706FC /* ViewModel.swift in Sources */,
+				AD2E604929A4AC3E008F64D7 /* ObjcMapper.mm in Sources */,
+				AD2E604C29A4AC3E008F64D7 /* OpenCVWrapper.mm in Sources */,
+				AD2E606429A4AE4A008F64D7 /* DataModel.swift in Sources */,
+				AD2E606329A4AE4A008F64D7 /* Service.swift in Sources */,
+				AD2E606129A4AE4A008F64D7 /* Document.swift in Sources */,
+				AD2E606B29A4AE4A008F64D7 /* Header.swift in Sources */,
+				AD2E606C29A4AE4A008F64D7 /* CameraPreView.swift in Sources */,
+				AD2E606E29A4AE4A008F64D7 /* ViewModel.swift in Sources */,
+				AD2E606829A4AE4A008F64D7 /* FaceDetection.swift in Sources */,
+				AD2E606729A4AE4A008F64D7 /* CameraSetup.swift in Sources */,
+				AD2E606529A4AE4A008F64D7 /* Model.swift in Sources */,
+				AD2E606A29A4AE4A008F64D7 /* Protocol.swift in Sources */,
+				AD2E606629A4AE4A008F64D7 /* RGBData.swift in Sources */,
+				AD2E606929A4AE4A008F64D7 /* CameraObject.swift in Sources */,
+				AD2E606D29A4AE4A008F64D7 /* FaceAreaView.swift in Sources */,
+				AD2E606229A4AE4A008F64D7 /* MeasurementObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

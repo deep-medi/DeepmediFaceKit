@@ -15,7 +15,6 @@
 #endif
 #endif
 
-#import "DeepmediFaceKit-Bridging-Header.h"
 #import "ObjcMapper.h"
 #import "OpenCVWrapper.h"
 
