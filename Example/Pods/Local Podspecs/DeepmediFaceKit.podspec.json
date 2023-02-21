@@ -1,6 +1,6 @@
 {
   "name": "DeepmediFaceKit",
-  "version": "0.4.1",
+  "version": "0.4.3",
   "summary": "Framework for measurement after face recognition",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/deep-medi/DeepmediFaceKit",
@@ -13,12 +13,12 @@
   },
   "source": {
     "git": "https://github.com/deep-medi/DeepmediFaceKit.git",
-    "tag": "0.4.1"
+    "tag": "0.4.3"
   },
   "platforms": {
     "ios": "13.0"
   },
-  "source_files": "DeepmediFaceKit/Classes/**/*",
+  "source_files": "DeepmediFaceKit/Classes/**/*.{h, mm}",
   "swift_versions": "5.0",
   "static_framework": true,
   "pod_target_xcconfig": {
