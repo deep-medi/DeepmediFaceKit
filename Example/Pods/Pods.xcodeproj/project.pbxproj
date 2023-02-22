@@ -441,7 +441,6 @@
 		82D081C875477836C4498C20A3C881D6 /* SerialDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F40D2F3041A0A9280546A33D6AB0B0 /* SerialDisposable.swift */; };
 		82E45B54D2C145B7EF9C31ED39A3D482 /* AtomicInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9931A911D51C79BE9EE72FC605FF45 /* AtomicInt.swift */; };
 		8364C97909C7E75BD4431C49FFF22154 /* GPBRootObject.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3AF5F7F33AD91B72F8A8171B865752 /* GPBRootObject.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		83D38920E27BC17311BDB84FAD8B90AC /* ObjcMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 11534A981086ED683E86F5371497B14F /* ObjcMapper.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8429BDDA03436242D0B4C06674ECCA9B /* FBLPromise+Testing.h in Headers */ = {isa = PBXBuildFile; fileRef = 044C042A5477D8669882677C2DA17EC1 /* FBLPromise+Testing.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8491F919E5AB9F1903F91E2A689302D7 /* RxPickerViewDataSourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC63A8DB3FD01582893F6FE835F9B2 /* RxPickerViewDataSourceType.swift */; };
 		8502282AEE46E8F0F5BB065BA5E256B2 /* UISlider+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC84F997695AFCAEDE9CEDB938BAA61 /* UISlider+Rx.swift */; };
@@ -540,6 +539,8 @@
 		AD4BC19AF1D1ACEFA146760C1C253146 /* GDTCOREndpoints_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 46C4A72F89F952D6337E4BAD444685E5 /* GDTCOREndpoints_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		AD646C5929A5F4020026DD41 /* ObjcMapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = AD646C5729A5F4020026DD41 /* ObjcMapper.mm */; };
 		AD646C5A29A5F4020026DD41 /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = AD646C5829A5F4020026DD41 /* OpenCVWrapper.mm */; };
+		AD70CC6D29A6147400760157 /* ObjcMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = AD70CC6C29A6147400760157 /* ObjcMapper.h */; };
+		AD70CC6F29A6147E00760157 /* OpenCVWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = AD70CC6E29A6147E00760157 /* OpenCVWrapper.h */; };
 		AD95392B773F5B106EF92116223394D4 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F29E4957D39FA247019680AA0BF276 /* ViewModel.swift */; };
 		ADA6F780D5EC7C50C67AFB6E003C17B7 /* Bag.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64DBECD709168DB3658AEA41FBF92F6 /* Bag.swift */; };
 		AE4A9E43B9C37326B862F45F31363A5A /* Maybe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690DAD561B01157E87D3346C955F3677 /* Maybe.swift */; };
@@ -725,7 +726,6 @@
 		F980DD0D9FF42B6C34BD23CD7C5D9F12 /* Scan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3660E57BD3671ACC9DC20AAB55495BE8 /* Scan.swift */; };
 		F98B859D66C003884FD48CCA5AF45273 /* GPBWireFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = E8E0A614B8DD16E4371978CDCA708E73 /* GPBWireFormat.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		FA079DD0BA7CED9D9F911F1F7E2B5F52 /* client_metrics.nanopb.h in Headers */ = {isa = PBXBuildFile; fileRef = 48ECD448DA284DCE2C10DEFED28C3F68 /* client_metrics.nanopb.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		FA11C5DC2B2AAD66D16E6DBC35CF0887 /* OpenCVWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = D34C963F03F4F4DA28AA67ACD0C025FC /* OpenCVWrapper.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		FA17335D280045AF7F44AC1D7A36089A /* Buffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791B239CCD784EF4C7115A1FE69FC604 /* Buffer.swift */; };
 		FAAD2AC615CCD155CC7D2EC5981DD181 /* GPBExtensionRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D65A4E837B75805FFEF9CD2CD03229C /* GPBExtensionRegistry.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		FB256A1BF4BF3F8E0FE074831F145572 /* Reduce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECC0695221B3B3DB79DC299A8741CF9 /* Reduce.swift */; };
@@ -1191,7 +1191,6 @@
 		10E5137BCFEB2328EAE107ED14A11361 /* video.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = video.hpp; path = opencv2.framework/Versions/A/Headers/video/video.hpp; sourceTree = "<group>"; };
 		11075886ECCF53093B2CA0A73196D28A /* vec_distance.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = vec_distance.hpp; path = opencv2.framework/Versions/A/Headers/core/cuda/vec_distance.hpp; sourceTree = "<group>"; };
 		111F94A2FFFF6636C772CF9FE0B2A80B /* TakeLast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TakeLast.swift; path = RxSwift/Observables/TakeLast.swift; sourceTree = "<group>"; };
-		11534A981086ED683E86F5371497B14F /* ObjcMapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ObjcMapper.h; sourceTree = "<group>"; };
 		118C1010D5DA459A0D3466C2FFC9DE88 /* AsMaybe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsMaybe.swift; path = RxSwift/Observables/AsMaybe.swift; sourceTree = "<group>"; };
 		11D010E05828131998F8E58DE9DBE79D /* Cancelable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cancelable.swift; path = RxSwift/Cancelable.swift; sourceTree = "<group>"; };
 		122F7B049E3C5784C5FC5BEB29C6555A /* Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Session.swift; path = Source/Session.swift; sourceTree = "<group>"; };
@@ -1813,7 +1812,8 @@
 		AD646C5729A5F4020026DD41 /* ObjcMapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ObjcMapper.mm; path = ../../Objc/ObjcMapper.mm; sourceTree = "<group>"; };
 		AD646C5829A5F4020026DD41 /* OpenCVWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OpenCVWrapper.mm; path = ../../Objc/OpenCVWrapper.mm; sourceTree = "<group>"; };
 		AD69E082D5F7F76A6905B6250859F773 /* AsSingle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsSingle.swift; path = RxSwift/Observables/AsSingle.swift; sourceTree = "<group>"; };
-		AD70CC6B29A60E0800760157 /* DeepmediFaceKit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeepmediFaceKit-Bridging-Header.h"; sourceTree = "<group>"; };
+		AD70CC6C29A6147400760157 /* ObjcMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObjcMapper.h; path = ../../Objc/ObjcMapper.h; sourceTree = "<group>"; };
+		AD70CC6E29A6147E00760157 /* OpenCVWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenCVWrapper.h; path = ../../Objc/OpenCVWrapper.h; sourceTree = "<group>"; };
 		ADAAF2D5B3C5F77B45D061D0D4D003E1 /* Zip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Zip.swift; path = RxSwift/Observables/Zip.swift; sourceTree = "<group>"; };
 		ADCCAD8623510C47166F35E5D7FB8F23 /* DelegateProxyType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DelegateProxyType.swift; path = RxCocoa/Common/DelegateProxyType.swift; sourceTree = "<group>"; };
 		ADDEEA94EE08AD301A50D072BF23FBF6 /* DistinctUntilChanged.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DistinctUntilChanged.swift; path = RxSwift/Observables/DistinctUntilChanged.swift; sourceTree = "<group>"; };
@@ -1961,7 +1961,6 @@
 		D2704D85EC2A7D0745423F3CF81A961B /* opencl_svm_20.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = opencl_svm_20.hpp; path = opencv2.framework/Versions/A/Headers/core/opencl/runtime/opencl_svm_20.hpp; sourceTree = "<group>"; };
 		D2AFE91BC4A24FB7C082A5748191A29F /* Do.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Do.swift; path = RxSwift/Observables/Do.swift; sourceTree = "<group>"; };
 		D2CB2386E02A6DA8459ECF2B139AF467 /* _RX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _RX.m; path = RxCocoa/Runtime/_RX.m; sourceTree = "<group>"; };
-		D34C963F03F4F4DA28AA67ACD0C025FC /* OpenCVWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
 		D363B5F126D876D82EFA0096129F6FD4 /* _RX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _RX.h; path = RxCocoa/Runtime/include/_RX.h; sourceTree = "<group>"; };
 		D3B6A5BF94E4B918E75E2BC0D5E113BC /* imgcodecs.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = imgcodecs.hpp; path = opencv2.framework/Versions/A/Headers/imgcodecs/imgcodecs.hpp; sourceTree = "<group>"; };
 		D42001BA541C34AAC4B65990A43990E3 /* cv_cpu_dispatch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cv_cpu_dispatch.h; path = opencv2.framework/Versions/A/Headers/core/cv_cpu_dispatch.h; sourceTree = "<group>"; };
@@ -2753,11 +2752,10 @@
 		2E56F595BFA6B731A7B2F048883BB68E /* Objc */ = {
 			isa = PBXGroup;
 			children = (
-				11534A981086ED683E86F5371497B14F /* ObjcMapper.h */,
+				AD70CC6C29A6147400760157 /* ObjcMapper.h */,
 				AD646C5729A5F4020026DD41 /* ObjcMapper.mm */,
 				AD646C5829A5F4020026DD41 /* OpenCVWrapper.mm */,
-				D34C963F03F4F4DA28AA67ACD0C025FC /* OpenCVWrapper.h */,
-				AD70CC6B29A60E0800760157 /* DeepmediFaceKit-Bridging-Header.h */,
+				AD70CC6E29A6147E00760157 /* OpenCVWrapper.h */,
 			);
 			name = Objc;
 			path = DeepmediFaceKit/Classes/Objc;
@@ -3985,8 +3983,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DD752D82E060FDAF83129DAF8B575F7 /* DeepmediFaceKit-umbrella.h in Headers */,
-				83D38920E27BC17311BDB84FAD8B90AC /* ObjcMapper.h in Headers */,
-				FA11C5DC2B2AAD66D16E6DBC35CF0887 /* OpenCVWrapper.h in Headers */,
+				AD70CC6F29A6147E00760157 /* OpenCVWrapper.h in Headers */,
+				AD70CC6D29A6147400760157 /* ObjcMapper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
