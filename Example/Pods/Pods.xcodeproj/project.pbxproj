@@ -1813,6 +1813,7 @@
 		AD646C5729A5F4020026DD41 /* ObjcMapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ObjcMapper.mm; path = ../../Objc/ObjcMapper.mm; sourceTree = "<group>"; };
 		AD646C5829A5F4020026DD41 /* OpenCVWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OpenCVWrapper.mm; path = ../../Objc/OpenCVWrapper.mm; sourceTree = "<group>"; };
 		AD69E082D5F7F76A6905B6250859F773 /* AsSingle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsSingle.swift; path = RxSwift/Observables/AsSingle.swift; sourceTree = "<group>"; };
+		AD70CC6B29A60E0800760157 /* DeepmediFaceKit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeepmediFaceKit-Bridging-Header.h"; sourceTree = "<group>"; };
 		ADAAF2D5B3C5F77B45D061D0D4D003E1 /* Zip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Zip.swift; path = RxSwift/Observables/Zip.swift; sourceTree = "<group>"; };
 		ADCCAD8623510C47166F35E5D7FB8F23 /* DelegateProxyType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DelegateProxyType.swift; path = RxCocoa/Common/DelegateProxyType.swift; sourceTree = "<group>"; };
 		ADDEEA94EE08AD301A50D072BF23FBF6 /* DistinctUntilChanged.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DistinctUntilChanged.swift; path = RxSwift/Observables/DistinctUntilChanged.swift; sourceTree = "<group>"; };
@@ -2756,6 +2757,7 @@
 				AD646C5729A5F4020026DD41 /* ObjcMapper.mm */,
 				AD646C5829A5F4020026DD41 /* OpenCVWrapper.mm */,
 				D34C963F03F4F4DA28AA67ACD0C025FC /* OpenCVWrapper.h */,
+				AD70CC6B29A60E0800760157 /* DeepmediFaceKit-Bridging-Header.h */,
 			);
 			name = Objc;
 			path = DeepmediFaceKit/Classes/Objc;

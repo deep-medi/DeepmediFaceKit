@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DeepmediFaceKit'
-  s.version          = '0.5.1'
+  s.version          = '0.5.2'
   s.summary          = 'Framework for measurement after face recognition'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '13.0'
 
 #  s.source_files = 'DeepmediFaceKit','DeepmediFaceKit/Classes/**/*.{h,m,swift}'
-  s.source_files = 'DeepmediFaceKit','DeepmediFaceKit/Classes/**/*.h','DeepmediFaceKit/Classes/**/*.{swift}', 'DeepmediFaceKit/Classes/*.{h,mm}'
+  s.source_files = 'DeepmediFaceKit','DeepmediFaceKit/Classes/**/*.{h,swift}', 'DeepmediFaceKit/Objc/*.{h,mm}'
   
   s.swift_versions = '5.0'
   s.static_framework = true
@@ -39,7 +39,7 @@ TODO: Add long description of the pod here.
   
   # s.resource_bundles = {
   #   'DeepmediFaceKit' => ['DeepmediFaceKit/Assets/*.png']
-  # }
+  # }₩
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
