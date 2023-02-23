@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     let captureDevice = AVCaptureDevice(uniqueID: "Capture")
     
     let measurement = MeasurementObject()
-    let service = Service()
+    let header = Header()
     let camera = CameraObject()
     
     let faceDetetion = FaceDetection()
@@ -45,7 +45,7 @@ class ViewController: UIViewController {
         camera.initalized(session: session, captureDevice: captureDevice)
         camera.setup(delegate: faceDetetion)
         
-        let signature = service.makeSignature(method: .post, uri: "", secretKey: "", apiKey: "")
+        let header = header.v2Header(method: .post, uri: "", secretKey: "", apiKey: "")
         
         self.setupUI()
     }
