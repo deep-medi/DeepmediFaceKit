@@ -8,7 +8,7 @@
 import Foundation
 import Alamofire
 
-open class Header: NSObject {
+public class Header: NSObject {
     public enum method: String {
         case post = "POST", get = "GET", put = "PUT", delete = "DELETE"
     }
