@@ -15,20 +15,12 @@ import CoreMotion
 import Then
 
 public class FaceDetection: NSObject, FaceDetectionArea {
-    
     private let bag = DisposeBag()
     private let makeDocument = Document(),
                 rgbModel = RGBData()
     private let dataModel = DataModel.shared,
                 model = Model.shared
     private let viewModel = ViewModel()
-    
-    public var previewLayer = AVCaptureVideoPreviewLayer()
-    
-    public var detectionArea = UIView().then { v in
-        v.layer.borderColor = UIColor.red.cgColor
-        v.layer.borderWidth = 2
-    }
     
     private var lastFrame: CMSampleBuffer?,
                 gCIContext: CIContext?,
@@ -42,7 +34,9 @@ public class FaceDetection: NSObject, FaceDetectionArea {
     
     private var detectTimer = Timer()
     
-    private let detectFaceAreaView = FaceAreaView(strokeColor: .white, lineWidth: 11.8) // 얼굴을 인식하는 위치
+    public var previewLayer = AVCaptureVideoPreviewLayer()
+    
+    public var detectionArea = UIView()
     
     public func finishedMeasurement(_ isSuccess: @escaping((Bool, URL?) -> ())) {
         let completion = self.viewModel.completeMeasurement
@@ -176,23 +170,22 @@ extension FaceDetection: AVCaptureVideoDataOutputSampleBufferDelegate { // 카�
                     y = (face.frame.origin.y + face.frame.size.height * 0.2),
                     w = (face.frame.size.width) * 0.4,
                     h = (face.frame.size.height) * 0.62 // 얼굴인식 위치 설정
-                
-                let normalizedRect = CGRect(x: (x / width) * 1.3,
-                                            y: y / height,
+
+                let normalizedRect = CGRect(x: x / width,
+                                            y: (y / height) * 1.3,
                                             width: w / width,
                                             height: h / height)
                 
                 let standardizedRect = self.previewLayer.layerRectConverted(fromMetadataOutputRect: normalizedRect).standardized
                 
-                if ((self.detectionArea.frame.minX * 0.8) <= standardizedRect.minX),
-                   ((self.detectionArea.frame.maxX * 1.2) >= standardizedRect.maxX),
-                   ((self.detectionArea.frame.minY * 0.8) <= standardizedRect.minY),
-                   ((self.detectionArea.frame.maxY * 1.2) >= standardizedRect.maxY) {
+                if (self.detectionArea.frame.minX <= standardizedRect.minX) &&
+                   (self.detectionArea.frame.maxX >= standardizedRect.maxX) &&
+                   (self.detectionArea.frame.minY <= standardizedRect.minY) &&
+                   (self.detectionArea.frame.maxY >= standardizedRect.maxY) {
                     
-//                    self.detectionArea.layer.strokeColor = UIColor.white.cgColor
                     self.cropFaceRect = CGRect(x: x, y: y, width: w, height: h).integral // 얼굴인식 위치 계산
+                    
                 } else {
-//                    self.detectionArea.layer.strokeColor = UIColor.red.cgColor
                     self.flag = false
                     self.cropFaceRect = nil
                 }

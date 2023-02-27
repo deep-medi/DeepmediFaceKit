@@ -15,10 +15,10 @@ public class CameraObject: NSObject {
         self.cameraSetup.initModel(session: session, captureDevice: captureDevice)
     }
     
-    public func setup(delegate viewController: AVCaptureVideoDataOutputSampleBufferDelegate) {
+    public func setup(delegate object: AVCaptureVideoDataOutputSampleBufferDelegate) {
         self.cameraSetup.startDetection()
         self.cameraSetup.setupCameraFormat(30.0)
-        self.cameraSetup.setupVideoOutput(viewController)
+        self.cameraSetup.setupVideoOutput(object)
     }
     
     public func previewLayer() -> AVCaptureVideoPreviewLayer {
