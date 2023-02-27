@@ -11,7 +11,7 @@ public class FaceAreaView: UIView {
     
     private let borderLayer = CAShapeLayer()
     
-    init(pattern: [NSNumber]? = nil, strokeColor: UIColor? = .white, lineWidth: CGFloat? = nil) {
+    public init(pattern: [NSNumber]? = nil, strokeColor: UIColor? = .white, lineWidth: CGFloat? = nil) {
         super.init(frame: .zero)
         
         self.backgroundColor = .clear
