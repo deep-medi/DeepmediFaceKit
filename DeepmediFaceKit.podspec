@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DeepmediFaceKit'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'Framework for measurement after face recognition'
 
 # This description is used to generate tags and improve search results.
@@ -35,7 +35,6 @@ TODO: Add long description of the pod here.
   s.static_framework = true
   s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  
   # s.resource_bundles = {
   #   'DeepmediFaceKit' => ['DeepmediFaceKit/Assets/*.png']
   # }₩
@@ -48,7 +47,7 @@ TODO: Add long description of the pod here.
   s.dependency 'SnapKit', '~> 5.0.0'
   s.dependency 'GoogleMLKit/FaceDetection'
   s.dependency 'Alamofire', '~> 5.2.0'
-  s.dependency 'OpenCV'
+  s.dependency 'OpenCV', '~> 4.4.0'
   s.dependency 'RxSwift', '~> 6.0.0'
   s.dependency 'RxCocoa', '~> 6.0.0'
 

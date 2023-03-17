@@ -106,10 +106,6 @@ class ViewController: UIViewController {
         faceDetection.numberOfData { count in
             print("count: \(count)")
         }
-        
-        faceDetection.filteredData { filtered in
-            print("filtered: \(filtered)")
-        }
     }
     
     func setupUI() {

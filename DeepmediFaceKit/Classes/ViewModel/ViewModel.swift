@@ -11,6 +11,5 @@ class ViewModel {
     
     let completeMeasurement = BehaviorSubject(value: (false, URL(string: "")))
     let numberOfData = PublishSubject<Int>()
-    let filteredData = PublishSubject<Double>()
     let secondRemaining = PublishSubject<Int>()
 }

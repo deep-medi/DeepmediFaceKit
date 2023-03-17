@@ -73,10 +73,9 @@ class CameraSetup: NSObject {
     }
   }
   
-  func setUpCatureDevice(_ framePerSec: Double) {
+  func setUpCatureDevice() {
     try! self.captureDevice?.lockForConfiguration()
-    let cmTime = CMTimeMake(value: 1, timescale: Int32(framePerSec))// 10/600 초
-    captureDevice?.setExposureModeCustom(duration: cmTime, iso: self.customISO ?? 30, completionHandler: nil)
+      captureDevice?.exposureMode = .locked
     captureDevice?.unlockForConfiguration()
   }
   
