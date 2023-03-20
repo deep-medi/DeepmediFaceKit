@@ -37,7 +37,7 @@ public class FaceDetection: NSObject, FaceDetectionArea {
     public var previewLayer = AVCaptureVideoPreviewLayer()
     
     public var detectionArea = UIView()
-    
+        
     public func finishedMeasurement(_ isSuccess: @escaping((Bool, URL?) -> ())) {
         let completion = self.viewModel.completeMeasurement
         completion
@@ -64,16 +64,6 @@ public class FaceDetection: NSObject, FaceDetectionArea {
             .asDriver(onErrorJustReturn: 0)
             .drive(onNext: { count  in
                 com(count)
-            })
-            .disposed(by: bag)
-    }
-    
-    public func filteredData(_ filtered: @escaping((Double) -> ())) {
-        let filteredData = self.viewModel.filteredData
-        filteredData
-            .asDriver(onErrorJustReturn: 0.0)
-            .drive(onNext: { data in
-                filtered(data)
             })
             .disposed(by: bag)
     }
@@ -154,13 +144,17 @@ extension FaceDetection: AVCaptureVideoDataOutputSampleBufferDelegate { // 카�
             faces = try faceDetector.results(in: image)
         } catch let error {
             print("Failed to detect faces with error: \(error.localizedDescription).")
-            self.updatePreviewOverlayViewWithLastFrame()
             return
         }
         
         self.updatePreviewOverlayViewWithLastFrame()
         
-        guard !faces.isEmpty else { return print("On-Device face detector returned no results.") }
+        guard !faces.isEmpty else {
+            self.flag = false
+            self.cropFaceRect = nil
+            print("On-Device face detector returned no results.")
+            return
+        }
         
         DispatchQueue.main.sync {
             
@@ -172,7 +166,7 @@ extension FaceDetection: AVCaptureVideoDataOutputSampleBufferDelegate { // 카�
                     h = (face.frame.size.height) * 0.62 // 얼굴인식 위치 설정
 
                 let normalizedRect = CGRect(x: x / width,
-                                            y: (y / height) * 1.3,
+                                            y: y / height,
                                             width: w / width,
                                             height: h / height)
                 
@@ -184,7 +178,7 @@ extension FaceDetection: AVCaptureVideoDataOutputSampleBufferDelegate { // 카�
                    (self.detectionArea.frame.maxY >= standardizedRect.maxY) {
                     
                     self.cropFaceRect = CGRect(x: x, y: y, width: w, height: h).integral // 얼굴인식 위치 계산
-                    
+                    self.addContours(for: face, width: width, height: height)
                 } else {
                     self.flag = false
                     self.cropFaceRect = nil
@@ -195,22 +189,15 @@ extension FaceDetection: AVCaptureVideoDataOutputSampleBufferDelegate { // 카�
     
     private func updatePreviewOverlayViewWithLastFrame() {
         DispatchQueue.main.sync {
-            guard let lastFrame = lastFrame,
-                  let imageBuffer = CMSampleBufferGetImageBuffer(lastFrame) else { return }
-            
-            self.updatePreviewOverlayViewWithImageBuffer(imageBuffer)
+            guard lastFrame != nil else { fatalError("sample buffer error") }
+            self.updatePreviewOverlayViewWithImageBuffer()
         }
     }
     
-    private func updatePreviewOverlayViewWithImageBuffer(_ imageBuffer: CVImageBuffer?) {
-        if let faceRect = self.cropFaceRect {
-            guard let lastFrame = self.lastFrame,
-                  let faceCropBuffer = self.croppedSampleBuffer(lastFrame, with: faceRect) else { return }
-            
-            self.extractRGBFromDetectFace(sampleBuffer: faceCropBuffer) //얼굴이미지에서 rgb데이터 추출을 위한
-            
-                /// 데이터 수집 완료, 수집개수로만 처리시 error 발생 ; 방지를 위해 flag사용
-            if self.flag && (self.dataModel.gData.count == self.model.measurementTime * self.preparingSec) {
+    private func updatePreviewOverlayViewWithImageBuffer() {
+        if self.cropFaceRect != nil {
+            if (self.dataModel.gData.count == self.preparingSec * 30), (self.flag) {
+                CameraObject().AELock()
                 self.collectDatas()
             }
         } else {
@@ -229,48 +216,176 @@ extension FaceDetection: AVCaptureVideoDataOutputSampleBufferDelegate { // 카�
               let b = faceRGB[2] as? Float else { return print("objc rgb casting error") }
         
         let timeStamp = (Date().timeIntervalSince1970 * 1000000).rounded()
-        let numberOfData = self.viewModel.numberOfData,
-            filteredData = self.viewModel.filteredData
+        let numberOfData = self.viewModel.numberOfData
         
         self.rgbModel.collectRGB(timeStamp: timeStamp, r: r, g: g, b: b) //rgb데이터 수집
         numberOfData.onNext(self.dataModel.gData.count)
-        filteredData.onNext(self.filter(g: self.dataModel.gData))
+    }
+  
+    private func addContours(
+        for face: Face,
+        width: CGFloat,
+        height: CGFloat
+    ) {
+        if let rect = self.cropFaceRect,
+           let lastFrame = self.lastFrame,
+           let faceContour = face.contour(ofType: .face),
+           let leftEyeContour = face.contour(ofType: .leftEye),
+           let leftEyeBrowTopContour = face.contour(ofType: .leftEyebrowTop),
+           let leftEyeBrowBottomContour = face.contour(ofType: .leftEyebrowBottom),
+           let rightEyeContour = face.contour(ofType: .rightEye),
+           let rightEyeBrowTopContour = face.contour(ofType: .rightEyebrowTop),
+           let rightEyeBrowBottomContour = face.contour(ofType: .rightEyebrowBottom),
+           let upperLipContour = face.contour(ofType: .upperLipTop),
+           let lowerLipContour = face.contour(ofType: .lowerLipBottom),
+           let faceCropBuffer = self.croppedSampleBuffer(lastFrame, with: rect),
+           let cropImage = OpenCVWrapper.converting(faceCropBuffer) {
+            
+            var facePath = UIBezierPath().then { p in
+                p.lineWidth = 2
+            }
+            var leftEyePath = UIBezierPath().then { p in
+                p.lineWidth = 2
+            }
+            var rightEyePath = UIBezierPath().then { p in
+                p.lineWidth = 2
+            }
+            var leftEyeBrowPath = UIBezierPath().then { p in
+                p.lineWidth = 2
+            }
+            var rightEyeBrowPath = UIBezierPath().then { p in
+                p.lineWidth = 2
+            }
+            var lipsPath = UIBezierPath().then { p in
+                p.lineWidth = 2
+            }
+            
+            draw(previewLayer: previewLayer,
+                 facePoints: faceContour.points,
+                 leftEyePoints: leftEyeContour.points,
+                 rightEyePoints: rightEyeContour.points,
+                 leftEyeBrowPoints: leftEyeBrowTopContour.points + leftEyeBrowBottomContour.points ,
+                 rightEyeBrowPoints: rightEyeBrowTopContour.points + rightEyeBrowBottomContour.points,
+                 lipsPoints: upperLipContour.points + lowerLipContour.points,
+                 cropImage: cropImage,
+                 width: width,
+                 height: height)
+            
+            func draw(previewLayer: AVCaptureVideoPreviewLayer?,
+                      facePoints: [VisionPoint],
+                      leftEyePoints: [VisionPoint],
+                      rightEyePoints: [VisionPoint],
+                      leftEyeBrowPoints: [VisionPoint],
+                      rightEyeBrowPoints: [VisionPoint],
+                      lipsPoints: [VisionPoint],
+                      cropImage: UIImage?,
+                      width: CGFloat,
+                      height: CGFloat) {
+                
+                facePath.lineJoinStyle = .miter
+                
+                guard let previewLayer = previewLayer,
+                      let cropImage = cropImage else { return print("crop image return") }
+                    
+                gridPath(previewLayer: previewLayer, width: width, height: height, points: facePoints, path: &facePath)
+                
+                gridPath(previewLayer: previewLayer, width: width, height: height, points: leftEyePoints, path: &leftEyePath)
+                gridPath(previewLayer: previewLayer, width: width, height: height, points: rightEyePoints, path: &rightEyePath)
+                
+                gridPath(previewLayer: previewLayer, width: width, height: height, points: leftEyeBrowPoints, path: &leftEyeBrowPath)
+                gridPath(previewLayer: previewLayer, width: width, height: height, points: rightEyeBrowPoints, path: &rightEyeBrowPath)
+                
+                gridPath(previewLayer: previewLayer, width: width, height: height, points: lipsPoints, path: &lipsPath)
+                
+                facePath.append(leftEyePath)
+                facePath.append(rightEyePath)
+                facePath.append(leftEyeBrowPath)
+                facePath.append(rightEyeBrowPath)
+                facePath.append(lipsPath)
+                
+                guard let faceCropImage = getMaskedImage(picture: cropImage, cgPath: facePath.cgPath),
+                      let sampleBuffer = faceCropImage.createCMSampleBuffer() else { fatalError("face crop image return") }
+                
+                self.extractRGBFromDetectFace(sampleBuffer: sampleBuffer)
+            }
+        }
     }
     
-    private func filter(g: [Float]) -> Double {
-        let a = [1.0, -7.30103128, 23.42566938, -43.14485924, 49.89209273, -37.09502293, 17.31790014, -4.64159393, 0.54684548]
-        let b = [0.00013253, 0.0, -0.00053013, 0.0, 0.0007952, 0.0, -0.00053013, 0.0, 0.00013253]
+    private func normalizedPoint(
+      fromVisionPoint point: VisionPoint,
+      width: CGFloat,
+      height: CGFloat
+    ) -> CGPoint {
+      let cgPoint = CGPoint(x: point.x, y: point.y)
+      var normalizedPoint = CGPoint(x: cgPoint.x / width, y: cgPoint.y / height)
+      normalizedPoint = previewLayer.layerPointConverted(fromCaptureDevicePoint: normalizedPoint)
+      return normalizedPoint
+    }
+    
+    private func getMaskedImage(picture: UIImage, cgPath: CGPath) -> UIImage? {
+        let picture = flipImage(picture) ?? picture
+        let imageLayer = CALayer()
+        imageLayer.frame = CGRect(origin: .zero, size: picture.size)
+        imageLayer.contents = picture.cgImage
+        let maskLayer = CAShapeLayer()
+        let maskPath = cgPath.resized(to: CGRect(origin: .zero, size: picture.size))
+        maskLayer.path = maskPath
+        maskLayer.fillRule = .evenOdd
+        imageLayer.mask = maskLayer
         
-        var x: [Double] = [0, 0, 0, 0, 0, 0, 0, 0, 0]
-        var y: [Double] = [0, 0, 0, 0, 0, 0, 0, 0, 0]
-        var result = Double()
-        
-        for i in g.indices {
-            x.insert(Double(g[i]), at: 0)
-            
-            result = ((b[0] * x[0])
-                      + (b[1] * x[1])
-                      + (b[2] * x[2])
-                      + (b[3] * x[3])
-                      + (b[4] * x[4])
-                      + (b[5] * x[5])
-                      + (b[6] * x[6])
-                      + (b[7] * x[7])
-                      + (b[8] * x[8])
-                      - (a[1] * y[0])
-                      - (a[2] * y[1])
-                      - (a[3] * y[2])
-                      - (a[4] * y[3])
-                      - (a[5] * y[4])
-                      - (a[6] * y[5])
-                      - (a[7] * y[6])
-                      - (a[8] * y[7]))
-            
-            y.insert(result, at: 0)
-            x.removeLast()
-            y.removeLast()
+        UIGraphicsBeginImageContext(picture.size)
+        defer { UIGraphicsEndImageContext() }
+
+        if let context = UIGraphicsGetCurrentContext() {
+            context.addPath(maskPath ?? cgPath)
+            context.clip()
+            imageLayer.render(in: context)
+            let newImage = UIGraphicsGetImageFromCurrentImageContext()
+
+            return newImage
         }
-        return result
+        return nil
+    }
+    
+    private func normalizedPoint(
+        previewLayer: AVCaptureVideoPreviewLayer,
+        fromVisionPoint point: VisionPoint,
+        width: CGFloat,
+        height: CGFloat
+    ) -> CGPoint {
+        let cgPoint = CGPoint(x: point.x, y: point.y)
+        var normalizedPoint = CGPoint(x: cgPoint.x / width, y: cgPoint.y / height)
+        normalizedPoint = previewLayer.layerPointConverted(fromCaptureDevicePoint: normalizedPoint)
+        return normalizedPoint
+    }
+
+    private func gridPath(previewLayer: AVCaptureVideoPreviewLayer, width: CGFloat, height: CGFloat, points: [VisionPoint], path: inout UIBezierPath) {
+        for (i, point) in points.enumerated() {
+            let cgPoint = normalizedPoint(previewLayer: previewLayer,
+                                          fromVisionPoint: point,
+                                          width: width,
+                                          height: height)
+            if i == 0 {
+                path.move(to: CGPoint(x: cgPoint.x, y: cgPoint.y))
+            } else if i == points.count - 1 {
+                path.addLine(to: CGPoint(x: cgPoint.x, y: cgPoint.y))
+                path.close()
+                path.stroke()
+            } else {
+                path.addLine(to: CGPoint(x: cgPoint.x, y: cgPoint.y))
+            }
+        }
+    }
+
+    private func flipImage(_ image: UIImage) -> UIImage? {
+        UIGraphicsBeginImageContextWithOptions(image.size, false, image.scale)
+        let context = UIGraphicsGetCurrentContext()!
+        context.translateBy(x: image.size.width, y: image.size.height)
+        context.scaleBy(x: -image.scale, y: -image.scale)
+        context.draw(image.cgImage!, in: CGRect(origin:CGPoint.zero, size: image.size))
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return newImage
     }
     
         // MARK: ImageBuffer crop

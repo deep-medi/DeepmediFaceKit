@@ -21,6 +21,10 @@ public class CameraObject: NSObject {
         self.cameraSetup.setupVideoOutput(object)
     }
     
+    func AELock() {
+        self.cameraSetup.setUpCatureDevice()
+    }
+    
     public func previewLayer() -> AVCaptureVideoPreviewLayer {
         return self.cameraSetup.usePreViewLayer()
     }
