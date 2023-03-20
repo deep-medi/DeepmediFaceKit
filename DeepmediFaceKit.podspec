@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DeepmediFaceKit'
-  s.version          = '1.0.1'
+  s.version          = '2.0.0'
   s.summary          = 'Framework for measurement after face recognition'
 
 # This description is used to generate tags and improve search results.
@@ -17,9 +17,9 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+#  s.description      = <<-DESC
+#TODO: Add long description of the pod here.
+#                       DESC
 
   s.homepage         = 'https://github.com/deep-medi/DeepmediFaceKit'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
@@ -47,7 +47,7 @@ TODO: Add long description of the pod here.
   s.dependency 'SnapKit', '~> 5.0.0'
   s.dependency 'GoogleMLKit/FaceDetection'
   s.dependency 'Alamofire', '~> 5.2.0'
-  s.dependency 'OpenCV', '~> 4.4.0'
+  s.dependency 'OpenCV'
   s.dependency 'RxSwift', '~> 6.0.0'
   s.dependency 'RxCocoa', '~> 6.0.0'
 
