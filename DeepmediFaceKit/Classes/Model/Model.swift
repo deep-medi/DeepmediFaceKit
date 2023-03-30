@@ -6,15 +6,20 @@
 //
 
 import UIKit
+import AVKit
 
 class Model {
     static let shared = Model()
     
-    var measurementAccTime = 10
-    var measurementTime: Int {
+    var useFaceRecognitionArea: Bool
+    
+    var faceRecognitionAreaView: UIView
+    var previewLayer: AVCaptureVideoPreviewLayer
+        
+    var measurementTime: Double {
         didSet {
-            if self.measurementTime < 30 {
-                self.measurementTime = 30
+            if self.measurementTime < 30.0 {
+                self.measurementTime = 30.0
             }
         }
     }
@@ -33,12 +38,17 @@ class Model {
     }
     
     init() {
+        self.faceRecognitionAreaView = UIView()
+        self.previewLayer = AVCaptureVideoPreviewLayer()
+        
+        self.useFaceRecognitionArea = true
+        
         self.age = 20
         self.gender = 0
         self.height = 160
         self.weight = 60
         
-        self.measurementTime = 30
+        self.measurementTime = 30.0
         self.windowSec = 15
         self.overlappingSec = 2
     }

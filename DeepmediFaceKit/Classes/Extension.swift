@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import AVKit
 
 extension UIImage {
     enum type: String {
@@ -98,7 +99,9 @@ extension UIImage {
 }
 
 extension CGPath {
-    func resized(to rect: CGRect) -> CGPath? {
+    func resized(
+        to rect: CGRect
+    ) -> CGPath? {
         let boundingBox = self.boundingBox
         let boundingBoxAspectRatio = boundingBox.width / boundingBox.height
         let viewAspectRatio = rect.width / rect.height

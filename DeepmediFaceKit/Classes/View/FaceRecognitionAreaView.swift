@@ -7,11 +7,15 @@
 
 import UIKit
 
-public class FaceAreaView: UIView {
+public class FaceRecognitionAreaView: UIView {
     
     private let borderLayer = CAShapeLayer()
     
-    public init(pattern: [NSNumber]? = nil, strokeColor: UIColor? = .white, lineWidth: CGFloat? = nil) {
+    public init(
+        pattern: [NSNumber]? = nil,
+        strokeColor: UIColor? = .white,
+        lineWidth: CGFloat? = nil
+    ) {
         super.init(frame: .zero)
         
         self.backgroundColor = .clear
@@ -25,7 +29,9 @@ public class FaceAreaView: UIView {
         layer.addSublayer(self.borderLayer)
     }
     
-    public override func draw(_ rect: CGRect) {
+    public override func draw(
+        _ rect: CGRect
+    ) {
         let path = UIBezierPath(roundedRect: rect,cornerRadius: rect.width / 2).cgPath
         self.borderLayer.path = path
     }

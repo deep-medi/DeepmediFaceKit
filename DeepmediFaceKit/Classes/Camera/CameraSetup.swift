@@ -13,7 +13,10 @@ class CameraSetup: NSObject {
   private var customISO: Float? = 30
   private let device = UIDevice.current
   
-  func initModel(session: AVCaptureSession, captureDevice: AVCaptureDevice?) {
+  func initModel(
+    session: AVCaptureSession,
+    captureDevice: AVCaptureDevice?
+  ) {
     self.session = session
     self.captureDevice = captureDevice
   }
@@ -42,8 +45,9 @@ class CameraSetup: NSObject {
     }
   }
   
-  func setupCameraFormat(_ framePerSec: Double) {
-
+  func setupCameraFormat(
+    _ framePerSec: Double
+  ) {
     var currentFormat: AVCaptureDevice.Format?,
         tempFramePerSec = Double()
         
@@ -89,7 +93,9 @@ class CameraSetup: NSObject {
 //    self.captureDevice?.unlockForConfiguration()
 //  }
   
-  func setupVideoOutput(_ delegate: AVCaptureVideoDataOutputSampleBufferDelegate) {
+  func setupVideoOutput(
+    _ delegate: AVCaptureVideoDataOutputSampleBufferDelegate
+  ) {
     let videoOutput = AVCaptureVideoDataOutput()
     let captureQueue = DispatchQueue(label: "catpureQueue")
     
