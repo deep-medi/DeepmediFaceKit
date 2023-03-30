@@ -8,8 +8,8 @@
 import UIKit
 import AVKit
 
-protocol FaceDetectionArea {
-    var detectionArea: UIView { get set }
+public protocol FaceRecognitionProtocol {
+    var faceRecognitionAreaView: UIView { get set }
     var previewLayer: AVCaptureVideoPreviewLayer { get }
 }
 

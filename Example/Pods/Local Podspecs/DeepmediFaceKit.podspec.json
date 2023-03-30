@@ -1,8 +1,7 @@
 {
   "name": "DeepmediFaceKit",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "summary": "Framework for measurement after face recognition",
-  "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/deep-medi/DeepmediFaceKit",
   "license": {
     "type": "BSD",
@@ -13,7 +12,7 @@
   },
   "source": {
     "git": "https://github.com/deep-medi/DeepmediFaceKit.git",
-    "tag": "1.0.0"
+    "tag": "2.0.0"
   },
   "platforms": {
     "ios": "13.0"
