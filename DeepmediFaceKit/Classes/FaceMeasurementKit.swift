@@ -126,7 +126,6 @@ extension FaceMeasureKit: AVCaptureVideoDataOutputSampleBufferDelegate { // ì¹´ë
         from connection: AVCaptureConnection
     ) {
         guard let previewLayer = self.model.previewLayer,
-              let faceRecognitionAreaView = self.model.faceRecognitionAreaView,
               let cvimgRef: CVImageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else {
             print("cvimg ref")
             return
@@ -134,8 +133,12 @@ extension FaceMeasureKit: AVCaptureVideoDataOutputSampleBufferDelegate { // ì¹´ë
 
         CVPixelBufferLockBaseAddress(cvimgRef, CVPixelBufferLockFlags(rawValue: 0))
 
+        if self.model.useFaceRecognitionArea,
+           let faceRecognitionAreaView = self.model.faceRecognitionAreaView {
+            self.faceRecognitionAreaView = faceRecognitionAreaView
+        }
+        
         self.previewLayer = previewLayer
-        self.faceRecognitionAreaView = faceRecognitionAreaView
         self.lastFrame = sampleBuffer
 
         let orientation = self.imageOrientation(fromDevicePosition: .front)
