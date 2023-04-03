@@ -14,6 +14,15 @@ import Alamofire
 import DeepmediFaceKit
 
 class ViewController: UIViewController, FaceRecognitionProtocol {
+    var faceRecognitionAreaView: UIView = FaceRecognitionAreaView(
+        pattern: [24, 10],
+        strokeColor: .white,
+        lineWidth: 11.8
+    )
+    
+    
+    var previewLayer = AVCaptureVideoPreviewLayer()
+    
     
     let session = AVCaptureSession()
     let captureDevice = AVCaptureDevice(uniqueID: "Capture")
@@ -24,11 +33,6 @@ class ViewController: UIViewController, FaceRecognitionProtocol {
     let faceMeasureKit = FaceMeasureKit()
 
     let preview = CameraPreview()
-    let faceRecognitionAreaView = FaceRecognitionAreaView(
-        pattern: [24, 10],
-        strokeColor: .white,
-        lineWidth: 11.8
-    )
 
     let startButton = UIButton().then { b in
         b.setTitle("Start", for: .normal)

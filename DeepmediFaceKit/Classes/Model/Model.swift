@@ -13,8 +13,8 @@ class Model {
     
     var useFaceRecognitionArea: Bool
     
-    var faceRecognitionAreaView: UIView
-    var previewLayer: AVCaptureVideoPreviewLayer
+    var faceRecognitionAreaView: UIView?
+    var previewLayer: AVCaptureVideoPreviewLayer?
         
     var measurementTime: Double {
         didSet {

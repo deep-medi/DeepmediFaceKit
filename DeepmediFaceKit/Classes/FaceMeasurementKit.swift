@@ -78,8 +78,6 @@ public class FaceMeasureKit: NSObject {
     public override init() {
         super.init()
         UIApplication.shared.isIdleTimerDisabled = true //측정중 화면 자동잠금을 막기 위해 설정
-        self.previewLayer = self.model.previewLayer
-        self.faceRecognitionAreaView = self.model.faceRecognitionAreaView
         self.sec = self.model.measurementTime
         self.preparingSec = 3
         if let openCVstr = OpenCVWrapper.openCVVersionString() {
@@ -127,10 +125,17 @@ extension FaceMeasureKit: AVCaptureVideoDataOutputSampleBufferDelegate { // 카�
         didOutput sampleBuffer: CMSampleBuffer,
         from connection: AVCaptureConnection
     ) {
-        guard let cvimgRef: CVImageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else { fatalError("cvimg ref") }
+        guard let previewLayer = self.model.previewLayer,
+              let faceRecognitionAreaView = self.model.faceRecognitionAreaView,
+              let cvimgRef: CVImageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else {
+            print("cvimg ref")
+            return
+        }
 
         CVPixelBufferLockBaseAddress(cvimgRef, CVPixelBufferLockFlags(rawValue: 0))
 
+        self.previewLayer = previewLayer
+        self.faceRecognitionAreaView = faceRecognitionAreaView
         self.lastFrame = sampleBuffer
 
         let orientation = self.imageOrientation(fromDevicePosition: .front)
