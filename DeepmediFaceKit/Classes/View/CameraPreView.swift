@@ -9,6 +9,8 @@ import AVKit
 
 public class CameraPreview: UIView {
     
+    private let model = Model.shared
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
@@ -17,9 +19,11 @@ public class CameraPreview: UIView {
         layer: AVCaptureVideoPreviewLayer,
         bound: CGRect
     ) {
+        self.model.previewLayer = layer
         self.layer.addSublayer(layer)
         layer.videoGravity = .resizeAspectFill
         layer.frame = bound
+        print("layer: \(layer.frame)")
     }
     
     required init?(coder: NSCoder) {

@@ -89,12 +89,11 @@ public class FaceMeasureKit: NSObject {
     }
     
     open func startSession() {
-        DispatchQueue.main.async {
-            self.previewLayer = self.cameraSetup.usePreViewLayer()
+        //        DispatchQueue.main.async {
             self.measurementTime = self.model.measurementTime
             self.preparingSec = 3
             self.cameraSetup.useSession().startRunning()
-        }
+        //        }
     }
     
     open func stopSession() {
@@ -249,10 +248,14 @@ extension FaceMeasureKit: AVCaptureVideoDataOutputSampleBufferDelegate { // ì¹´ë
         normalizedRect: CGRect,
         faceRecognitionAreaView: UIView
     ) {
+        print("preview layer: \(self.previewLayer.frame)")
         let standardizedRect = self.previewLayer.layerRectConverted(
             fromMetadataOutputRect: normalizedRect
         )
             .standardized
+        print("view: \(faceRecognitionAreaView.frame)")
+        print("rect: \(standardizedRect)")
+        print("====================================")
         
         if (faceRecognitionAreaView.frame.minX <= standardizedRect.minX) &&
             (faceRecognitionAreaView.frame.maxX >= standardizedRect.maxX) &&

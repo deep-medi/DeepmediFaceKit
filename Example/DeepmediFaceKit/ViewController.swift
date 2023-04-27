@@ -63,7 +63,6 @@ class ViewController: UIViewController, FaceRecognitionProtocol {
         )
 
         faceMeasureKitModel.injectingRecognitionAreaView(faceRecognitionAreaView)
-//        faceMeasureKitModel.previewLayer(previewLayer)
     }
 
     @objc func start() {

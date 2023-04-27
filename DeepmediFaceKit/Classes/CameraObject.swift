@@ -10,6 +10,7 @@ import AVKit
 
 public class CameraObject: NSObject {
     let cameraSetup = CameraSetup.shared
+    let model = Model.shared
     
     public func initalized(
         delegate object: AVCaptureVideoDataOutputSampleBufferDelegate,
@@ -24,8 +25,4 @@ public class CameraObject: NSObject {
         self.cameraSetup.setupCameraFormat(30.0)
         self.cameraSetup.setupVideoOutput(object)
     }
-    
-//    public func previewLayer() -> AVCaptureVideoPreviewLayer {
-//        return self.cameraSetup.usePreViewLayer()
-//    }
 }
