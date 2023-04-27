@@ -3,10 +3,6 @@ import UIKit
 import AVKit
 
 public class FaceMeasureKitModel: NSObject {
-    public enum gender: Int {
-        case male = 0, female = 1
-    }
-    
     let model = Model.shared
     
     public override init() {
@@ -47,17 +43,5 @@ public class FaceMeasureKitModel: NSObject {
         _ time: Int?
     ) {
         self.model.overlappingSec = time ?? 2
-    }
-    
-    public func setUserInformation(
-        age: Int?,
-        gender: FaceMeasureKitModel.gender?,
-        height: Int?,
-        weight: Int?
-    ) {
-        self.model.age = age ?? 20
-        self.model.gender = gender?.rawValue ?? 0
-        self.model.height = height ?? 160
-        self.model.weight = weight ?? 60
     }
 }

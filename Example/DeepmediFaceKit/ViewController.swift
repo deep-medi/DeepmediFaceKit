@@ -20,20 +20,17 @@ class ViewController: UIViewController, FaceRecognitionProtocol {
         lineWidth: 11.8
     )
     
-    
     var previewLayer = AVCaptureVideoPreviewLayer()
-    
-    
     let session = AVCaptureSession()
     let captureDevice = AVCaptureDevice(uniqueID: "Capture")
 
-    let faceMeasureKitModel = FaceMeasureKitModel()
     let header = Header()
     let camera = CameraObject()
+    
     let faceMeasureKit = FaceMeasureKit()
+    let faceMeasureKitModel = FaceMeasureKitModel()
 
     let preview = CameraPreview()
-
     let startButton = UIButton().then { b in
         b.setTitle("Start", for: .normal)
         b.setTitleColor(.white, for: .normal)
@@ -42,31 +39,53 @@ class ViewController: UIViewController, FaceRecognitionProtocol {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        checkOutput()
+        completionMethod()
+        
+        camera.initalized(
+            delegate: faceMeasureKit,
+            session: session,
+            captureDevice: captureDevice
+        )
         faceMeasureKitModel.setMeasurementTime(30)
         faceMeasureKitModel.setWindowSecond(15)
         faceMeasureKitModel.setOverlappingSecond(2)
-        faceMeasureKitModel.setUserInformation(age: 20, gender: .male, height: 160, weight: 60)
         faceMeasureKitModel.willUseFaceRecognitionArea(true)
-
-        camera.initalized(session: session, captureDevice: captureDevice)
-        camera.setup(delegate: faceMeasureKit)
+        
+        previewLayer = AVCaptureVideoPreviewLayer(session: session)
 
         self.setupUI()
+    }
+    
+    override func viewDidLayoutSubviews() {
+        preview.setup(
+            layer: previewLayer,
+            bound: preview.bounds
+        )
+
+        faceMeasureKitModel.injectingRecognitionAreaView(faceRecognitionAreaView)
+//        faceMeasureKitModel.previewLayer(previewLayer)
     }
 
     @objc func start() {
         DispatchQueue.global(qos: .background).async {
-            self.session.startRunning()
+            self.faceMeasureKit.startSession()
         }
     }
 
-    func checkOutput() {
+    func completionMethod() {
+        faceMeasureKit.measurementCompleteRatio { ratio in
+            print("complete ratio: \(ratio)")
+        }
+
+        faceMeasureKit.timesLeft { second in
+            print("second: \(second)")
+        }
+        
         faceMeasureKit.finishedMeasurement { (successed, path) in
             if let path = path,
                successed {
                 DispatchQueue.global(qos: .background).async {
-                    self.session.stopRunning()
+                    self.faceMeasureKit.stopSession()
                 }
 
                 let offeredUri = "offered uri"
@@ -106,14 +125,6 @@ class ViewController: UIViewController, FaceRecognitionProtocol {
                 print("error")
             }
         }
-
-        faceMeasureKit.measurementCompleteRatio { completeRatio in
-            print("complete ratio: \(completeRatio)")
-        }
-
-        faceMeasureKit.timesLeft { second in
-            print("second: \(second)")
-        }
     }
 
     func setupUI() {
@@ -121,7 +132,6 @@ class ViewController: UIViewController, FaceRecognitionProtocol {
         self.view.addSubview(faceRecognitionAreaView)
         self.view.addSubview(startButton)
 
-        let layer = camera.previewLayer()
         let width = UIScreen.main.bounds.width * 0.8,
             height = UIScreen.main.bounds.height * 0.8
 
@@ -149,15 +159,6 @@ class ViewController: UIViewController, FaceRecognitionProtocol {
             action: #selector(start),
             for: .touchUpInside
         )
-
-        preview.setup(
-            preview: layer,
-            position: CGPoint(x: 0, y: 0),
-            size: CGSize(width: width, height: height)
-        )
-
-        faceMeasureKitModel.injectingRecognitionAreaView(faceRecognitionAreaView)
-        faceMeasureKitModel.previewLayer(layer)
     }
 }
 
