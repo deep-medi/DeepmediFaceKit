@@ -9,11 +9,11 @@ public class FaceMeasureKitModel: NSObject {
         super.init()
     }
     
-    public func previewLayer(
-        _ layer: AVCaptureVideoPreviewLayer
-    ) {
-        self.model.previewLayer = layer
-    }
+//    public func previewLayer(
+//        _ layer: AVCaptureVideoPreviewLayer
+//    ) {
+//        self.model.previewLayer = layer
+//    }
     
     public func injectingRecognitionAreaView(
         _ view: UIView

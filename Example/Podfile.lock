@@ -1,12 +1,11 @@
 PODS:
   - Alamofire (5.2.2)
-  - DeepmediFaceKit (2.1.0):
+  - DeepmediFaceKit (2.2.0):
     - Alamofire (~> 5.2.0)
     - GoogleMLKit/FaceDetection
     - OpenCV
     - RxCocoa (~> 6.0.0)
     - RxSwift (~> 6.0.0)
-    - SnapKit (~> 5.0.0)
     - Then
   - GoogleDataTransport (9.2.1):
     - GoogleUtilities/Environment (~> 7.7)
@@ -74,6 +73,7 @@ PODS:
 
 DEPENDENCIES:
   - DeepmediFaceKit (from `../`)
+  - SnapKit (~> 5.0.0)
 
 SPEC REPOS:
   trunk:
@@ -103,7 +103,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
-  DeepmediFaceKit: e3a607f1a933a2d846c1d00d9ab069950e50bd16
+  DeepmediFaceKit: 98e78ddb925d2cc0bd748a55be37d048135f73fd
   GoogleDataTransport: ea169759df570f4e37bdee1623ec32a7e64e67c4
   GoogleMLKit: 2bd0dc6253c4d4f227aad460f69215a504b2980e
   GoogleToolboxForMac: 8bef7c7c5cf7291c687cf5354f39f9db6399ad34
@@ -123,6 +123,6 @@ SPEC CHECKSUMS:
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
 
-PODFILE CHECKSUM: a8722f6a756df2456be5e278c800cd0e40e5245f
+PODFILE CHECKSUM: b112b211ebbcd2637529de5d3b73bd6e59a8f2cc
 
-COCOAPODS: 1.12.0
+COCOAPODS: 1.12.1

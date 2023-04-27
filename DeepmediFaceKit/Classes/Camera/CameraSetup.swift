@@ -16,6 +16,8 @@ class CameraSetup: NSObject {
     private var customISO: Float? = 30
     private let device = UIDevice.current
     
+    private let model = Model.shared
+    
     func initModel(
         session: AVCaptureSession,
         captureDevice: AVCaptureDevice?
@@ -23,15 +25,7 @@ class CameraSetup: NSObject {
         self.session = session
         self.captureDevice = captureDevice
     }
-    
-    func usePreViewLayer(
-    ) -> AVCaptureVideoPreviewLayer {
-        let preViewLayer = AVCaptureVideoPreviewLayer(
-            session: session
-        )
-        return preViewLayer
-    }
-    
+        
     func useSession() -> AVCaptureSession {
         return self.session
     }

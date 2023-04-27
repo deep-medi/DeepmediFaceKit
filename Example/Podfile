@@ -6,9 +6,9 @@ platform :ios, '13.0'
 target 'DeepmediFaceKit_Example' do
 
   pod 'DeepmediFaceKit', :path => '../'
+  pod 'SnapKit', '~> 5.0.0'
 
 	#pod 'Then'
-	#pod 'SnapKit', '~> 5.0.0'
 	#pod 'GoogleMLKit/FaceDetection'
 	#pod 'Alamofire', '~> 5.2.0'
 	#pod 'OpenCV'
