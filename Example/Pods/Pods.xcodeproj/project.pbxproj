@@ -288,10 +288,10 @@
 		5BEE6E31368822063D065FAD88FEAF23 /* RxCollectionViewDataSourceProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EBCEED2D9E9F017A08D2FF921CC2F4 /* RxCollectionViewDataSourceProxy.swift */; };
 		5C312C9C943E0BB54D26A9A1B48E9638 /* UITabBar+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E254155F006375D4186AF3DAAECB1 /* UITabBar+Rx.swift */; };
 		5C3D2A2EC51A53026B8D343A2A5AC426 /* GDTCORUploadCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = DCC85B82BECD41107DF0B8C31B7FCF1F /* GDTCORUploadCoordinator.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		5CD9CA8329D6B24600DA4846 /* ObjcMapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5CD9CA7F29D6B23B00DA4846 /* ObjcMapper.mm */; };
-		5CD9CA8429D6B24600DA4846 /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5CD9CA8229D6B23B00DA4846 /* OpenCVWrapper.mm */; };
-		5CD9CA8529D6B25A00DA4846 /* ObjcMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CD9CA8129D6B23B00DA4846 /* ObjcMapper.h */; };
-		5CD9CA8629D6B25A00DA4846 /* OpenCVWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CD9CA8029D6B23B00DA4846 /* OpenCVWrapper.h */; };
+		5CA3899929FA45EA00867A30 /* ObjcMapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5CA3899529FA45EA00867A30 /* ObjcMapper.mm */; };
+		5CA3899A29FA45EA00867A30 /* ObjcMapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5CA3899529FA45EA00867A30 /* ObjcMapper.mm */; };
+		5CA3899D29FA45EA00867A30 /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5CA3899829FA45EA00867A30 /* OpenCVWrapper.mm */; };
+		5CA3899E29FA45EA00867A30 /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5CA3899829FA45EA00867A30 /* OpenCVWrapper.mm */; };
 		5D7665C91C04C82C31DEC7273094B818 /* FBLPromise+Validate.m in Sources */ = {isa = PBXBuildFile; fileRef = C83904B442A93E776B7E3F3982575E49 /* FBLPromise+Validate.m */; };
 		5DAE709362DA78EE756F63B1EC6607C0 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05325BC3145F0FF1CBFE9D432227B46B /* Queue.swift */; };
 		5EE03B9B024560E117EFD4E8BD415D6F /* RetryWhen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFEEFF0C550AA9E2E43E3BA01737D6F /* RetryWhen.swift */; };
@@ -1362,13 +1362,13 @@
 		5BF59BE78AC0AE4214376BC07DCFE3D4 /* Pods-DeepmediFaceKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DeepmediFaceKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5C5866D5B5358981B3D4AED37DEE90E1 /* HistoricalScheduler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HistoricalScheduler.swift; path = RxSwift/Schedulers/HistoricalScheduler.swift; sourceTree = "<group>"; };
 		5C6D1F6D4BB9978B183A692C88573B0B /* ScheduledItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScheduledItem.swift; path = RxSwift/Schedulers/Internal/ScheduledItem.swift; sourceTree = "<group>"; };
+		5CA3899529FA45EA00867A30 /* ObjcMapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ObjcMapper.mm; sourceTree = "<group>"; };
+		5CA3899629FA45EA00867A30 /* OpenCVWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
+		5CA3899729FA45EA00867A30 /* ObjcMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjcMapper.h; sourceTree = "<group>"; };
+		5CA3899829FA45EA00867A30 /* OpenCVWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
 		5CC249D344AC4A02168749E36C232DDB /* gplaidmlkernel.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = gplaidmlkernel.hpp; path = opencv2.framework/Versions/A/Headers/gapi/plaidml/gplaidmlkernel.hpp; sourceTree = "<group>"; };
 		5CCC83D4966852374E33436093150703 /* exposure_compensate.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = exposure_compensate.hpp; path = opencv2.framework/Versions/A/Headers/stitching/detail/exposure_compensate.hpp; sourceTree = "<group>"; };
 		5CD057A9A4556626989334314EDE3144 /* nanopb-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "nanopb-dummy.m"; sourceTree = "<group>"; };
-		5CD9CA7F29D6B23B00DA4846 /* ObjcMapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ObjcMapper.mm; sourceTree = "<group>"; };
-		5CD9CA8029D6B23B00DA4846 /* OpenCVWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
-		5CD9CA8129D6B23B00DA4846 /* ObjcMapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjcMapper.h; sourceTree = "<group>"; };
-		5CD9CA8229D6B23B00DA4846 /* OpenCVWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
 		5CDDDA83A607F7B91B97B6E6962250B1 /* UIApplication+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIApplication+Rx.swift"; path = "RxCocoa/iOS/UIApplication+Rx.swift"; sourceTree = "<group>"; };
 		5D07CED2E264089775E8A3FFAD73BC83 /* Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = RxSwift/Errors.swift; sourceTree = "<group>"; };
 		5D179384E632D2A2CF8295AAECD5DE4B /* render.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = render.hpp; path = opencv2.framework/Versions/A/Headers/gapi/render/render.hpp; sourceTree = "<group>"; };
@@ -2158,8 +2158,8 @@
 		16F750B7BCB247F7F71AA44056D2C503 /* DeepmediFaceKit */ = {
 			isa = PBXGroup;
 			children = (
+				5CA3899429FA45EA00867A30 /* Objc */,
 				2E599E7C0A4B5CA9B5D6AA4A99E7F2C2 /* Classes */,
-				5CD9CA7E29D6B23B00DA4846 /* Objc */,
 				7C8EF3A8B2A6A0088271211BE8678634 /* Pod */,
 				8C8B5463C11F75F449ACD8FDA01578D8 /* Support Files */,
 			);
@@ -2416,15 +2416,16 @@
 			path = GoogleMLKit;
 			sourceTree = "<group>";
 		};
-		5CD9CA7E29D6B23B00DA4846 /* Objc */ = {
+		5CA3899429FA45EA00867A30 /* Objc */ = {
 			isa = PBXGroup;
 			children = (
-				5CD9CA8129D6B23B00DA4846 /* ObjcMapper.h */,
-				5CD9CA7F29D6B23B00DA4846 /* ObjcMapper.mm */,
-				5CD9CA8029D6B23B00DA4846 /* OpenCVWrapper.h */,
-				5CD9CA8229D6B23B00DA4846 /* OpenCVWrapper.mm */,
+				5CA3899729FA45EA00867A30 /* ObjcMapper.h */,
+				5CA3899529FA45EA00867A30 /* ObjcMapper.mm */,
+				5CA3899629FA45EA00867A30 /* OpenCVWrapper.h */,
+				5CA3899829FA45EA00867A30 /* OpenCVWrapper.mm */,
 			);
-			path = Objc;
+			name = Objc;
+			path = DeepmediFaceKit/Objc;
 			sourceTree = "<group>";
 		};
 		5F33AC1A8FF1FA66BD35FF6BE6914064 /* Model */ = {
@@ -3728,8 +3729,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E54C2CD947EE24581B2FB9BDCF483A42 /* DeepmediFaceKit-umbrella.h in Headers */,
-				5CD9CA8529D6B25A00DA4846 /* ObjcMapper.h in Headers */,
-				5CD9CA8629D6B25A00DA4846 /* OpenCVWrapper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4627,19 +4626,19 @@
 				39FDEA9AEA04B5386C9F3642DDCE153C /* CameraObject.swift in Sources */,
 				70F347F28231012F73E19AE08EE338AD /* CameraPreView.swift in Sources */,
 				4ABBC01E9C8952B047A318F94899A577 /* CameraSetup.swift in Sources */,
+				5CA3899D29FA45EA00867A30 /* OpenCVWrapper.mm in Sources */,
 				42F62757F4D59F102570FE41D1C4717B /* DataModel.swift in Sources */,
+				5CA3899929FA45EA00867A30 /* ObjcMapper.mm in Sources */,
 				0FA05C8D988A5545F367F0BF3B215680 /* DeepmediFaceKit-dummy.m in Sources */,
 				C4C2EC6ED345979E6A999688AD22CB21 /* Document.swift in Sources */,
 				A1E120BE4E77DCF09AFA6C5F5DAB4715 /* Extension.swift in Sources */,
 				AF56F7A8F2536BF5FF7D3097D5C3FD19 /* FaceMeasureKitModel.swift in Sources */,
-				5CD9CA8329D6B24600DA4846 /* ObjcMapper.mm in Sources */,
 				E047620DA9A3D0B7E9106A4E8F44FFCE /* FaceMeasurementKit.swift in Sources */,
 				AEFC414669899BF22CF29D0AC6756263 /* FaceRecognitionAreaView.swift in Sources */,
 				C7D365A8D8CE83556F6A300AFBCD1CB9 /* Header.swift in Sources */,
 				A415889FBF0583AA55C856CE7C41E27F /* Model.swift in Sources */,
 				D19D1694FCF29E9AD04344E64B5FDAC6 /* Protocol.swift in Sources */,
 				FCAB8B721A094D6FC2EDFF8970C58EBD /* RGBData.swift in Sources */,
-				5CD9CA8429D6B24600DA4846 /* OpenCVWrapper.mm in Sources */,
 				F9191EB82C8FB802BFEB7D5094ED9F48 /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -4687,6 +4686,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CA3899E29FA45EA00867A30 /* OpenCVWrapper.mm in Sources */,
+				5CA3899A29FA45EA00867A30 /* ObjcMapper.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
