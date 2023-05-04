@@ -98,6 +98,7 @@ public class FaceMeasureKit: NSObject {
     
     open func stopSession() {
         self.measurementTimer.invalidate()
+        self.cameraSetup.useCapterDevice()?.exposureMode = .autoExpose
         self.cameraSetup.useSession().stopRunning()
     }
     
@@ -249,13 +250,7 @@ extension FaceMeasureKit: AVCaptureVideoDataOutputSampleBufferDelegate { // ì¹´ë
         faceRecognitionAreaView: UIView
     ) {
         print("preview layer: \(self.previewLayer.frame)")
-        let standardizedRect = self.previewLayer.layerRectConverted(
-            fromMetadataOutputRect: normalizedRect
-        )
-            .standardized
-        print("view: \(faceRecognitionAreaView.frame)")
-        print("rect: \(standardizedRect)")
-        print("====================================")
+        let standardizedRect = self.previewLayer.layerRectConverted(fromMetadataOutputRect: normalizedRect).standardized
         
         if (faceRecognitionAreaView.frame.minX <= standardizedRect.minX) &&
             (faceRecognitionAreaView.frame.maxX >= standardizedRect.maxX) &&

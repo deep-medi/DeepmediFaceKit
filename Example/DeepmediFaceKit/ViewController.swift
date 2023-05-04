@@ -9,7 +9,6 @@
 import UIKit
 import AVKit
 import SnapKit
-import Then
 import Alamofire
 import DeepmediFaceKit
 

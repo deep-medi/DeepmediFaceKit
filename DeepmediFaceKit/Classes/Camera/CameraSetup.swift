@@ -25,9 +25,13 @@ class CameraSetup: NSObject {
         self.session = session
         self.captureDevice = captureDevice
     }
-        
+    
     func useSession() -> AVCaptureSession {
         return self.session
+    }
+    
+    func useCapterDevice() -> AVCaptureDevice? {
+        return self.captureDevice
     }
     
     @available(iOS 10.0, *)
@@ -69,20 +73,21 @@ class CameraSetup: NSObject {
             }
         }
         
-        if try! self.captureDevice?.lockForConfiguration() != nil {
-            try! self.captureDevice?.lockForConfiguration()
-            guard let tempCurrentFormat = currentFormat else { fatalError("current format")}
-            self.captureDevice?.activeFormat = tempCurrentFormat
-            self.captureDevice?.activeVideoMinFrameDuration = CMTimeMake(
-                value: 1,
-                timescale: Int32(tempFramePerSec)
-            )
-            self.captureDevice?.activeVideoMaxFrameDuration = CMTimeMake(
-                value: 1,
-                timescale: Int32(tempFramePerSec)
-            )
-            self.captureDevice?.unlockForConfiguration()
-        }
+        guard let tempCurrentFormat = currentFormat,
+              try! self.captureDevice?.lockForConfiguration() != nil else { return print("current format")}
+        
+        try! self.captureDevice?.lockForConfiguration()
+        self.captureDevice?.activeFormat = tempCurrentFormat
+        self.captureDevice?.activeVideoMinFrameDuration = CMTimeMake(
+            value: 1,
+            timescale: Int32(tempFramePerSec)
+        )
+        self.captureDevice?.activeVideoMaxFrameDuration = CMTimeMake(
+            value: 1,
+            timescale: Int32(tempFramePerSec)
+        )
+        self.captureDevice?.unlockForConfiguration()
+        
     }
     
     func setUpCatureDevice() {
