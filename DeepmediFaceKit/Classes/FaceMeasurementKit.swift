@@ -329,6 +329,7 @@ extension FaceMeasureKit: AVCaptureVideoDataOutputSampleBufferDelegate { // ì¹´ë
         }
         
         let timeStamp = (Date().timeIntervalSince1970 * 1000000).rounded()
+        guard timeStamp != 0 else { return }
         self.rgbModel.collectRGB(
             timeStamp: timeStamp,
             r: r, g: g, b: b
