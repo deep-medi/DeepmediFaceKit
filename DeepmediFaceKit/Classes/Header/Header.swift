@@ -1,8 +1,8 @@
 //
-//  header.swift
-//  DeepmediFaceKit
+//  Header.swift
+//  DeepmediFingerKit
 //
-//  Created by Demian on 2023/02/09.
+//  Created by 딥메디 on 2023/04/03.
 //
 
 import Foundation
