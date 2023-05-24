@@ -9,6 +9,6 @@ import RxSwift
 
 class ViewModel {
     let completeMeasurement = BehaviorSubject(value: (false, URL(string: "")))
-    let secondRemaining = PublishSubject<Double>()
+    let secondRemaining = PublishSubject<Int>()
     let measurementCompleteRatio = PublishSubject<String>()
 }

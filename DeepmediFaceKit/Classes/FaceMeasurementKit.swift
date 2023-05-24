@@ -65,11 +65,11 @@ public class FaceMeasureKit: NSObject {
     }
     
     public func timesLeft(
-        _ com: @escaping((Double) -> ())
+        _ com: @escaping((Int) -> ())
     ) {
         let secondRemaining = self.viewModel.secondRemaining
         secondRemaining
-            .asDriver(onErrorJustReturn: 0.0)
+            .asDriver(onErrorJustReturn: 0)
             .drive(onNext: { remaining in
                 com(remaining)
             })
@@ -116,8 +116,9 @@ public class FaceMeasureKit: NSObject {
             withTimeInterval: 0.1,
             repeats: true
         ) { timer in
-            secondRemaining.onNext(self.measurementTime)
-            measurementCompleteRatio.onNext("\(100 - Int(self.measurementTime * 100.0 / 30.0))%")
+            let ratio = Int(100.0 - self.measurementTime * 100.0 / self.model.measurementTime)
+            measurementCompleteRatio.onNext("\(ratio)%")
+            secondRemaining.onNext(Int(self.measurementTime))
             self.measurementTime -= 0.1
             if self.measurementTime <= 0 {
                 timer.invalidate()
@@ -249,7 +250,6 @@ extension FaceMeasureKit: AVCaptureVideoDataOutputSampleBufferDelegate { // ì¹´ë
         normalizedRect: CGRect,
         faceRecognitionAreaView: UIView
     ) {
-        print("preview layer: \(self.previewLayer.frame)")
         let standardizedRect = self.previewLayer.layerRectConverted(fromMetadataOutputRect: normalizedRect).standardized
         
         if (faceRecognitionAreaView.frame.minX <= standardizedRect.minX) &&
