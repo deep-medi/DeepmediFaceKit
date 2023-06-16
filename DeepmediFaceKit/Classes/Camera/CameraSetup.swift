@@ -16,8 +16,6 @@ class CameraSetup: NSObject {
     private var customISO: Float? = 30
     private let device = UIDevice.current
     
-    private let model = Model.shared
-    
     func initModel(
         session: AVCaptureSession,
         captureDevice: AVCaptureDevice?
@@ -87,7 +85,6 @@ class CameraSetup: NSObject {
             timescale: Int32(tempFramePerSec)
         )
         self.captureDevice?.unlockForConfiguration()
-        
     }
     
     func setUpCatureDevice() {
