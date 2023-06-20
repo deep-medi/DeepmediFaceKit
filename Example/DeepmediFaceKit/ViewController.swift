@@ -51,8 +51,12 @@ class ViewController: UIViewController, FaceRecognitionProtocol {
         faceMeasureKitModel.willUseFaceRecognitionArea(true)
         
         previewLayer = AVCaptureVideoPreviewLayer(session: session)
-
+        
         self.setupUI()
+        
+        DispatchQueue.global(qos: .background).asyncAfter(deadline: .now() + 1) {
+            self.faceMeasureKit.startSession()
+        }
     }
     
     override func viewDidLayoutSubviews() {
@@ -65,9 +69,9 @@ class ViewController: UIViewController, FaceRecognitionProtocol {
     }
 
     @objc func start() {
-        DispatchQueue.global(qos: .background).async {
-            self.faceMeasureKit.startSession()
-        }
+//        DispatchQueue.global(qos: .background).async {
+//            self.faceMeasureKit.startSession()
+//        }
     }
 
     func completionMethod() {
@@ -129,7 +133,6 @@ class ViewController: UIViewController, FaceRecognitionProtocol {
         self.view.addSubview(preview)
         self.view.addSubview(faceRecognitionAreaView)
         self.view.addSubview(startButton)
-
         let width = UIScreen.main.bounds.width * 0.8,
             height = UIScreen.main.bounds.height * 0.8
 
