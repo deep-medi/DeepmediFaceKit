@@ -19,6 +19,11 @@ class ViewController: UIViewController, FaceRecognitionProtocol {
         lineWidth: 11.8
     )
     
+    var tempView = UIView().then { v in
+        v.layer.borderColor = UIColor.red.cgColor
+        v.layer.borderWidth = 3
+    }
+    
     var previewLayer = AVCaptureVideoPreviewLayer()
     let session = AVCaptureSession()
     let captureDevice = AVCaptureDevice(uniqueID: "Capture")
@@ -54,9 +59,9 @@ class ViewController: UIViewController, FaceRecognitionProtocol {
         
         self.setupUI()
         
-        DispatchQueue.global(qos: .background).asyncAfter(deadline: .now() + 1) {
-            self.faceMeasureKit.startSession()
-        }
+//        DispatchQueue.global(qos: .background).asyncAfter(deadline: .now() + 1) {
+//            self.faceMeasureKit.startSession()
+//        }
     }
     
     override func viewDidLayoutSubviews() {
@@ -66,12 +71,13 @@ class ViewController: UIViewController, FaceRecognitionProtocol {
         )
 
         faceMeasureKitModel.injectingRecognitionAreaView(faceRecognitionAreaView)
+        faceMeasureKitModel.tempView(view: tempView)
     }
 
     @objc func start() {
-//        DispatchQueue.global(qos: .background).async {
-//            self.faceMeasureKit.startSession()
-//        }
+        DispatchQueue.global(qos: .background).async {
+            self.faceMeasureKit.startSession()
+        }
     }
 
     func completionMethod() {
@@ -102,27 +108,27 @@ class ViewController: UIViewController, FaceRecognitionProtocol {
                                                   secretKey: "offered secret key",
                                                   apiKey: "offered api key")
 
-                AF.upload(multipartFormData: { multipartFormData in
-                    for (key, value) in params {
-                        multipartFormData.append("\(value)".data(using: .utf8)!, withName: key)
-                    }
-                    multipartFormData.append(path, withName: "rgb")
-                },
-                          to: offeredUrl,
-                          method: .post,
-                          headers: header)
-                .responseDecodable(of: CodableStruct.self) { response in
-                    switch response.result {
-
-                    case .success(let res):
-                        guard res.result == 200 else { return print("multi ppg stress result return") }
-                        let response = res.message
-                        print("responose: \(response)")
-
-                    case .failure(let err):
-                        print("data err: " + err.localizedDescription)
-                    }
-                }
+//                AF.upload(multipartFormData: { multipartFormData in
+//                    for (key, value) in params {
+//                        multipartFormData.append("\(value)".data(using: .utf8)!, withName: key)
+//                    }
+//                    multipartFormData.append(path, withName: "rgb")
+//                },
+//                          to: offeredUrl,
+//                          method: .post,
+//                          headers: header)
+//                .responseDecodable(of: CodableStruct.self) { response in
+//                    switch response.result {
+//
+//                    case .success(let res):
+//                        guard res.result == 200 else { return print("multi ppg stress result return") }
+//                        let response = res.message
+//                        print("responose: \(response)")
+//
+//                    case .failure(let err):
+//                        print("data err: " + err.localizedDescription)
+//                    }
+//                }
             } else {
                 print("error")
             }
@@ -132,14 +138,21 @@ class ViewController: UIViewController, FaceRecognitionProtocol {
     func setupUI() {
         self.view.addSubview(preview)
         self.view.addSubview(faceRecognitionAreaView)
+        self.view.addSubview(tempView)
         self.view.addSubview(startButton)
         let width = UIScreen.main.bounds.width * 0.8,
             height = UIScreen.main.bounds.height * 0.8
+//        let width = UIScreen.main.bounds.width,
+//            height = UIScreen.main.bounds.height
 
         preview.snp.makeConstraints { make in
             make.top.centerX.equalToSuperview()
             make.width.equalTo(width)
             make.height.equalTo(height)
+        }
+        
+        tempView.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
         }
 
         faceRecognitionAreaView.snp.makeConstraints { make in

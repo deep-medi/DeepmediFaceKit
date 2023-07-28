@@ -9,6 +9,10 @@ public class FaceMeasureKitModel: NSObject {
         super.init()
     }
     
+    public func tempView(view: UIView) {
+        self.model.tempView = view
+    }
+    
     public func injectingRecognitionAreaView(
         _ view: UIView
     ) {

@@ -36,7 +36,6 @@ final class RGBData {
         b: Float
     ) {
         let dataFormat = (timeStamp, r, g, b)
-        self.dataModel.gTempData.append(g)
         self.dataModel.rData.append(r)
         self.dataModel.gData.append(g)
         self.dataModel.bData.append(b)

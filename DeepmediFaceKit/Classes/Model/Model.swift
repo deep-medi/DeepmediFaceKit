@@ -14,6 +14,7 @@ class Model {
     var useFaceRecognitionArea: Bool
     
     var faceRecognitionAreaView: UIView?
+    var tempView: UIView?
     var previewLayer: AVCaptureVideoPreviewLayer?
         
     var measurementTime: Double {
@@ -39,6 +40,7 @@ class Model {
     
     init() {
         self.faceRecognitionAreaView = UIView()
+        self.tempView = UIView()
         self.previewLayer = AVCaptureVideoPreviewLayer()
         
         self.useFaceRecognitionArea = true
