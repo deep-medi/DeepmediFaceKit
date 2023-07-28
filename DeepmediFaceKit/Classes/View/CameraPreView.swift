@@ -23,7 +23,6 @@ public class CameraPreview: UIView {
         self.layer.addSublayer(layer)
         layer.videoGravity = .resizeAspectFill
         layer.frame = bound
-        print("layer: \(layer.frame)")
     }
     
     required init?(coder: NSCoder) {

@@ -37,7 +37,8 @@ public class FaceMeasureKit: NSObject {
                 measurementTimer = Timer()
     
     private var previewLayer = AVCaptureVideoPreviewLayer(),
-                faceRecognitionAreaView = UIView()
+                faceRecognitionAreaView = UIView(),
+                tempView = UIView()
     
     public func finishedMeasurement(
         _ isSuccess: @escaping((Bool, URL?) -> ())
@@ -65,15 +66,25 @@ public class FaceMeasureKit: NSObject {
     }
     
     public func timesLeft(
-        _ com: @escaping((Double) -> ())
+        _ com: @escaping((Int) -> ())
     ) {
         let secondRemaining = self.viewModel.secondRemaining
         secondRemaining
-            .asDriver(onErrorJustReturn: 0.0)
+            .asDriver(onErrorJustReturn: 0)
             .drive(onNext: { remaining in
                 com(remaining)
             })
             .disposed(by: bag)
+    }
+    
+    let detectArea = UIView().then { v in
+        v.layer.borderColor = UIColor.green.cgColor
+        v.layer.borderWidth = 1
+    }
+    
+    let faceView = UIView().then { v in
+        v.layer.borderColor = UIColor.blue.cgColor
+        v.layer.borderWidth = 1
     }
     
     public override init() {
@@ -89,11 +100,12 @@ public class FaceMeasureKit: NSObject {
     }
     
     open func startSession() {
-        //        DispatchQueue.main.async {
-            self.measurementTime = self.model.measurementTime
-            self.preparingSec = 3
-            self.cameraSetup.useSession().startRunning()
-        //        }
+        self.measurementTime = self.model.measurementTime
+        self.preparingSec = 2
+        if let previewLayer = self.model.previewLayer {
+            self.previewLayer = previewLayer
+        }
+        self.cameraSetup.useSession().startRunning()
     }
     
     open func stopSession() {
@@ -107,17 +119,17 @@ public class FaceMeasureKit: NSObject {
             secondRemaining = self.viewModel.secondRemaining,
             measurementCompleteRatio = self.viewModel.measurementCompleteRatio
         
-        self.rgbModel.initRGBData() // 중간에 쌓여있을 수 있는 데이터 초기화
+        self.dataModel.gTempData.removeAll()
         
-        self.flag = false
-        self.measurementTime = self.model.measurementTime
         self.preparingSec = 1
+        self.measurementTime = self.model.measurementTime
         self.measurementTimer = Timer.scheduledTimer(
             withTimeInterval: 0.1,
             repeats: true
         ) { timer in
-            secondRemaining.onNext(self.measurementTime)
-            measurementCompleteRatio.onNext("\(100 - Int(self.measurementTime * 100.0 / 30.0))%")
+            let ratio = Int(100.0 - self.measurementTime * 100.0 / self.model.measurementTime)
+            measurementCompleteRatio.onNext("\(ratio)%")
+            secondRemaining.onNext(Int(self.measurementTime))
             self.measurementTime -= 0.1
             if self.measurementTime <= 0 {
                 timer.invalidate()
@@ -139,8 +151,8 @@ extension FaceMeasureKit: AVCaptureVideoDataOutputSampleBufferDelegate { // 카�
         didOutput sampleBuffer: CMSampleBuffer,
         from connection: AVCaptureConnection
     ) {
-        guard let previewLayer = self.model.previewLayer,
-              let cvimgRef: CVImageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else {
+
+        guard let cvimgRef: CVImageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else {
             print("cvimg ref")
             return
         }
@@ -149,12 +161,30 @@ extension FaceMeasureKit: AVCaptureVideoDataOutputSampleBufferDelegate { // 카�
             cvimgRef,
             CVPixelBufferLockFlags(rawValue: 0)
         )
+        
+        self.tempView = self.model.tempView ?? UIView()
+        
         if self.model.useFaceRecognitionArea,
            let faceRecognitionAreaView = self.model.faceRecognitionAreaView {
             self.faceRecognitionAreaView = faceRecognitionAreaView
+            DispatchQueue.main.async {
+                
+                self.faceRecognitionAreaView.layer.borderColor = UIColor.red.cgColor
+                self.faceRecognitionAreaView.layer.borderWidth = 1
+                
+                self.detectArea.layer.borderColor = UIColor.green.cgColor
+                self.detectArea.layer.borderWidth = 1
+                
+                self.faceView.layer.borderColor = UIColor.blue.cgColor
+                self.faceView.layer.borderWidth = 1
+                
+                if self.tempView.subviews.count < 2 {                
+                    self.tempView.addSubview(self.detectArea)
+                    self.tempView.addSubview(self.faceView)
+                }
+            }
         }
         
-        self.previewLayer = previewLayer
         self.lastFrame = sampleBuffer
         
         let orientation = self.imageOrientation(fromDevicePosition: .front)
@@ -199,12 +229,13 @@ extension FaceMeasureKit: AVCaptureVideoDataOutputSampleBufferDelegate { // 카�
             return
         }
         
-        self.updatePreviewOverlayViewWithLastFrame()
+//        self.updatePreviewOverlayViewWithLastFrame()
         
         guard !faces.isEmpty else {
-            self.flag = false
+            self.dataModel.gTempData.removeAll()
             self.cropFaceRect = nil
-            print("On-Device face detector returned no results.")
+            self.lastFrame = nil
+//            print("On-Device face detector returned no results.")
             return
         }
         
@@ -212,15 +243,31 @@ extension FaceMeasureKit: AVCaptureVideoDataOutputSampleBufferDelegate { // 카�
             
             for face in faces {
                 
-                let x = (face.frame.origin.x + face.frame.size.width * 0.35),
+                print("preview frame: \(self.previewLayer.frame)")
+                print("face frame: \(face.frame)")
+                let previewCenterX = self.previewLayer.frame.width / 2
+                let faceCenterX = face.frame.width / 2
+                let ratio = self.previewLayer.frame.size.width / UIScreen.main.bounds.width
+                let x = (face.frame.origin.x + face.frame.size.width * 0.4),
                     y = (face.frame.origin.y + face.frame.size.height * 0.2),
-                    w = (face.frame.size.width) * 0.4,
-                    h = (face.frame.size.height) * 0.62 // 얼굴인식 위치 설정
+                    w = (face.frame.size.width * 0.4),
+                    h = (face.frame.size.height * 0.6),
+                    x1 = (face.frame.origin.x + face.frame.size.width * 0.1),
+                    y1 = (face.frame.origin.y + face.frame.size.height * 0.1),
+                    w1 = (face.frame.size.width * 0.8),
+                    h1 = (face.frame.size.height * 0.8)// 얼굴인식 위치 설정
                 
                 let normalizedRect = CGRect(x: x / imageWidth,
                                             y: y / imageHeight,
                                             width: w / imageWidth,
-                                            height: h / imageHeight)
+                                            height: h / imageHeight),
+                    noneRecognitionNormalizedRect = CGRect(x: x1 / imageWidth,
+                                                           y: y1 / imageHeight,
+                                                           width: w1 / imageWidth,
+                                                           height: h1 / imageHeight)
+                
+                let standardizedRect = self.previewLayer.layerRectConverted(fromMetadataOutputRect: normalizedRect).standardized,
+                    noneRecgnitionStandardizedRect = self.previewLayer.layerRectConverted(fromMetadataOutputRect: noneRecognitionNormalizedRect).standardized
                 
                 if self.model.useFaceRecognitionArea {
                     self.recognitionArea(
@@ -228,6 +275,7 @@ extension FaceMeasureKit: AVCaptureVideoDataOutputSampleBufferDelegate { // 카�
                         imageWidth: imageWidth,
                         imageHeight: imageHeight,
                         normalizedRect: normalizedRect,
+                        standardizedRect: standardizedRect,
                         faceRecognitionAreaView: faceRecognitionAreaView
                     )
                 } else {
@@ -235,40 +283,43 @@ extension FaceMeasureKit: AVCaptureVideoDataOutputSampleBufferDelegate { // 카�
                         face: face,
                         imageWidth: imageWidth,
                         imageHeight: imageHeight,
-                        normalizedRect: normalizedRect
+                        standardizedRect: noneRecgnitionStandardizedRect
                     )
                 }
             }
         }
     }
-    
+
     private func recognitionArea(
         face: Face,
         imageWidth: CGFloat,
         imageHeight: CGFloat,
         normalizedRect: CGRect,
+        standardizedRect: CGRect,
         faceRecognitionAreaView: UIView
     ) {
-        print("preview layer: \(self.previewLayer.frame)")
-        let standardizedRect = self.previewLayer.layerRectConverted(fromMetadataOutputRect: normalizedRect).standardized
-        
-        if (faceRecognitionAreaView.frame.minX <= standardizedRect.minX) &&
-            (faceRecognitionAreaView.frame.maxX >= standardizedRect.maxX) &&
-            (faceRecognitionAreaView.frame.minY <= standardizedRect.minY) &&
-            (faceRecognitionAreaView.frame.maxY >= standardizedRect.maxY) {
+      
+        self.detectArea.frame = faceRecognitionAreaView.frame
+        self.faceView.frame = standardizedRect
+    
+        if faceRecognitionAreaView.frame.minX <= standardizedRect.minX &&
+           faceRecognitionAreaView.frame.maxX >= standardizedRect.maxX &&
+           faceRecognitionAreaView.frame.minY <= standardizedRect.minY &&
+           faceRecognitionAreaView.frame.maxY >= standardizedRect.maxY {
             
-            self.cropFaceRect = CGRect(x: normalizedRect.origin.x,
-                                       y: normalizedRect.origin.y,
-                                       width: normalizedRect.width,
-                                       height: normalizedRect.height).integral // 얼굴인식 위치 계산
-            self.addContours(
-                for: face,
-                imageWidth: imageWidth,
-                imageHeight: imageHeight
-            )
+            self.cropFaceRect = CGRect(x: face.frame.origin.x,
+                                       y: face.frame.origin.y,
+                                       width: face.frame.width,
+                                       height: face.frame.height).integral // 얼굴인식 위치 계산
+//            self.addContours(
+//                for: face,
+//                imageWidth: imageWidth,
+//                imageHeight: imageHeight
+//            )
         } else {
-            self.flag = false
             self.cropFaceRect = nil
+            self.dataModel.gTempData.removeAll()
+            self.rgbModel.initRGBData() // 중간에 쌓여있을 수 있는 데이터 초기화
         }
     }
     
@@ -276,64 +327,71 @@ extension FaceMeasureKit: AVCaptureVideoDataOutputSampleBufferDelegate { // 카�
         face: Face,
         imageWidth: CGFloat,
         imageHeight: CGFloat,
-        normalizedRect: CGRect
+        standardizedRect: CGRect
     ) {
-        self.cropFaceRect = CGRect(
-            x: normalizedRect.origin.x,
-            y: normalizedRect.origin.y,
-            width: normalizedRect.width,
-            height: normalizedRect.height
-        )
-        .integral // 얼굴인식 위치 계산
-        self.addContours(
-            for: face,
-            imageWidth: imageWidth,
-            imageHeight: imageHeight
-        )
+        
+        self.faceView.frame = standardizedRect
+        
+        let minX = UIScreen.main.bounds.minX,
+            minY = UIScreen.main.bounds.minY,
+            maxX = UIScreen.main.bounds.maxX,
+            maxY = UIScreen.main.bounds.maxY
+        
+        if standardizedRect.minX >= minX
+            && standardizedRect.maxX <= maxX
+            && standardizedRect.minY >= minY
+            && standardizedRect.maxY <= maxY {
+            
+            self.cropFaceRect = CGRect(x: face.frame.origin.x,
+                                       y: face.frame.origin.y,
+                                       width: face.frame.width,
+                                       height: face.frame.height).integral // 얼굴인식 위치 계산
+//            self.addContours(
+//                for: face,
+//                imageWidth: imageWidth,
+//                imageHeight: imageHeight
+//            )
+        } else {
+            print("data count: \(self.dataModel.gData.count)")
+            self.lastFrame = nil
+            self.cropFaceRect = nil
+            self.dataModel.gTempData.removeAll()
+        }
     }
     
     private func updatePreviewOverlayViewWithLastFrame() {
         DispatchQueue.main.sync {
             guard lastFrame != nil else { fatalError("sample buffer error") }
-            self.updatePreviewOverlayViewWithImageBuffer()
+            if self.model.useFaceRecognitionArea {
+                self.useRecogntionFace()
+            } else {
+                self.noneUseRecognitionFace()
+            }
         }
     }
     
-    private func updatePreviewOverlayViewWithImageBuffer() {
+    private func useRecogntionFace() {
         if self.cropFaceRect != nil {
-            if self.dataModel.gData.count == self.preparingSec * 30 && self.flag {
+            if self.dataModel.gTempData.count == self.preparingSec * 30 {
                 self.cameraSetup.setUpCatureDevice()
                 self.collectDatas()
             }
         } else {
-            self.measurementTimer.invalidate()
+            self.dataModel.gTempData.removeAll()
             self.rgbModel.initRGBData()
-            self.flag = true
+            self.measurementTimer.invalidate()
         }
     }
     
-    // MARK: Detect
-    private func extractRGBFromDetectFace(
-        sampleBuffer: CMSampleBuffer
-    ) {
-        guard let faceRGB = OpenCVWrapper.detectFace(sampleBuffer) else {
-            print("objc casting error")
-            return
+    private func noneUseRecognitionFace() {
+        if self.cropFaceRect != nil {
+            self.cameraSetup.setUpCatureDevice()
+            if self.dataModel.gTempData.count == self.preparingSec * 30 && !self.measurementTimer.isValid {
+                self.collectDatas()
+            }
+        } else {
+            self.dataModel.gTempData.removeAll()
         }
-        
-        guard let r = faceRGB[0] as? Float,
-              let g = faceRGB[1] as? Float,
-              let b = faceRGB[2] as? Float else {
-            print("objc rgb casting error")
-            return
-        }
-        
-        let timeStamp = (Date().timeIntervalSince1970 * 1000000).rounded()
-        guard timeStamp != 0 else { return }
-        self.rgbModel.collectRGB(
-            timeStamp: timeStamp,
-            r: r, g: g, b: b
-        ) //rgb데이터 수집
     }
     
     private func addContours(
@@ -465,15 +523,32 @@ extension FaceMeasureKit: AVCaptureVideoDataOutputSampleBufferDelegate { // 카�
         }
     }
     
-    private func normalizedPoint(
-        fromVisionPoint point: VisionPoint,
-        width: CGFloat,
-        height: CGFloat
-    ) -> CGPoint {
-        let cgPoint = CGPoint(x: point.x, y: point.y)
-        var normalizedPoint = CGPoint(x: cgPoint.x / width, y: cgPoint.y / height)
-        normalizedPoint = previewLayer.layerPointConverted(fromCaptureDevicePoint: normalizedPoint)
-        return normalizedPoint
+    private func extractRGBFromDetectFace(
+        sampleBuffer: CMSampleBuffer
+    ) {
+        guard let faceRGB = OpenCVWrapper.detectFace(sampleBuffer) else {
+            print("objc casting error")
+            return
+        }
+        
+        guard let r = faceRGB[0] as? Float,
+              let g = faceRGB[1] as? Float,
+              let b = faceRGB[2] as? Float else {
+            print("objc rgb casting error")
+            return
+        }
+        
+        let timeStamp = (Date().timeIntervalSince1970 * 1000000).rounded()
+        
+        if self.measurementTimer.isValid {
+            guard timeStamp != 0 else { return }
+            self.rgbModel.collectRGB(
+                timeStamp: timeStamp,
+                r: r, g: g, b: b
+            )
+        } else {
+            self.dataModel.gTempData.append(g)
+        }
     }
     
     private func getMaskedImage(

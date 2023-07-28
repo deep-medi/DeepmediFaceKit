@@ -31,8 +31,6 @@ open class DataModel {
     var bytesArr = [[UInt8]]()
     var byteData = [UInt8]()
     
-    var temp = [UInt8]()
-    
     var accDataPath: URL?,
         gyroDataPath: URL?
     

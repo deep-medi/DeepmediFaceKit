@@ -16,8 +16,6 @@ class CameraSetup: NSObject {
     private var customISO: Float? = 30
     private let device = UIDevice.current
     
-    private let model = Model.shared
-    
     func initModel(
         session: AVCaptureSession,
         captureDevice: AVCaptureDevice?
@@ -87,7 +85,6 @@ class CameraSetup: NSObject {
             timescale: Int32(tempFramePerSec)
         )
         self.captureDevice?.unlockForConfiguration()
-        
     }
     
     func setUpCatureDevice() {
@@ -95,16 +92,6 @@ class CameraSetup: NSObject {
         captureDevice?.exposureMode = .locked
         captureDevice?.unlockForConfiguration()
     }
-    
-    //  @objc func correctColor() {
-    //    try! self.captureDevice?.lockForConfiguration()
-    //    let gainset = AVCaptureDevice.WhiteBalanceGains(redGain: 1.0,
-    //                                                    greenGain: 1.0, // 3 -> 1 edit
-    //                                                    blueGain: 1.0)
-    //    self.captureDevice?.setWhiteBalanceModeLocked(with: gainset,
-    //                                                  completionHandler: nil)
-    //    self.captureDevice?.unlockForConfiguration()
-    //  }
     
     func setupVideoOutput(
         _ delegate: AVCaptureVideoDataOutputSampleBufferDelegate
