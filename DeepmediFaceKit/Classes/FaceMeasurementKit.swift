@@ -229,7 +229,7 @@ extension FaceMeasureKit: AVCaptureVideoDataOutputSampleBufferDelegate { // 카�
             return
         }
         
-//        self.updatePreviewOverlayViewWithLastFrame()
+        self.updatePreviewOverlayViewWithLastFrame()
         
         guard !faces.isEmpty else {
             self.dataModel.gTempData.removeAll()
@@ -243,12 +243,8 @@ extension FaceMeasureKit: AVCaptureVideoDataOutputSampleBufferDelegate { // 카�
             
             for face in faces {
                 
-                print("preview frame: \(self.previewLayer.frame)")
-                print("face frame: \(face.frame)")
-                let previewCenterX = self.previewLayer.frame.width / 2
-                let faceCenterX = face.frame.width / 2
-                let ratio = self.previewLayer.frame.size.width / UIScreen.main.bounds.width
-                let x = (face.frame.origin.x + face.frame.size.width * 0.4),
+                let previewBounds = self.model.previewLayerBounds
+                let x = (face.frame.origin.x + face.frame.size.width * 0.3),
                     y = (face.frame.origin.y + face.frame.size.height * 0.2),
                     w = (face.frame.size.width * 0.4),
                     h = (face.frame.size.height * 0.6),
@@ -267,6 +263,10 @@ extension FaceMeasureKit: AVCaptureVideoDataOutputSampleBufferDelegate { // 카�
                                                            height: h1 / imageHeight)
                 
                 let standardizedRect = self.previewLayer.layerRectConverted(fromMetadataOutputRect: normalizedRect).standardized,
+                    recognitionStandardizedRect =  CGRect(x: standardizedRect.origin.x + previewBounds.origin.x,
+                                                          y: standardizedRect.origin.y + previewBounds.origin.y,
+                                                          width: standardizedRect.width,
+                                                          height: standardizedRect.height),
                     noneRecgnitionStandardizedRect = self.previewLayer.layerRectConverted(fromMetadataOutputRect: noneRecognitionNormalizedRect).standardized
                 
                 if self.model.useFaceRecognitionArea {
@@ -275,7 +275,7 @@ extension FaceMeasureKit: AVCaptureVideoDataOutputSampleBufferDelegate { // 카�
                         imageWidth: imageWidth,
                         imageHeight: imageHeight,
                         normalizedRect: normalizedRect,
-                        standardizedRect: standardizedRect,
+                        standardizedRect: recognitionStandardizedRect,
                         faceRecognitionAreaView: faceRecognitionAreaView
                     )
                 } else {
@@ -298,7 +298,7 @@ extension FaceMeasureKit: AVCaptureVideoDataOutputSampleBufferDelegate { // 카�
         standardizedRect: CGRect,
         faceRecognitionAreaView: UIView
     ) {
-      
+        let previewBounds = self.model.previewLayerBounds
         self.detectArea.frame = faceRecognitionAreaView.frame
         self.faceView.frame = standardizedRect
     
@@ -311,11 +311,12 @@ extension FaceMeasureKit: AVCaptureVideoDataOutputSampleBufferDelegate { // 카�
                                        y: face.frame.origin.y,
                                        width: face.frame.width,
                                        height: face.frame.height).integral // 얼굴인식 위치 계산
-//            self.addContours(
-//                for: face,
-//                imageWidth: imageWidth,
-//                imageHeight: imageHeight
-//            )
+            
+            self.addContours(
+                for: face,
+                imageWidth: imageWidth,
+                imageHeight: imageHeight
+            )
         } else {
             self.cropFaceRect = nil
             self.dataModel.gTempData.removeAll()
@@ -346,11 +347,11 @@ extension FaceMeasureKit: AVCaptureVideoDataOutputSampleBufferDelegate { // 카�
                                        y: face.frame.origin.y,
                                        width: face.frame.width,
                                        height: face.frame.height).integral // 얼굴인식 위치 계산
-//            self.addContours(
-//                for: face,
-//                imageWidth: imageWidth,
-//                imageHeight: imageHeight
-//            )
+            self.addContours(
+                for: face,
+                imageWidth: imageWidth,
+                imageHeight: imageHeight
+            )
         } else {
             print("data count: \(self.dataModel.gData.count)")
             self.lastFrame = nil

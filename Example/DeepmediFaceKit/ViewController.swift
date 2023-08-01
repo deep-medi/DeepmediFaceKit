@@ -67,7 +67,7 @@ class ViewController: UIViewController, FaceRecognitionProtocol {
     override func viewDidLayoutSubviews() {
         preview.setup(
             layer: previewLayer,
-            bound: preview.bounds
+            frame : preview.frame
         )
 
         faceMeasureKitModel.injectingRecognitionAreaView(faceRecognitionAreaView)
@@ -96,39 +96,11 @@ class ViewController: UIViewController, FaceRecognitionProtocol {
                     self.faceMeasureKit.stopSession()
                 }
 
-                let offeredUri = "offered uri"
-                let offeredUrl = "offered urL"
-                let params = ["age": "\(20)",
-                              "gender": "\(0)",
-                              "overlapping_sec": "\(3)",
-                              "window_sec": "\(10)"] as [String: String]
-
                 let header = self.header.v2Header(method: .post,
-                                                  uri: offeredUri,
+                                                  uri: "offered uri",
                                                   secretKey: "offered secret key",
                                                   apiKey: "offered api key")
 
-//                AF.upload(multipartFormData: { multipartFormData in
-//                    for (key, value) in params {
-//                        multipartFormData.append("\(value)".data(using: .utf8)!, withName: key)
-//                    }
-//                    multipartFormData.append(path, withName: "rgb")
-//                },
-//                          to: offeredUrl,
-//                          method: .post,
-//                          headers: header)
-//                .responseDecodable(of: CodableStruct.self) { response in
-//                    switch response.result {
-//
-//                    case .success(let res):
-//                        guard res.result == 200 else { return print("multi ppg stress result return") }
-//                        let response = res.message
-//                        print("responose: \(response)")
-//
-//                    case .failure(let err):
-//                        print("data err: " + err.localizedDescription)
-//                    }
-//                }
             } else {
                 print("error")
             }
@@ -140,13 +112,13 @@ class ViewController: UIViewController, FaceRecognitionProtocol {
         self.view.addSubview(faceRecognitionAreaView)
         self.view.addSubview(tempView)
         self.view.addSubview(startButton)
-        let width = UIScreen.main.bounds.width * 0.8,
-            height = UIScreen.main.bounds.height * 0.8
+        let width = UIScreen.main.bounds.width * 0.7,
+            height = UIScreen.main.bounds.height * 0.7
 //        let width = UIScreen.main.bounds.width,
 //            height = UIScreen.main.bounds.height
 
         preview.snp.makeConstraints { make in
-            make.top.centerX.equalToSuperview()
+            make.top.leading.equalToSuperview().offset(30)
             make.width.equalTo(width)
             make.height.equalTo(height)
         }
@@ -162,12 +134,12 @@ class ViewController: UIViewController, FaceRecognitionProtocol {
         }
 
         startButton.snp.makeConstraints { make in
-            make.width.height.equalTo(width * 0.3)
+            make.width.height.equalTo(UIScreen.main.bounds.width * 0.3)
             make.centerX.equalToSuperview()
             make.bottom.equalToSuperview().offset(-80)
         }
 
-        startButton.layer.cornerRadius = (width * 0.3) / 2
+        startButton.layer.cornerRadius = (UIScreen.main.bounds.width * 0.3) / 2
         startButton.addTarget(
             self,
             action: #selector(start),

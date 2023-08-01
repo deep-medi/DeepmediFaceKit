@@ -16,6 +16,7 @@ class Model {
     var faceRecognitionAreaView: UIView?
     var tempView: UIView?
     var previewLayer: AVCaptureVideoPreviewLayer?
+    var previewLayerBounds: CGRect
         
     var measurementTime: Double {
         didSet {
@@ -42,6 +43,7 @@ class Model {
         self.faceRecognitionAreaView = UIView()
         self.tempView = UIView()
         self.previewLayer = AVCaptureVideoPreviewLayer()
+        self.previewLayerBounds = CGRect()
         
         self.useFaceRecognitionArea = true
         
