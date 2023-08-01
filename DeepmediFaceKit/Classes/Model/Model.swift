@@ -14,7 +14,6 @@ class Model {
     var useFaceRecognitionArea: Bool
     
     var faceRecognitionAreaView: UIView?
-    var tempView: UIView?
     var previewLayer: AVCaptureVideoPreviewLayer?
     var previewLayerBounds: CGRect
         
@@ -41,7 +40,6 @@ class Model {
     
     init() {
         self.faceRecognitionAreaView = UIView()
-        self.tempView = UIView()
         self.previewLayer = AVCaptureVideoPreviewLayer()
         self.previewLayerBounds = CGRect()
         

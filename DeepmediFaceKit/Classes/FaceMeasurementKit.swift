@@ -77,16 +77,6 @@ public class FaceMeasureKit: NSObject {
             .disposed(by: bag)
     }
     
-    let detectArea = UIView().then { v in
-        v.layer.borderColor = UIColor.green.cgColor
-        v.layer.borderWidth = 1
-    }
-    
-    let faceView = UIView().then { v in
-        v.layer.borderColor = UIColor.blue.cgColor
-        v.layer.borderWidth = 1
-    }
-    
     public override init() {
         super.init()
         UIApplication.shared.isIdleTimerDisabled = true //측정중 화면 자동잠금을 막기 위해 설정
@@ -162,27 +152,9 @@ extension FaceMeasureKit: AVCaptureVideoDataOutputSampleBufferDelegate { // 카�
             CVPixelBufferLockFlags(rawValue: 0)
         )
         
-        self.tempView = self.model.tempView ?? UIView()
-        
         if self.model.useFaceRecognitionArea,
            let faceRecognitionAreaView = self.model.faceRecognitionAreaView {
             self.faceRecognitionAreaView = faceRecognitionAreaView
-            DispatchQueue.main.async {
-                
-                self.faceRecognitionAreaView.layer.borderColor = UIColor.red.cgColor
-                self.faceRecognitionAreaView.layer.borderWidth = 1
-                
-                self.detectArea.layer.borderColor = UIColor.green.cgColor
-                self.detectArea.layer.borderWidth = 1
-                
-                self.faceView.layer.borderColor = UIColor.blue.cgColor
-                self.faceView.layer.borderWidth = 1
-                
-                if self.tempView.subviews.count < 2 {                
-                    self.tempView.addSubview(self.detectArea)
-                    self.tempView.addSubview(self.faceView)
-                }
-            }
         }
         
         self.lastFrame = sampleBuffer
@@ -244,32 +216,23 @@ extension FaceMeasureKit: AVCaptureVideoDataOutputSampleBufferDelegate { // 카�
             for face in faces {
                 
                 let previewBounds = self.model.previewLayerBounds
-                let x = (face.frame.origin.x + face.frame.size.width * 0.3),
-                    y = (face.frame.origin.y + face.frame.size.height * 0.2),
-                    w = (face.frame.size.width * 0.4),
-                    h = (face.frame.size.height * 0.6),
-                    x1 = (face.frame.origin.x + face.frame.size.width * 0.1),
-                    y1 = (face.frame.origin.y + face.frame.size.height * 0.1),
-                    w1 = (face.frame.size.width * 0.8),
-                    h1 = (face.frame.size.height * 0.8)// 얼굴인식 위치 설정
-                
-                let normalizedRect = CGRect(x: x / imageWidth,
-                                            y: y / imageHeight,
-                                            width: w / imageWidth,
-                                            height: h / imageHeight),
-                    noneRecognitionNormalizedRect = CGRect(x: x1 / imageWidth,
-                                                           y: y1 / imageHeight,
-                                                           width: w1 / imageWidth,
-                                                           height: h1 / imageHeight)
-                
-                let standardizedRect = self.previewLayer.layerRectConverted(fromMetadataOutputRect: normalizedRect).standardized,
-                    recognitionStandardizedRect =  CGRect(x: standardizedRect.origin.x + previewBounds.origin.x,
-                                                          y: standardizedRect.origin.y + previewBounds.origin.y,
-                                                          width: standardizedRect.width,
-                                                          height: standardizedRect.height),
-                    noneRecgnitionStandardizedRect = self.previewLayer.layerRectConverted(fromMetadataOutputRect: noneRecognitionNormalizedRect).standardized
                 
                 if self.model.useFaceRecognitionArea {
+                    
+                    let x = (face.frame.origin.x + face.frame.size.width * 0.3),
+                        y = (face.frame.origin.y + face.frame.size.height * 0.2),
+                        w = (face.frame.size.width * 0.4),
+                        h = (face.frame.size.height * 0.6)
+                    let normalizedRect = CGRect(x: x / imageWidth,
+                                                y: y / imageHeight,
+                                                width: w / imageWidth,
+                                                height: h / imageHeight)
+                    let standardizedRect = self.previewLayer.layerRectConverted(fromMetadataOutputRect: normalizedRect).standardized,
+                        recognitionStandardizedRect = CGRect(x: standardizedRect.origin.x + previewBounds.origin.x,
+                                                              y: standardizedRect.origin.y + previewBounds.origin.y,
+                                                              width: standardizedRect.width,
+                                                              height: standardizedRect.height)
+                    
                     self.recognitionArea(
                         face: face,
                         imageWidth: imageWidth,
@@ -278,7 +241,23 @@ extension FaceMeasureKit: AVCaptureVideoDataOutputSampleBufferDelegate { // 카�
                         standardizedRect: recognitionStandardizedRect,
                         faceRecognitionAreaView: faceRecognitionAreaView
                     )
+                    
                 } else {
+                    
+                    let x1 = (face.frame.origin.x + face.frame.size.width * 0.1),
+                        y1 = (face.frame.origin.y + face.frame.size.height * 0.1),
+                        w1 = (face.frame.size.width * 0.8),
+                        h1 = (face.frame.size.height * 0.8)// 얼굴인식 위치 설정
+                    let noneRecognitionNormalizedRect = CGRect(x: x1 / imageWidth,
+                                                               y: y1 / imageHeight,
+                                                               width: w1 / imageWidth,
+                                                               height: h1 / imageHeight)
+                    let standardizedRect1 = self.previewLayer.layerRectConverted(fromMetadataOutputRect: noneRecognitionNormalizedRect).standardized,
+                        noneRecgnitionStandardizedRect = CGRect(x: standardizedRect1.origin.x + previewBounds.origin.x,
+                                                                y: standardizedRect1.origin.y + previewBounds.origin.y,
+                                                                width: standardizedRect1.width,
+                                                                height: standardizedRect1.height)
+                    
                     self.noneRecognitionArea(
                         face: face,
                         imageWidth: imageWidth,
@@ -298,10 +277,7 @@ extension FaceMeasureKit: AVCaptureVideoDataOutputSampleBufferDelegate { // 카�
         standardizedRect: CGRect,
         faceRecognitionAreaView: UIView
     ) {
-        let previewBounds = self.model.previewLayerBounds
-        self.detectArea.frame = faceRecognitionAreaView.frame
-        self.faceView.frame = standardizedRect
-    
+        
         if faceRecognitionAreaView.frame.minX <= standardizedRect.minX &&
            faceRecognitionAreaView.frame.maxX >= standardizedRect.maxX &&
            faceRecognitionAreaView.frame.minY <= standardizedRect.minY &&
@@ -330,8 +306,6 @@ extension FaceMeasureKit: AVCaptureVideoDataOutputSampleBufferDelegate { // 카�
         imageHeight: CGFloat,
         standardizedRect: CGRect
     ) {
-        
-        self.faceView.frame = standardizedRect
         
         let minX = UIScreen.main.bounds.minX,
             minY = UIScreen.main.bounds.minY,
