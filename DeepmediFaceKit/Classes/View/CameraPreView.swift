@@ -17,12 +17,15 @@ public class CameraPreview: UIView {
     
     public func setup(
         layer: AVCaptureVideoPreviewLayer,
-        bound: CGRect
+        frame: CGRect
     ) {
         self.model.previewLayer = layer
+        self.model.previewLayerBounds = self.frame
         self.layer.addSublayer(layer)
         layer.videoGravity = .resizeAspectFill
-        layer.frame = bound
+        layer.frame = CGRect(x: 0, y: 0,
+                             width: frame.width,
+                             height: frame.height)
     }
     
     required init?(coder: NSCoder) {
