@@ -53,7 +53,7 @@ class ViewController: UIViewController, FaceRecognitionProtocol {
         faceMeasureKitModel.setMeasurementTime(30)
         faceMeasureKitModel.setWindowSecond(15)
         faceMeasureKitModel.setOverlappingSecond(2)
-        faceMeasureKitModel.willUseFaceRecognitionArea(true)
+        faceMeasureKitModel.willUseFaceRecognitionArea(false)
         
         previewLayer = AVCaptureVideoPreviewLayer(session: session)
         
@@ -71,7 +71,6 @@ class ViewController: UIViewController, FaceRecognitionProtocol {
         )
 
         faceMeasureKitModel.injectingRecognitionAreaView(faceRecognitionAreaView)
-        faceMeasureKitModel.tempView(view: tempView)
     }
 
     @objc func start() {
@@ -110,7 +109,6 @@ class ViewController: UIViewController, FaceRecognitionProtocol {
     func setupUI() {
         self.view.addSubview(preview)
         self.view.addSubview(faceRecognitionAreaView)
-        self.view.addSubview(tempView)
         self.view.addSubview(startButton)
         let width = UIScreen.main.bounds.width * 0.7,
             height = UIScreen.main.bounds.height * 0.7
@@ -121,10 +119,6 @@ class ViewController: UIViewController, FaceRecognitionProtocol {
             make.top.leading.equalToSuperview().offset(30)
             make.width.equalTo(width)
             make.height.equalTo(height)
-        }
-        
-        tempView.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
         }
 
         faceRecognitionAreaView.snp.makeConstraints { make in
