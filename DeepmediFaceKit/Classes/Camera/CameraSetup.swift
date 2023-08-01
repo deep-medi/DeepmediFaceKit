@@ -93,16 +93,6 @@ class CameraSetup: NSObject {
         captureDevice?.unlockForConfiguration()
     }
     
-    //  @objc func correctColor() {
-    //    try! self.captureDevice?.lockForConfiguration()
-    //    let gainset = AVCaptureDevice.WhiteBalanceGains(redGain: 1.0,
-    //                                                    greenGain: 1.0, // 3 -> 1 edit
-    //                                                    blueGain: 1.0)
-    //    self.captureDevice?.setWhiteBalanceModeLocked(with: gainset,
-    //                                                  completionHandler: nil)
-    //    self.captureDevice?.unlockForConfiguration()
-    //  }
-    
     func setupVideoOutput(
         _ delegate: AVCaptureVideoDataOutputSampleBufferDelegate
     ) {
