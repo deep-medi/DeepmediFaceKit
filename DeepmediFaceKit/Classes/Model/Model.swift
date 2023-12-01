@@ -11,6 +11,7 @@ import AVKit
 class Model {
     static let shared = Model()
     
+    var usingCheckRealFace: Bool
     var useFaceRecognitionArea: Bool
     
     var faceRecognitionAreaView: UIView?
@@ -43,6 +44,7 @@ class Model {
         self.previewLayer = AVCaptureVideoPreviewLayer()
         self.previewLayerBounds = CGRect()
         
+        self.usingCheckRealFace = false
         self.useFaceRecognitionArea = true
         
         self.age = 20

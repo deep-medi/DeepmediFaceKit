@@ -40,7 +40,7 @@ class ViewController: UIViewController, FaceRecognitionProtocol {
         b.setTitleColor(.white, for: .normal)
         b.backgroundColor = .black
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         completionMethod()
@@ -53,15 +53,12 @@ class ViewController: UIViewController, FaceRecognitionProtocol {
         faceMeasureKitModel.setMeasurementTime(30)
         faceMeasureKitModel.setWindowSecond(15)
         faceMeasureKitModel.setOverlappingSecond(2)
+        faceMeasureKitModel.usingCheckRealFace(true)
         faceMeasureKitModel.willUseFaceRecognitionArea(false)
         
         previewLayer = AVCaptureVideoPreviewLayer(session: session)
         
         self.setupUI()
-        
-//        DispatchQueue.global(qos: .background).asyncAfter(deadline: .now() + 1) {
-//            self.faceMeasureKit.startSession()
-//        }
     }
     
     override func viewDidLayoutSubviews() {
@@ -80,6 +77,9 @@ class ViewController: UIViewController, FaceRecognitionProtocol {
     }
 
     func completionMethod() {
+        faceMeasureKit.stopMeasurement { stop in
+            print("measurement stop: \(stop)")
+        }
         faceMeasureKit.measurementCompleteRatio { ratio in
             print("complete ratio: \(ratio)")
         }
@@ -94,11 +94,17 @@ class ViewController: UIViewController, FaceRecognitionProtocol {
                 DispatchQueue.global(qos: .background).async {
                     self.faceMeasureKit.stopSession()
                 }
+//                
+//                let header = self.header.v2Header(method: .post,
+//                                                  uri: "uri",
+//                                                  secretKey: "secretkey",
+//                                                  apiKey: "apikey")
 
                 let header = self.header.v2Header(method: .post,
-                                                  uri: "offered uri",
-                                                  secretKey: "offered secret key",
-                                                  apiKey: "offered api key")
+                                                  uri: "/face_health_estimate/v1/calculate_multi_seg_face_ppg_stress",
+                                                  secretKey: "HOAg4vr7bjzHr4OvMeAvw70Ae8nNKa6ctudDJuJy",
+                                                  apiKey: "qOxZNxOrpbJPaPtbuf2Qu9hdV7y6FAiwKWqTLJDE")
+                print("header: \(header)")
 
             } else {
                 print("error")

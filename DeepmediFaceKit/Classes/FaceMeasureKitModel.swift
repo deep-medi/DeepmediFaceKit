@@ -9,6 +9,12 @@ public class FaceMeasureKitModel: NSObject {
         super.init()
     }
     
+    public func usingCheckRealFace(
+        _ use: Bool
+    ) {
+        self.model.usingCheckRealFace = use
+    }
+    
     public func injectingRecognitionAreaView(
         _ view: UIView
     ) {

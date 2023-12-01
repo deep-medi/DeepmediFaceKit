@@ -28,8 +28,9 @@ class CameraSetup: NSObject {
         return self.session
     }
     
-    func useCapterDevice() -> AVCaptureDevice? {
-        return self.captureDevice
+    func useCaptureDevice() -> AVCaptureDevice {
+        guard let device = self.captureDevice else { return AVCaptureDevice(uniqueID: "tmp")! }
+        return device
     }
     
     @available(iOS 10.0, *)
@@ -40,7 +41,12 @@ class CameraSetup: NSObject {
             for: .video,
             position: .front
         ) else { fatalError("capture device error") }
-        
+        self.detection(captureDevice)
+    }
+    
+    private func detection(
+        _ captureDevice: AVCaptureDevice
+    ) {
         self.captureDevice = captureDevice
         
         if self.session.inputs.isEmpty {
@@ -60,11 +66,9 @@ class CameraSetup: NSObject {
         for format in captureDeviceFormats {
             let ranges = format.videoSupportedFrameRateRanges
             let frameRates = ranges[0]
-            
             if (frameRates.maxFrameRate == framePerSec) {
                 let videoFormatDimensions = CMVideoFormatDescriptionGetDimensions(format.formatDescription)
                 if videoFormatDimensions.width <= Int32(2000) && videoFormatDimensions.height <= Int32(1100) {
-                    
                     currentFormat = format
                     tempFramePerSec = 30.0
                 }

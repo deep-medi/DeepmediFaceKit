@@ -4,24 +4,21 @@
 //
 //  Created by Demian on 2023/02/09.
 //
-
+import Foundation
 import UIKit
 
-open class Document {
-    enum Sensor {
-        case acc, gyro
-    }
-    
+public class Document {
     private let fileManager = FileManager()
     private let dataModel = DataModel.shared
+    private let model = Model.shared
     
     // MARK: 측정데이터 파일생성
-    func makeDocuFromData() {
+    func makeDocument() {
         let docuURL = self.fileManager.urls(for: .documentDirectory, in: .userDomainMask).first!
-        let faceFilePath = docuURL.appendingPathComponent("PPG_DATA_ios.txt")
         
-        self.dataModel.rgbDataPath = faceFilePath
-        self.transrateFaceDataToTxtFile(faceFilePath)
+        var rgbFilePath = docuURL.appendingPathComponent("PPG_DATA_Face_ios.txt")
+        self.dataModel.rgbDataPath = rgbFilePath
+        self.transrateDataToTxtFile(rgbFilePath)
     }
     
     func makeDocuFromChestData() {
@@ -36,7 +33,7 @@ open class Document {
         _ fileURL: URL
     ) {
         
-        self.dataModel.rgbDatas.forEach { dataMass in
+        self.dataModel.rgbData.forEach { dataMass in
             self.dataModel.rgbDataToArr.append("\(dataMass.0 as Float64)\t" + "\(dataMass.1)\t" + "\(dataMass.2)\t" + "\(dataMass.3)\n")
         }
         
@@ -56,21 +53,21 @@ open class Document {
         let length = self.byteArray(from: 900),
             chestSize = self.byteArray(from: 32)
         
-        for i in length.indices {
+        for i in length.indices.reversed() {
             if i > 3 {
                 let lengthArr = length[i]
                 self.dataModel.byteData.append(lengthArr)
             }
         }
         
-        for i in chestSize.indices {
+        for i in chestSize.indices.reversed() {
             if i > 3 {
                 let sizeArr = chestSize[i]
                 self.dataModel.byteData.append(sizeArr)
             }
         }
         
-        for i in chestSize.indices {
+        for i in chestSize.indices.reversed() {
             if i > 3 {
                 let sizeArr = chestSize[i]
                 self.dataModel.byteData.append(sizeArr)
@@ -78,11 +75,10 @@ open class Document {
         }
         
         self.dataModel.timeStamp.forEach { time in
-            
             let timeDiff = Int((time - self.dataModel.timeStamp.first!) / 1000),
                 timeToByteArr = self.byteArray(from: timeDiff)
             
-            for i in timeToByteArr.indices {
+            for i in timeToByteArr.indices.reversed() {
                 if i > 3 {
                     let timeArr = timeToByteArr[i]
                     self.dataModel.byteData.append(timeArr)
@@ -107,54 +103,30 @@ open class Document {
         withUnsafeBytes(of: value.bigEndian, Array.init)
     }
     
-    func makeDocuFromMeasureData(data: Sensor,
-                                 dataMass: [(Double, Float, Float, Float)],
-                                 dataArr: inout [String],
-                                 dataStr: inout String) {
-        
-        let docuURL = self.fileManager.urls(for: .documentDirectory,
-                                            in: .userDomainMask).first!
-        switch data {
-        case .acc:
-            let file = docuURL.appendingPathComponent("ACC_DATA_ios.txt")
-            self.dataModel.accDataPath = file
-            
-            self.transrateDataToTxtFile(file,
-                                        dataMass,
-                                        &dataArr,
-                                        &dataStr)
-            
-        case .gyro:
-            let file = docuURL.appendingPathComponent("GYRO_DATA_ios.txt")
-            self.dataModel.gyroDataPath = file
-            
-            self.transrateDataToTxtFile(file,
-                                        dataMass,
-                                        &dataArr,
-                                        &dataStr)
-        }
-    }
-    
     private func transrateDataToTxtFile(
-        _ file: URL,
-        _ dataMass: [(Double, Float, Float, Float)],
-        _ dataArr: inout [String],
-        _ dataStr: inout String
+        _ file: URL
     ) {
+        var data = self.dataModel.rgbData,
+            dataToArr = self.dataModel.rgbDataToArr,
+            dataSubStr = self.dataModel.rgbSubStr
         
-        for i in dataMass.indices {
-            dataArr.append(
-                "\(dataMass[i].0 as Float64)\t"
-                + "\(dataMass[i].1)\t"
-                + "\(dataMass[i].2)\t"
-                + "\(dataMass[i].3)\n"
+        data.forEach { dataMass in
+            dataToArr.append(
+                "\(dataMass.0 as Float64)\t"
+                + "\(dataMass.1)\t"
+                + "\(dataMass.2)\t"
+                + "\(dataMass.3)\n"
             )
         }
         
-        for i in dataArr.indices {
-            dataStr += "\(dataArr[i])"
+        for i in dataToArr.indices {
+            dataSubStr += "\(dataToArr[i])"
         }
         
-        try? dataStr.write(to: file, atomically: true, encoding: String.Encoding.utf8)
+        try? dataSubStr.write(
+            to: file,
+            atomically: true,
+            encoding: String.Encoding.utf8
+        )
     }
 }
