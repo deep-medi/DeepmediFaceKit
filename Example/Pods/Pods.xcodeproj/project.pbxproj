@@ -306,6 +306,7 @@
 		5BA06648A839EBDC2728BF73BAE96755 /* ControlEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EFA47F54B1DEA3E660189D828F8C59 /* ControlEvent.swift */; };
 		5C54444C49F134B4DFEB8206168CEA9C /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF6DF05342DA6D514E945A7FCE3A463 /* PriorityQueue.swift */; };
 		5C5C16AF33B4B9F9BF509407C4E0ADD1 /* Zip+Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5057EE1457FB51621161DDD1E3BD23E /* Zip+Collection.swift */; };
+		5C5C46272B19A684007A8F98 /* MeasurementModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5C46262B19A684007A8F98 /* MeasurementModel.swift */; };
 		5CB5C2A17E950770BD55DDEAC6A61D96 /* GULLoggerLevel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1745B64F6FEF0CFF1962688E232881B0 /* GULLoggerLevel.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		5CDF41362A171EA0002A14A5 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDF41352A171EA0002A14A5 /* Header.swift */; };
 		5E6510D3D36528A767039A8022F8C10E /* GDTCORStorageSizeBytes.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B1D0FEBE3D083C64D64F26AF81A4EBD /* GDTCORStorageSizeBytes.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -330,7 +331,6 @@
 		637E610202AA28C39E632BD42B8E453C /* SharedSequence+Operators+arity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF46A7B62E70B69A05B776FFDCD7652 /* SharedSequence+Operators+arity.swift */; };
 		638558468370D82396FB15928DC442AB /* Just.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D8BC092083BDAF7B7A559B7BE82D6F /* Just.swift */; };
 		63A18A49984021C6D531C9030C76E674 /* NopDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28115ECFB4159A8F7B5F4E1D2800A94C /* NopDisposable.swift */; };
-		63EE16A0639D14DC1328C68627A07977 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA44616E502D801D4473367101E9DB13 /* ViewModel.swift */; };
 		64113332D583E2FD3E7621A23A42A15B /* ScheduledDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8BB2425997FF04CA9D34E1D5DEB19C /* ScheduledDisposable.swift */; };
 		643AAE32EC4C3E42885B1F466D857ED9 /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95BC2E0A0B778469295557FAF52B5A0 /* Delay.swift */; };
 		64B05A8F2CB1F1189CC2FB7E71512259 /* FBLPromise+Retry.h in Headers */ = {isa = PBXBuildFile; fileRef = EF1D0849955020B5BE566B4B9667645E /* FBLPromise+Retry.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -442,7 +442,6 @@
 		99204275FB42EADCFDAAA60B17661E9F /* Cancelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE52F652D1FC506CC97C61903CFC03DE /* Cancelable.swift */; };
 		9A283D42467B1E4EBE78AD1128DC0A1D /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABC70C5565DFB376E4CA4045340ECD4 /* ConstraintMakerEditable.swift */; };
 		9A2FBE8B14A3BF2E63ED589F7CBEB5FD /* ConcurrentMainScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573F3DB6E47441CE6D6784F1CA237EC7 /* ConcurrentMainScheduler.swift */; };
-		9BDABC246F5AD16BDCB8B2A069BEE422 /* RGBData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB1054DF3A81825E803DE62A4E809DC /* RGBData.swift */; };
 		9BF9A14E8C762E6115BBED83CD5D994E /* GTMSessionFetcher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA6EC96E402AF90CEF9A5B56CD2A4A4 /* GTMSessionFetcher-dummy.m */; };
 		9C5D3FEB9B085BE4E402622DB1694665 /* GULKeychainStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 896F242DED562046F01BC31F7BF92325 /* GULKeychainStorage.m */; };
 		9CD980B060C3226E7D865697B96A8B12 /* FBLPromise+Catch.h in Headers */ = {isa = PBXBuildFile; fileRef = 79946C8F1A1594DDF1AE51E23C0AE00E /* FBLPromise+Catch.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -1354,6 +1353,7 @@
 		5B87643EC7777B8D02F1A74BD6DA00E3 /* VirtualTimeConverterType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VirtualTimeConverterType.swift; path = RxSwift/Schedulers/VirtualTimeConverterType.swift; sourceTree = "<group>"; };
 		5BF59BE78AC0AE4214376BC07DCFE3D4 /* Pods-DeepmediFaceKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DeepmediFaceKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5C5866D5B5358981B3D4AED37DEE90E1 /* HistoricalScheduler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HistoricalScheduler.swift; path = RxSwift/Schedulers/HistoricalScheduler.swift; sourceTree = "<group>"; };
+		5C5C46262B19A684007A8F98 /* MeasurementModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementModel.swift; sourceTree = "<group>"; };
 		5C6D1F6D4BB9978B183A692C88573B0B /* ScheduledItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScheduledItem.swift; path = RxSwift/Schedulers/Internal/ScheduledItem.swift; sourceTree = "<group>"; };
 		5CC249D344AC4A02168749E36C232DDB /* gplaidmlkernel.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = gplaidmlkernel.hpp; path = opencv2.framework/Versions/A/Headers/gapi/plaidml/gplaidmlkernel.hpp; sourceTree = "<group>"; };
 		5CCC83D4966852374E33436093150703 /* exposure_compensate.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = exposure_compensate.hpp; path = opencv2.framework/Versions/A/Headers/stitching/detail/exposure_compensate.hpp; sourceTree = "<group>"; };
@@ -1669,7 +1669,6 @@
 		AB02FF54512A17B728C07F99B7A35138 /* CameraObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CameraObject.swift; sourceTree = "<group>"; };
 		AB598EEAF166487271A5955466E9B075 /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Source/Typealiases.swift; sourceTree = "<group>"; };
 		AB92D5A38CEF4A496F49C2E082A742CD /* opencl_gl.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = opencl_gl.hpp; path = opencv2.framework/Versions/A/Headers/core/opencl/runtime/autogenerated/opencl_gl.hpp; sourceTree = "<group>"; };
-		ABB1054DF3A81825E803DE62A4E809DC /* RGBData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RGBData.swift; sourceTree = "<group>"; };
 		ABEF56CA4C1DFA892CC4FC4CE1A807C7 /* RxTableViewDataSourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxTableViewDataSourceType.swift; path = RxCocoa/iOS/Protocols/RxTableViewDataSourceType.swift; sourceTree = "<group>"; };
 		ABF6DF05342DA6D514E945A7FCE3A463 /* PriorityQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PriorityQueue.swift; path = Platform/DataStructures/PriorityQueue.swift; sourceTree = "<group>"; };
 		AC2414CE17F0839D6F74142040210651 /* DispatchQueue+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Extensions.swift"; path = "Platform/DispatchQueue+Extensions.swift"; sourceTree = "<group>"; };
@@ -1716,7 +1715,6 @@
 		B950797E05B7B05223B0B31DAB126137 /* allocator_stats.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = allocator_stats.hpp; path = opencv2.framework/Versions/A/Headers/core/utils/allocator_stats.hpp; sourceTree = "<group>"; };
 		B960116FB3D66DFDD9C17BE41FF584B8 /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLConvertible+URLRequestConvertible.swift"; path = "Source/URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
 		BA026B6248AD23821FB99F54524AF4EB /* RxTableViewReactiveArrayDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxTableViewReactiveArrayDataSource.swift; path = RxCocoa/iOS/DataSources/RxTableViewReactiveArrayDataSource.swift; sourceTree = "<group>"; };
-		BA44616E502D801D4473367101E9DB13 /* ViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		BB06952AC9613263043BE6058F8DDA5F /* core.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = core.hpp; path = opencv2.framework/Versions/A/Headers/core.hpp; sourceTree = "<group>"; };
 		BB68008D66DA8068DB1190B1638BFF05 /* BehaviorRelay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BehaviorRelay.swift; path = RxRelay/BehaviorRelay.swift; sourceTree = "<group>"; };
 		BB99B0DA424B4C11C54FD9D79D4632EE /* gtype_traits.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = gtype_traits.hpp; path = opencv2.framework/Versions/A/Headers/gapi/gtype_traits.hpp; sourceTree = "<group>"; };
@@ -2235,7 +2233,6 @@
 				5CDF41342A171EA0002A14A5 /* Header */,
 				5F33AC1A8FF1FA66BD35FF6BE6914064 /* Model */,
 				E0F521B8517D4E01E986022E65C318B7 /* View */,
-				6AF81229067B426B35072EC1616E3A5E /* ViewModel */,
 			);
 			name = Classes;
 			path = DeepmediFaceKit/Classes;
@@ -2422,7 +2419,7 @@
 			children = (
 				B346AB261E029423C396DC00FF5EADF8 /* DataModel.swift */,
 				99310FEAF61C9076377FA03C64FF35A6 /* Model.swift */,
-				ABB1054DF3A81825E803DE62A4E809DC /* RGBData.swift */,
+				5C5C46262B19A684007A8F98 /* MeasurementModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -2454,14 +2451,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/GoogleMLKit";
-			sourceTree = "<group>";
-		};
-		6AF81229067B426B35072EC1616E3A5E /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				BA44616E502D801D4473367101E9DB13 /* ViewModel.swift */,
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		6B70480FEBB27CEB6D3BAC386F2DE43E /* RxRelay */ = {
@@ -4993,8 +4982,7 @@
 				5F3A39638EBF6093CF787C993BCD4DF7 /* ObjcMapper.mm in Sources */,
 				53D8D45F522ACFE658E68E17F470DFC5 /* OpenCVWrapper.mm in Sources */,
 				E1B97D3FC5CB030FE4BC146D5329F3C3 /* Protocol.swift in Sources */,
-				9BDABC246F5AD16BDCB8B2A069BEE422 /* RGBData.swift in Sources */,
-				63EE16A0639D14DC1328C68627A07977 /* ViewModel.swift in Sources */,
+				5C5C46272B19A684007A8F98 /* MeasurementModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -123,3 +123,17 @@ extension CGPath {
         return copy(using: &transform)
     }
 }
+
+extension UIDevice {
+    func currentModelName() -> String {
+        let device = UIDevice.current
+        let selName = "_\("deviceInfo")ForKey:"
+        let selector = NSSelectorFromString(selName)
+        
+        var modelName = ""
+        if device.responds(to: selector) {
+            modelName = String(describing: device.perform(selector, with: "marketing-name").takeRetainedValue())
+        }
+        return modelName
+    }
+}
