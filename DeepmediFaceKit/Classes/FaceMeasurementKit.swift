@@ -40,7 +40,7 @@ public class FaceMeasureKit: NSObject {
                 isReal:Bool = false,
                 diffArr:[CGFloat] = [],
                 checkArr:[Bool] = []
-    
+    //실제사람 확인 설정 후 진짜 사람이면 true 반환
     public func checkRealFace(
         _ isReal: @escaping((Bool) -> ())
     ) {
@@ -53,7 +53,7 @@ public class FaceMeasureKit: NSObject {
             }
             .disposed(by: bag)
     }
-    
+    ///측정이 멈추면 true 반환
     public func stopMeasurement(
         _ isStop: @escaping((Bool) -> ())
     ) {
@@ -66,7 +66,7 @@ public class FaceMeasureKit: NSObject {
             })
             .disposed(by: bag)
     }
-    
+    ///측정이 완료되면 true, 파일 url 반환
     public func finishedMeasurement(
         _ isSuccess: @escaping((Bool, URL?) -> ())
     ) {
@@ -78,7 +78,7 @@ public class FaceMeasureKit: NSObject {
             })
             .disposed(by: bag)
     }
-    
+    ///측정완료 된 비율 반환
     public func measurementCompleteRatio(
         _ com: @escaping((String) -> ())
     ) {
@@ -90,7 +90,7 @@ public class FaceMeasureKit: NSObject {
             })
             .disposed(by: bag)
     }
-    
+    ///남은 측정시간 반환
     public func timesLeft(
         _ com: @escaping((Int) -> ())
     ) {

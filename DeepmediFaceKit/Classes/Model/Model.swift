@@ -25,9 +25,21 @@ class Model {
             }
         }
     }
+    var windowSec: Int {
+        didSet {
+            if self.windowSec < 15 {
+                self.windowSec = 15
+            }
+        }
+    }
+    var overlappingSec: Int {
+        didSet {
+            if self.measurementTime < 2 {
+                self.measurementTime = 2
+            }
+        }
+    }
     
-    var windowSec: Int
-    var overlappingSec: Int
     var age: Int,
         height: Int,
         weight: Int
