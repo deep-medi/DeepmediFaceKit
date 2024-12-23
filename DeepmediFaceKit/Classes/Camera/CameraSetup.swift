@@ -64,14 +64,10 @@ class CameraSetup: NSObject {
         guard let captureDeviceFormats = self.captureDevice?.formats else { fatalError("capture device") }
         
         for format in captureDeviceFormats {
-            let ranges = format.videoSupportedFrameRateRanges
-            let frameRates = ranges[0]
-            if (frameRates.maxFrameRate == framePerSec) {
-                let videoFormatDimensions = CMVideoFormatDescriptionGetDimensions(format.formatDescription)
-                if videoFormatDimensions.width <= Int32(2000) && videoFormatDimensions.height <= Int32(1100) {
-                    currentFormat = format
-                    tempFramePerSec = 30.0
-                }
+            let videoFormatDimensions = CMVideoFormatDescriptionGetDimensions(format.formatDescription)
+            tempFramePerSec = 30.0
+            if videoFormatDimensions.width <= Int32(2000) && videoFormatDimensions.height <= Int32(1100) {
+                currentFormat = format
             }
         }
         

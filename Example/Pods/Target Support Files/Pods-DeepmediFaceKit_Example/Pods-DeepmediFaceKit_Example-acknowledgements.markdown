@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## Alamofire
 
-Copyright (c) 2014-2020 Alamofire Software Foundation (http://alamofire.org/)
+Copyright (c) 2014-2022 Alamofire Software Foundation (http://alamofire.org/)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -466,7 +466,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ## GoogleMLKit
 
-Copyright 2023 Google
+Copyright 2024 Google LLC
 
 ## GoogleToolboxForMac
 
@@ -881,9 +881,6 @@ Copyright 2023 Google
 
 ================================================================================
 
-The following copyright from Landon J. Fuller applies to the isAppEncrypted
-function in Environment/third_party/GULAppEnvironmentUtil.m.
-
 Copyright (c) 2017 Landon J. Fuller <landon@landonf.org>
 All rights reserved.
 
@@ -903,26 +900,6 @@ FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
 COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
 IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-Comment from
-<a href="http://iphonedevwiki.net/index.php/Crack_prevention">iPhone Dev Wiki
-Crack Prevention</a>: App Store binaries are signed by both their developer
-and Apple. This encrypts the binary so that decryption keys are needed in order
-to make the binary readable. When iOS executes the binary, the decryption keys
-are used to decrypt the binary into a readable state where it is then loaded
-into memory and executed. iOS can tell the encryption status of a binary via the
-cryptid structure member of LC_ENCRYPTION_INFO MachO load command. If cryptid is
-a non-zero value then the binary is encrypted.
-
-'Cracking' works by letting the kernel decrypt the binary then siphoning the
-decrypted data into a new binary file, resigning, and repackaging. This will
-only work on jailbroken devices as codesignature validation has been removed.
-Resigning takes place because while the codesignature doesn't have to be valid
-thanks to the jailbreak, it does have to be in place unless you have AppSync or
-similar to disable codesignature checks.
-
-More information at <a href="http://landonf.org/2009/02/index.html">Landon
-Fuller's blog</a>
 
 
 ## GoogleUtilitiesComponents
@@ -1133,19 +1110,19 @@ Fuller's blog</a>
 
 ## MLImage
 
-Copyright 2023 Google
+Copyright 2024 Google LLC
 
 ## MLKitCommon
 
-Copyright 2023 Google
+Copyright 2024 Google LLC
 
 ## MLKitFaceDetection
 
-Copyright 2023 Google
+Copyright 2024 Google LLC
 
 ## MLKitVision
 
-Copyright 2023 Google
+Copyright 2024 Google LLC
 
 ## OpenCV
 
@@ -1394,7 +1371,7 @@ the use of this software, even if advised of the possibility of such damage.
 ## RxCocoa
 
 **The MIT License**
-**Copyright © 2015 Krunoslav Zaher, Shai Mishali**
+**Copyright © 2015 Shai Mishali, Krunoslav Zaher**
 **All rights reserved.**
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
@@ -1407,7 +1384,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ## RxRelay
 
 **The MIT License**
-**Copyright © 2015 Krunoslav Zaher, Shai Mishali**
+**Copyright © 2015 Shai Mishali, Krunoslav Zaher**
 **All rights reserved.**
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
@@ -1420,7 +1397,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ## RxSwift
 
 **The MIT License**
-**Copyright © 2015 Krunoslav Zaher, Shai Mishali**
+**Copyright © 2015 Shai Mishali, Krunoslav Zaher**
 **All rights reserved.**
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:

@@ -8,13 +8,6 @@ target 'DeepmediFaceKit_Example' do
   pod 'DeepmediFaceKit', :path => '../'
   pod 'SnapKit', '~> 5.0.0'
 
-	#pod 'Then'
-	#pod 'GoogleMLKit/FaceDetection'
-	#pod 'Alamofire', '~> 5.2.0'
-	#pod 'OpenCV'
-	#pod 'RxSwift', '~> 6.0.0'
-	#pod 'RxCocoa', '~> 6.0.0'
-
   target 'DeepmediFaceKit_Tests' do
     inherit! :search_paths
   end

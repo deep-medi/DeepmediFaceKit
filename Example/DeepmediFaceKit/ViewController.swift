@@ -95,15 +95,11 @@ class ViewController: UIViewController, FaceRecognitionProtocol {
                     self.faceMeasureKit.stopSession()
                 }
 //                
-//                let header = self.header.v2Header(method: .post,
-//                                                  uri: "uri",
-//                                                  secretKey: "secretkey",
-//                                                  apiKey: "apikey")
-
                 let header = self.header.v2Header(method: .post,
-                                                  uri: "/face_health_estimate/v1/calculate_multi_seg_face_ppg_stress",
-                                                  secretKey: "HOAg4vr7bjzHr4OvMeAvw70Ae8nNKa6ctudDJuJy",
-                                                  apiKey: "qOxZNxOrpbJPaPtbuf2Qu9hdV7y6FAiwKWqTLJDE")
+                                                  uri: "uri",
+                                                  secretKey: "secretkey",
+                                                  apiKey: "apikey")
+
                 print("header: \(header)")
 
             } else {
